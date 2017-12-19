@@ -1,0 +1,480 @@
+#+TITLE: Work More Efficiently On Mac
+#+DATE: 2017-01-20
+#+PUBLISHDATE: 2017-00-20
+#+SUMMARY: dotfiles and tools.
+#+CATEGORIES: productivity
+#+TAGS: configuration
+#+DRAFT: false
+
+** Managing Dotfiles In Org-Babel
+
+I used to have almost 80% configurations that I stole from other people on the internet which are never used. 
+Why? Maybe because I did not think why I need them, those things just did not be adopted in my daily workflow.
+
+[[http://orgmode.org/worg/org-contrib/babel/][org-babel]] is a way that you can embed your code block in your literature. I've ever seen people use it to manage their Emacs 
+configuration many times, and think it might be easy to manage my dotfiles also.
+
+so, here you are, this is a post remains me why I need to have these configurations, how can I be more productivity, 
+but it is also used to export all my configurations on mac.
+
+** Get The Missing Package Manager
+  
+Do you miss aplt-get, or any package manager on Linux after you switched to Mac? If you do then HomeBrew and HomeBrew Cask is what you are looking for.
+
+*** Get Brew
+   
+#+BEGIN_SRC bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#+END_SRC
+
+*** Add more sources
+- System duplicate formulae
+
+#+BEGIN_SRC bash 
+brew tap homebrew/dupes
+#+END_SRC
+
+- Versioned formulae
+
+#+BEGIN_SRC bash 
+brew tap homebrew/versions
+#+END_SRC
+
+- Homebrew Cask is an extension for Homebrew that allows you to automate the installation of Mac Apps.
+
+#+BEGIN_SRC bash 
+brew tap caskroom/cask
+#+END_SRC
+
+- Cask can also be used to automatically download and install fonts.
+
+#+BEGIN_SRC bash 
+brew tap caskroom/fonts
+#+END_SRC
+
+*** Update formulaes
+#+BEGIN_SRC bash 
+brew update
+#+END_SRC
+
+** Use Spacemacs
+   Can not use ~org-babel~ without Emacs. I use spacemacs because the default configuration really saves my time.
+*** Get Emacs
+
+#+BEGIN_SRC bash
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --HEAD --with-natural-title-bars
+brew linkapps emacs-plus
+#+END_SRC
+
+*** Download spaceemacs cofiguration
+
+#+BEGIN_SRC bash
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+#+END_SRC
+
+** Better Terminal
+
+Iterm2 has a lot useful [[https://www.iterm2.com/features.html][features]], such as split panes, hotkey window.
+
+*** Installation
+    
+#+BEGIN_SRC bash
+brew cask install iterm2
+#+END_SRC
+
+*** Enable Hotkey Window
+
+Register a hotkey that brings iTerm2 to the foreground when you're in another application. A terminal is always a keypress away. This gives you an always-available terminal (like Visor, Guake, or Yakuake) at your fingertips.
+
+1. Creates a new profile named as ~Hotkey Window~.
+2. Open ~Preference~ > Keys.
+3. Enable ~Show/hide iTerm2~ with a system-wide hotkey, change Hotkey to ~Command + ;~.
+4. Enable ~Hotkey toogles a dedicated window with profile~, change the profile to ~Hotkey Window~.
+
+** Better Keyboard Configuration
+  
+I am a fan of *Emacs* but prefer *VIM style editing* (which leads me to start using spacemacs), 
+Capslock is useless and I never use it. Luckly, it seems a good place to put *Ctrl/Escape* there.
+
+*** Remaps Capslock To Ctrl
+
+1. Go into the Keyboard preference pane. 
+2. Click "Modifier Keys…", and change Caps Lock to Control.
+3. Download the lastest version of [[https://pqrs.org/osx/karabiner/seil.html.en][Seli]].
+4. Open Seli and go *other keys* section to Change *Ctrl_L*
+
+*** Remaps Capslock to Escape
+
+1. Download the lastest version of [[https://pqrs.org/osx/karabiner/][Karabiner]].
+2. go into Karabiner and search for this option:
+#+BEGIN_SRC
+Control_L to Control_L
+      (+ when you type Control_L only, send Escape)
+#+END_SRC
+
+*** Remaps Ctrl-L to Hypher
+
+To define Hyper as control+option+command+shift.
+
+- Open Karabiner and go to Misc & Uninstall > Open private.xml). 
+- Add this XML snippet directly under the <root> element.
+#+BEGIN_SRC xml
+<?xml version="1.0"?>
+	<item>
+    <name>Remap Left Control to Hyper</name>
+    <appendix>OS X doesn't have a Hyper. This maps Left Control to Control + Shift + Option + Command.</appendix>
+
+    <identifier>space_cadet.left_control_to_hyper</identifier>
+
+    <autogen>
+        --KeyToKey--
+        KeyCode::F19,
+
+        KeyCode::COMMAND_L,
+        ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+#+END_SRC
+- Save the file, then open Karabiner and press ReloadXML in the upper-right of the Change Key tab. 
+- Search for Remap Caps and check the box.
+
+** Don't sleep automatically
+   I truly don't understand why we need to install a third party application to do this...
+   anyway, caffeine is your best friend, no mattter it exists in realiality or just in Mac.
+   
+   The subtle Caffeine menu bar item is built for one thing in specific: keeping your Mac from going to sleep. 
+
+#+BEGIN_SRC bash
+brew cask install caffeine
+#+END_SRC
+
+** Uninstall application clearly
+   Again, I still don't understand why we need to install a third party application to do this.
+#+BEGIN_SRC bash
+brew cask install appcleaner
+#+END_SRC
+** Use Zsh 
+
+I moved to zsh from bash a while. oh-my-zsh is the first framwork I used. It is handy and well documented but has slow startup times, 
+Antigen is slow too. finally, I tried zplug and very happy with its speed and flexibility.
+
+*** Installation
+
+#+BEGIN_SRC bash
+brew install zsh
+git clone https://github.com/b4b4r07/zplug ~/.zplug
+chsh -s /usr/local/bin/zsh
+#+END_SRC
+
+*** Initialization
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+source ~/.zplug/zplug
+#+END_SRC
+
+*** Command Search PATH
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+export PATH=${HOME}/bin:${HOME}/.local/bin:/usr/local/bin:${PATH}
+#+END_SRC
+
+*** Default Editor
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+export EDITOR=vim
+#+END_SRC
+
+*** VIM mode
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+zplug "plugins/vi-mode", from:oh-my-zsh
+#+END_SRC
+
+*** Theme 
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+zplug "themes/pygmalion", from:oh-my-zsh
+#+END_SRC
+
+*** Syntax Highlight
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+zplug "zsh-users/zsh-syntax-highlighting", nice:10
+#+END_SRC
+
+*** History Search
+
+ Type in any part of any previously entered command and press the UP and DOWN arrow keys to cycle 
+ through the matching commands. You can also use K and J in VI mode or ^P and ^N in EMACS mode for the same.
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+zplug "zsh-users/zsh-history-substring-search"
+#+END_SRC
+
+*** Bind UP and DOWN arrow keys
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+#+END_SRC
+
+*** Bind P and N for EMACS mode
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+#+END_SRC
+
+*** Bind k and j for VI mode
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+bindkey -M vicmd 'k' history-substring-search-up
+#+END_SRC
+
+*** Git Support
+
+#+BEGIN_SRC sh :tangle ~/.zshrc
+zplug "plugins/git", from:oh-my-zsh
+#+END_SRC
+
+*** OSX Enhancement
+
+ brew auto completion.
+
+#+BEGIN_SRC sh :tangle ~/.zshrc
+zplug "plugins/brew", from:oh-my-zsh
+#+END_SRC
+
+*** NodeJS Development Env
+**** NPM auto completion 
+#+BEGIN_SRC sh :tangle ~/.zshrc
+zplug "plugins/npm", from:oh-my-zsh
+#+END_SRC
+
+**** NVM setup
+#+BEGIN_SRC sh :tangle ~/.zshrc
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+#+END_SRC
+
+*** Install plugins automatically
+
+
+zplug check return true if all plugins are installed
+Therefore, when it returns not true (thus false),
+run zplug install
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+if ! zplug check; then
+    zplug install
+fi
+#+END_SRC
+
+*** Loads Zplug Plugins.
+
+# source and add to the PATH
+
+#+BEGIN_SRC bash :tangle ~/.zshrc
+zplug load --verbose
+#+END_SRC
+
+*** Aliases & Additonal Commands
+**** List all branchs in tig by default.
+#+BEGIN_SRC bash :tangle ~/.zshrc
+which tig >/dev/null     && alias tig=tig --all
+#+END_SRC
+
+**** Searches files with names containing a string
+
+f: searches the current directory subtree for files with names containing a
+string (ignoring case). f png would find all PNG files in the current subtree,
+as well as “PNGisMyFavorite.txt” and so forth.
+
+#+BEGIN_SRC sh :tangle ~/.zshrc
+function f() { find . -iname "*$1*" ${@:2} }
+#+END_SRC
+
+**** Greps the current directory subtree for files matching a pattern.
+
+r: recursively greps the current directory subtree for files matching a pattern.
+r HTTP would grep for files containing that exact string, while r '"http[^"]*"'
+  -i would search for double-quoted strings starting with “http”, ignoring case.
+
+#+BEGIN_SRC sh :tangle ~/.zshrc
+function r() { grep "$1" ${@:2} -R . }
+#+END_SRC
+
+** Use VIM 
+
+Normally I use Emacs to write codes and documents, but sometimes 
+I  do quick modification on terminal by using VIM. 
+
+*** Syntax Highlight
+
+#+BEGIN_SRC sh :tangle ~/.vimrc
+syntax on
+#+END_SRC
+
+*** Highlight and strip eatra white spaces
+
+Highlight existing trailing whitespace and also strip trailing 
+whitespace.
+
+#+BEGIN_SRC bash :tangle ~/.vimrc
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+#+END_SRC
+
+** Use Git 
+Git is a widely used source code management system.
+*** Workflow
+When I start to develop something, my workflow always looks like:
+
+1. run *git fetch*, *git rebase* to get other people's changes.
+2. do some experimients. 
+3. run *git save* to save current codebase, so I can go back if I screw up my code later.
+4. do some experimients. 
+5. run *git wipe* if I don't like the result and want to throw current modifications to the hell.
+6. do some experimients.
+7. run *git save*.
+8. do some experimients.
+9. run *git undo*, if I want to commit some changes.
+10. run *git save*.
+11. run *git r* to re-organize my commit logs.
+12. run *git push* to deliver my works or save on cloud.
+
+*** Installation 
+**** Get Git
+#+BEGIN_SRC shell
+brew install git
+#+END_SRC
+*** Get Tig
+[[https://github.com/jonas/tig][Tig]] is an ncurses-based text-mode interface for git. It functions mainly as a Git repository browser, 
+but can also assist in staging changes for commit at chunk level and act as a pager for output from 
+various Git commands.
+
+#+BEGIN_SRC shell
+brew install tig
+#+END_SRC
+
+*** Global Config
+**** Set up my name and e-mail address
+
+ both of which are included in every commit i make.
+
+#+BEGIN_SRC ini :tangle ~/.gitconfig
+[user]
+  name = 陳信屹
+  email = ossug.hychen@gmail.com
+#+END_SRC 
+**** Caching password in git
+
+ Cloning Github repositories using HTTPS is better than using SSH when you want to access those repositories 
+ in multiple deivces. The only annoy thing is you need to type password everytime and this caches your GitHub 
+ password in Git.
+
+#+BEGIN_SRC ini :tangle ~/.gitconfig
+[credential]
+  helper = osxkeychain
+#+END_SRC
+**** Change git push behavior to simple
+
+ When pushing without giving a refspec, push the current branch to its remote branch.
+
+#+BEGIN_SRC ini :tangle ~/.gitconfig
+[push]
+  default = simple
+#+END_SRC
+
+**** Disable advices which isnt useful anymore
+
+It was useful when i was a beginer, but now it is annoy to me as a 老手!
+- Disable the advice shown by Git when you attempt to push something that’s not fast forward-able
+- Disable “how to stage/unstage/add” hints given by git status.
+
+#+BEGIN_SRC ini :tangle ~/.gitconfig
+[advice]
+  pushNonFastForward = false
+  statusHints = false
+#+END_SRC
+
+**** Useful Aliases
+
+ This saves a lot time, and I think you should do too!.
+
+#+NAME: Git Config Aliases
+| Alias          | Description                                                                                     |
+|----------------+-------------------------------------------------------------------------------------------------|
+| s              | View the current working tree status using the short format with branch information.            |
+| l              | View abbreviated SHA, description, and history graph of the latest 50 commits                   |
+| c              | Clone a repository including all submodules                                                     |
+| ci             | Normal git commit                                                                               |
+| ca             | Commit all changes                                                                              |
+| co             | Normal git checkout                                                                             |
+| p              | git push                                                                                        |
+| save           | Adds all changes including untracked files and creates a commit as a savepoint.                 |
+| undo           | Resets the previous commit, but keeps all the changes from that commit in the working directory |
+| wipe           | Commit everything and then do hard reset.                                                       |
+| r              | rebase lastest 15 commits                                                                       |
+| fc             | Find commits by source coude                                                                    |
+| fm             | Find commits by commit message                                                                  |
+| contributors	 | List contributors with number of commits                                                        |
+
+#+BEGIN_SRC ini :tangle ~/.gitconfig
+[alias]
+  s = status -sb
+  l = log --pretty=oneline -n 50 --graph --abbrev-commit
+  c = clone --recursive
+  ci = commit
+  ca = !git add -A && git commit -av
+  co = checkout
+  p = push
+  save = !git add -A && git commit -v -m 'SAVEPOINT'
+	undo = reset HEAD~1 --mixed
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+  r = rebase -i HEAD~15
+	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+	contributors = shortlog --summary --numbered
+#+END_SRC
+
+** Global Ignore
+
+Create the file ~/.gitignore as shown below to remove the files that are almost always ignored in 
+all git repositories. more global git ignores can found on [[https://github.com/github/gitignore/tree/master/Global][Github Gitignores]].
+
+#+BEGIN_SRC bash :tangle ~/.gitignore
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# VIM.
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+Session.vim
+.netrwhist
+*~
+tags
+#+END_SRC
+** Export all configurations
+- open *Emacs*
+- type *Alt-X* and select *org-babel-tangle*
+- all set!
