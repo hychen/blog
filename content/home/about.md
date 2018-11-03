@@ -17,7 +17,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Dropout in Electrical Engineering"
+  course = "College Dropout in Electrical Engineering"
   institution = "National Kaohsiung University of Applied Sciences"
   year = 2006
 
