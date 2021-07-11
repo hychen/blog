@@ -2,7 +2,7 @@
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "https://hychen.me/"
+baseURL = "http://hychen.me/"
 title = "不可觀修行筆記 —— 我修不知道;我觀不可觀。"
 enableRobotsTXT = true
 enableEmoji = true
