@@ -1,0 +1,629 @@
+<!doctype html><html lang=zh-tw itemscope itemtype=http://schema.org/WebPage><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>我的 Doom Emacs 設定 - 不可觀修行筆記 —— 我修不知道;我觀不可觀。</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=yes"><meta name=MobileOptimized content="width"><meta name=HandheldFriendly content="true"><meta name=applicable-device content="pc,mobile"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=mobile-web-app-capable content="yes"><meta name=author content="陳信屹"><meta name=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta name=keywords content="Hugo,theme,jane"><meta name=generator content="Hugo 0.85.0"><link rel=canonical href=http://localhost:1313/post/doom_config/><link rel=icon href=/favicon.ico><link rel=stylesheet href=/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css integrity="sha256-+ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media=screen crossorigin=anonymous><meta property="og:title" content="我的 Doom Emacs 設定"><meta property="og:description" content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta property="og:type" content="article"><meta property="og:url" content="http://localhost:1313/post/doom_config/"><meta property="article:section" content="post"><meta property="article:modified_time" content="2021-07-11T01:26:12+08:00"><meta itemprop=name content="我的 Doom Emacs 設定"><meta itemprop=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta itemprop=dateModified content="2021-07-11T01:26:12+08:00"><meta itemprop=wordCount content="4177"><meta itemprop=keywords content="Emacs,"><meta name=twitter:card content="summary"><meta name=twitter:title content="我的 Doom Emacs 設定"><meta name=twitter:description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>不可觀修行筆記</a></div><div class=mobile-navbar-icon><span></span><span></span><span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><li class=mobile-menu-item><a class=menu-item-link href=http://localhost:1313/>主頁</a></li><li class=mobile-menu-item><a class=menu-item-link href=http://localhost:1313/post/>歸檔</a></li><li class=mobile-menu-item><a class=menu-item-link href=http://localhost:1313/tags/>標籤</a></li><li class=mobile-menu-item><a class=menu-item-link href=http://localhost:1313/categories/>分類</a></li></ul></nav><link rel=stylesheet href=/lib/photoswipe/photoswipe.min.css><link rel=stylesheet href=/lib/photoswipe/default-skin/default-skin.min.css><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header id=header class="header container"><div class=logo-wrapper><a href=/ class=logo>不可觀修行筆記</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=http://localhost:1313/>主頁</a></li><li class=menu-item><a class=menu-item-link href=http://localhost:1313/post/>歸檔</a></li><li class=menu-item><a class=menu-item-link href=http://localhost:1313/tags/>標籤</a></li><li class=menu-item><a class=menu-item-link href=http://localhost:1313/categories/>分類</a></li></ul></nav></header><div id=mobile-panel><main id=main class="main bg-llight"><div class=content-wrapper><div id=content class="content container"><article class="post bg-white"><header class=post-header><h1 class=post-title>我的 Doom Emacs 設定</h1><div class=post-meta><time datetime=2021-07-11 class=post-time>2021-07-11</time><div class=post-category><a href=http://localhost:1313/categories/literate-configuration/>Literate Configuration</a></div></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目錄</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><a href=#原則>原則</a></li><li><a href=#doom-設定檔概要>Doom 設定檔概要</a></li><li><a href=#設定檔檔頭>設定檔檔頭</a></li><li><a href=#自定義變數>自定義變數</a></li><li><a href=#doom-模組>Doom 模組</a></li><li><a href=#一般設定>一般設定</a><ul><li><a href=#個人資訊>個人資訊</a></li><li><a href=#視窗設定>視窗設定</a></li></ul></li><li><a href=#org-mode>Org Mode</a><ul><li><a href=#日記>日記</a></li><li><a href=#筆記>筆記</a></li><li><a href=#文獻管理>文獻管理</a></li><li><a href=#代辦事項>代辦事項</a></li><li><a href=#行事曆>行事曆</a></li><li><a href=#hugo>Hugo</a></li><li><a href=#plantuml>Plantuml</a></li><li><a href=#latex>Latex</a></li></ul></li><li><a href=#快捷鍵配置>快捷鍵配置</a></li><li><a href=#感謝>感謝</a></li></ul></nav></div></div><div class=post-content><p>這是一份「文學編程」（literate）org 文件。 當 <a href=https://github.com/hlissner/doom-emacs/tree/develop/modules/config/literate>literate</a> 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經驗。</p><h2 id=原則>原則</h2><ol><li>所有的設定檔都應該有註解;</li><li>所有的模組宣告必須寫在 <code>init.el</code>.</li><li>所有的 package! 宣告必須寫在 <code>packages.el</code>.</li><li>所有的其他 LISP code 比需寫在 <code>config.el</code>.</li></ol><h2 id=doom-設定檔概要>Doom 設定檔概要</h2><p>Doom Emacs 使用下面三個檔案:</p><dl><dt>init.el</dt><dd>定義哪些 Doom 模組會被讀取。</dd><dt>packages.el</dt><dd>定義哪些套件應該被安裝。</dd><dt>config.el</dt><dd>包含所有自定的設定檔和程試碼。</dd></dl><p>所有的設定檔從這個檔案產生，並且盡可能清楚。</p><h2 id=設定檔檔頭>設定檔檔頭</h2><p>這些檔案檔頭來自安裝doom時產生的初始化文件，包含一些 Emacs-LISP 相關的指標，如詞法綁定，或者關於文件內容的說明。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=c1>;;; init.el -*- lexical-binding: t; -*-</span>
+
+<span class=c1>;; DO NOT EDIT THIS FILE DIRECTLY</span>
+<span class=c1>;; This is a file generated from a literate programing source file.</span>
+
+<span class=c1>;; This file controls what Doom modules are enabled and what order they load</span>
+<span class=c1>;; in. Remember to run &#39;doom sync&#39; after modifying it!</span>
+
+<span class=c1>;; NOTE Press &#39;SPC h d h&#39; (or &#39;C-h d h&#39; for non-vim users) to access Doom&#39;s</span>
+<span class=c1>;;      documentation. There you&#39;ll find a &#34;Module Index&#34; link where you&#39;ll find</span>
+<span class=c1>;;      a comprehensive list of Doom&#39;s modules and what flags they support.</span>
+
+<span class=c1>;; NOTE Move your cursor over a module&#39;s name (or its flags) and press &#39;K&#39; (or</span>
+<span class=c1>;;      &#39;C-c c k&#39; for non-vim users) to view its documentation. This works on</span>
+<span class=c1>;;      flags as well (those symbols that start with a plus).</span>
+<span class=c1>;;</span>
+<span class=c1>;;      Alternatively, press &#39;gd&#39; (or &#39;C-c c d&#39;) on a module to browse its</span>
+<span class=c1>;;      directory (for easy access to its source code).</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=c1>;; -*- no-byte-compile: t; -*-</span>
+<span class=c1>;;; $DOOMDIR/packages.el</span>
+
+<span class=c1>;; DO NOT EDIT THIS FILE DIRECTLY</span>
+<span class=c1>;; This is a file generated from a literate programing source file.</span>
+<span class=c1>;;</span>
+<span class=c1>;; You should make any changes there and regenerate it from Emacs org-mode</span>
+<span class=c1>;; using org-babel-tangle (C-c C-v t)</span>
+
+<span class=c1>;; To install a package with Doom you must declare them here and run &#39;doom sync&#39;</span>
+<span class=c1>;; on the command line, then restart Emacs for the changes to take effect -- or</span>
+<span class=c1>;; use &#39;M-x doom/reload&#39;.</span>
+
+<span class=c1>;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:</span>
+<span class=c1>;;(package! some-package)</span>
+
+<span class=c1>;; To install a package directly from a remote git repo, you must specify a</span>
+<span class=c1>;; `:recipe&#39;. You&#39;ll find documentation on what `:recipe&#39; accepts here:</span>
+<span class=c1>;; https://github.com/raxod502/straight.el#the-recipe-format</span>
+<span class=c1>;;(package! another-package</span>
+<span class=c1>;;  :recipe (:host github :repo &#34;username/repo&#34;))</span>
+
+<span class=c1>;; If the package you are trying to install does not contain a PACKAGENAME.el</span>
+<span class=c1>;; file, or is located in a subdirectory of the repo, you&#39;ll need to specify</span>
+<span class=c1>;; `:files&#39; in the `:recipe&#39;:</span>
+<span class=c1>;;(package! this-package</span>
+<span class=c1>;;  :recipe (:host github :repo &#34;username/repo&#34;</span>
+<span class=c1>;;           :files (&#34;some-file.el&#34; &#34;src/lisp/*.el&#34;)))</span>
+
+<span class=c1>;; If you&#39;d like to disable a package included with Doom, you can do so here</span>
+<span class=c1>;; with the `:disable&#39; property:</span>
+<span class=c1>;;(package! builtin-package :disable t)</span>
+
+<span class=c1>;; You can override the recipe of a built in package without having to specify</span>
+<span class=c1>;; all the properties for `:recipe&#39;. These will inherit the rest of its recipe</span>
+<span class=c1>;; from Doom or MELPA/ELPA/Emacsmirror:</span>
+<span class=c1>;;(package! builtin-package :recipe (:nonrecursive t))</span>
+<span class=c1>;;(package! builtin-package-2 :recipe (:repo &#34;myfork/package&#34;))</span>
+
+<span class=c1>;; Specify a `:branch&#39; to install a package from a particular branch or tag.</span>
+<span class=c1>;; This is required for some packages whose default branch isn&#39;t &#39;master&#39; (which</span>
+<span class=c1>;; our package manager can&#39;t deal with; see raxod502/straight.el#279)</span>
+<span class=c1>;;(package! builtin-package :recipe (:branch &#34;develop&#34;))</span>
+
+<span class=c1>;; Use `:pin&#39; to specify a particular commit to install.</span>
+<span class=c1>;;(package! builtin-package :pin &#34;1a2b3c4d5e&#34;)</span>
+
+<span class=c1>;; Doom&#39;s packages are pinned to a specific commit and updated from release to</span>
+<span class=c1>;; release. The `unpin!&#39; macro allows you to unpin single packages...</span>
+<span class=c1>;;(unpin! pinned-package)</span>
+<span class=c1>;; ...or multiple packages</span>
+<span class=c1>;;(unpin! pinned-package another-pinned-package)</span>
+<span class=c1>;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)</span>
+<span class=c1>;;(unpin! t)</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=c1>;;; config.el -*- lexical-binding: t; -*-</span>
+
+<span class=c1>;; DO NOT EDIT THIS FILE DIRECTLY</span>
+<span class=c1>;; This is a file generated from a literate programing source file.</span>
+
+<span class=c1>;; You should make any changes there and regenerate it from Emacs org-mode</span>
+<span class=c1>;; using org-babel-tangle (C-c C-v t)</span>
+
+<span class=c1>;; Place your private configuration here! Remember, you do not need to run &#39;doom</span>
+<span class=c1>;; sync&#39; after modifying this file!</span>
+
+<span class=c1>;; Some functionality uses this to identify you, e.g. GPG configuration, email</span>
+<span class=c1>;; clients, file templates and snippets.</span>
+<span class=c1>;; (setq user-full-name &#34;&#34;</span>
+<span class=c1>;;      user-mail-address &#34;&#34;)</span>
+
+<span class=c1>;; Doom exposes five (optional) variables for controlling fonts in Doom. Here</span>
+<span class=c1>;; are the three important ones:</span>
+<span class=c1>;;</span>
+<span class=c1>;; + `doom-font&#39;</span>
+<span class=c1>;; + `doom-variable-pitch-font&#39;</span>
+<span class=c1>;; + `doom-big-font&#39; -- used for `doom-big-font-mode&#39;; use this for</span>
+<span class=c1>;;   presentations or streaming.</span>
+<span class=c1>;;</span>
+<span class=c1>;; They all accept either a font-spec, font string (&#34;Input Mono-12&#34;), or xlfd</span>
+<span class=c1>;; font string. You generally only need these two:</span>
+<span class=c1>;; (setq doom-font (font-spec :family &#34;monospace&#34; :size 12 :weight &#39;semi-light)</span>
+<span class=c1>;;       doom-variable-pitch-font (font-spec :family &#34;sans&#34; :size 13))</span>
+
+<span class=c1>;; There are two ways to load a theme. Both assume the theme is installed and</span>
+<span class=c1>;; available. You can either set `doom-theme&#39; or manually load a theme with the</span>
+<span class=c1>;; `load-theme&#39; function. This is the default:</span>
+<span class=c1>;; (setq doom-theme &#39;doom-one)</span>
+
+<span class=c1>;; If you use `org&#39; and don&#39;t want your org files in the default location below,</span>
+<span class=c1>;; change `org-directory&#39;. It must be set before org loads!</span>
+<span class=c1>;; (setq org-directory &#34;~/org/&#34;)</span>
+
+<span class=c1>;; This determines the style of line numbers in effect. If set to `nil&#39;, line</span>
+<span class=c1>;; numbers are disabled. For relative line numbers, set this to `relative&#39;.</span>
+<span class=c1>;; (setq display-line-numbers-type t)</span>
+
+<span class=c1>;; Here are some additional functions/macros that could help you configure Doom:</span>
+<span class=c1>;;</span>
+<span class=c1>;; - `load!&#39; for loading external *.el files relative to this one</span>
+<span class=c1>;; - `use-package!&#39; for configuring packages</span>
+<span class=c1>;; - `after!&#39; for running code after a package has loaded</span>
+<span class=c1>;; - `add-load-path!&#39; for adding directories to the `load-path&#39;, relative to</span>
+<span class=c1>;;   this file. Emacs searches the `load-path&#39; when you load packages with</span>
+<span class=c1>;;   `require&#39; or `use-package&#39;.</span>
+<span class=c1>;; - `map!&#39; for binding new keys</span>
+<span class=c1>;;</span>
+<span class=c1>;; To get information about any of these functions/macros, move the cursor over</span>
+<span class=c1>;; the highlighted symbol at press &#39;K&#39; (non-evil users must press &#39;C-c c k&#39;).</span>
+<span class=c1>;; This will open documentation for it, including demos of how they are used.</span>
+<span class=c1>;;</span>
+<span class=c1>;; You can also try &#39;gd&#39; (or &#39;C-c c d&#39;) to jump to their definition and see how</span>
+<span class=c1>;; they are implemented.</span>
+</code></pre></div><h2 id=自定義變數>自定義變數</h2><p>Doom <a href=https://github.com/hlissner/doom-emacs/blob/develop/docs/getting%5Fstarted.org#configure>不推薦使用 Emacs 內建的機制</a>:</p><blockquote><p>Note: do not use M-x customize or the customize API in general. Doom is designed to be configured programmatically from your config.el, which can conflict with Customize’s way of modifying variables.</p><p>If you’re concerned about defcustom setters, Doom has a setq! macro that will trigger them.</p></blockquote><p>所有需要的設定都寫在這個檔案。</p><h2 id=doom-模組>Doom 模組</h2><p>如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。下面這段代碼被寫入 <code>init.el</code> 中，以選擇要加載的模組。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>doom!</span> <span class=nb>:input</span>
+       <span class=c1>;;chinese</span>
+       <span class=c1>;;japanese</span>
+       <span class=c1>;;layout            ; auie,ctsrnm is the superior home row</span>
+
+       <span class=nb>:completion</span>
+       <span class=nv>company</span>           <span class=c1>; the ultimate code completion backend</span>
+       <span class=c1>;;helm              ; the *other* search engine for love and life</span>
+       <span class=c1>;;ido               ; the other *other* search engine...</span>
+       <span class=nv>ivy</span>               <span class=c1>; a search engine for love and life</span>
+
+       <span class=nb>:ui</span>
+       <span class=nv>deft</span>              <span class=c1>; notational velocity for Emacs</span>
+       <span class=nv>doom</span>              <span class=c1>; what makes DOOM look the way it does</span>
+       <span class=nv>doom-dashboard</span>    <span class=c1>; a nifty splash screen for Emacs</span>
+       <span class=nv>doom-quit</span>         <span class=c1>; DOOM quit-message prompts when you quit Emacs</span>
+       <span class=c1>;;(emoji +unicode)  ; 🙂</span>
+       <span class=c1>;;fill-column       ; a `fill-column&#39; indicator</span>
+       <span class=nv>hl-todo</span>           <span class=c1>; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW</span>
+       <span class=c1>;;hydra</span>
+       <span class=c1>;;indent-guides     ; highlighted indent columns</span>
+       <span class=nv>ligatures</span>         <span class=c1>; ligatures and symbols to make your code pretty again</span>
+       <span class=c1>;;minimap           ; show a map of the code on the side</span>
+       <span class=nv>modeline</span>          <span class=c1>; snazzy, Atom-inspired modeline, plus API</span>
+       <span class=c1>;;nav-flash         ; blink cursor line after big motions</span>
+       <span class=c1>;;neotree           ; a project drawer, like NERDTree for vim</span>
+       <span class=nv>ophints</span>           <span class=c1>; highlight the region an operation acts on</span>
+       <span class=p>(</span><span class=nv>popup</span> <span class=nv>+defaults</span><span class=p>)</span>   <span class=c1>; tame sudden yet inevitable temporary windows</span>
+       <span class=c1>;;tabs              ; a tab bar for Emacs</span>
+       <span class=nv>treemacs</span>          <span class=c1>; a project drawer, like neotree but cooler</span>
+       <span class=c1>;;unicode           ; extended unicode support for various languages</span>
+       <span class=nv>vc-gutter</span>         <span class=c1>; vcs diff in the fringe</span>
+       <span class=nv>vi-tilde-fringe</span>   <span class=c1>; fringe tildes to mark beyond EOB</span>
+       <span class=c1>;;window-select     ; visually switch windows</span>
+       <span class=nv>workspaces</span>        <span class=c1>; tab emulation, persistence &amp; separate workspaces</span>
+       <span class=nv>zen</span>               <span class=c1>; distraction-free coding or writing</span>
+
+       <span class=nb>:editor</span>
+       <span class=p>(</span><span class=nv>evil</span> <span class=nv>+everywhere</span><span class=p>)</span><span class=c1>; come to the dark side, we have cookies</span>
+       <span class=nv>file-templates</span>    <span class=c1>; auto-snippets for empty files</span>
+       <span class=nv>fold</span>              <span class=c1>; (nigh) universal code folding</span>
+       <span class=c1>;;(format +onsave)  ; automated prettiness</span>
+       <span class=c1>;;god               ; run Emacs commands without modifier keys</span>
+       <span class=c1>;;lispy             ; vim for lisp, for people who don&#39;t like vim</span>
+       <span class=c1>;;multiple-cursors  ; editing in many places at once</span>
+       <span class=c1>;;objed             ; text object editing for the innocent</span>
+       <span class=c1>;;parinfer          ; turn lisp into python, sort of</span>
+       <span class=c1>;;rotate-text       ; cycle region at point between text candidates</span>
+       <span class=nv>snippets</span>          <span class=c1>; my elves. They type so I don&#39;t have to</span>
+       <span class=nv>word-wrap</span>         <span class=c1>; soft wrapping with language-aware indent</span>
+
+       <span class=nb>:emacs</span>
+       <span class=nv>dired</span>             <span class=c1>; making dired pretty [functional]</span>
+       <span class=nv>electric</span>          <span class=c1>; smarter, keyword-based electric-indent</span>
+       <span class=c1>;;ibuffer         ; interactive buffer management</span>
+       <span class=nv>undo</span>              <span class=c1>; persistent, smarter undo for your inevitable mistakes</span>
+       <span class=nv>vc</span>                <span class=c1>; version-control and Emacs, sitting in a tree</span>
+
+       <span class=nb>:term</span>
+       <span class=c1>;;eshell            ; the elisp shell that works everywhere</span>
+       <span class=c1>;;shell             ; simple shell REPL for Emacs</span>
+       <span class=c1>;;term              ; basic terminal emulator for Emacs</span>
+       <span class=nv>vterm</span>             <span class=c1>; the best terminal emulation in Emacs</span>
+
+       <span class=nb>:checkers</span>
+       <span class=nv>syntax</span>              <span class=c1>; tasing you for every semicolon you forget</span>
+       <span class=c1>;;spell             ; tasing you for misspelling mispelling</span>
+       <span class=c1>;;grammar           ; tasing grammar mistake every you make</span>
+
+       <span class=nb>:tools</span>
+       <span class=c1>;;ansible</span>
+       <span class=c1>;;debugger          ; FIXME stepping through code, to help you add bugs</span>
+       <span class=c1>;;direnv</span>
+       <span class=c1>;;docker</span>
+       <span class=nv>editorconfig</span>      <span class=c1>; let someone else argue about tabs vs spaces</span>
+       <span class=c1>;;ein               ; tame Jupyter notebooks with emacs</span>
+       <span class=p>(</span><span class=nf>eval</span> <span class=nv>+overlay</span><span class=p>)</span>     <span class=c1>; run code, run (also, repls)</span>
+       <span class=c1>;;gist              ; interacting with github gists</span>
+       <span class=nv>lookup</span>              <span class=c1>; navigate your code and its documentation</span>
+       <span class=c1>;;lsp</span>
+       <span class=nv>magit</span>             <span class=c1>; a git porcelain for Emacs</span>
+       <span class=c1>;;make              ; run make tasks from Emacs</span>
+       <span class=c1>;;pass              ; password manager for nerds</span>
+       <span class=nv>pdf</span>               <span class=c1>; pdf enhancements</span>
+       <span class=c1>;;prodigy           ; FIXME managing external services &amp; code builders</span>
+       <span class=c1>;;rgb               ; creating color strings</span>
+       <span class=c1>;;taskrunner        ; taskrunner for all your projects</span>
+       <span class=c1>;;terraform         ; infrastructure as code</span>
+       <span class=c1>;;tmux              ; an API for interacting with tmux</span>
+       <span class=c1>;;upload            ; map local to remote projects via ssh/ftp</span>
+
+       <span class=nb>:os</span>
+       <span class=p>(</span><span class=nb>:if</span> <span class=nv>IS-MAC</span> <span class=nv>macos</span><span class=p>)</span>  <span class=c1>; improve compatibility with macOS</span>
+       <span class=c1>;;tty               ; improve the terminal Emacs experience</span>
+
+       <span class=nb>:lang</span>
+       <span class=c1>;;agda              ; types of types of types of types...</span>
+       <span class=c1>;;cc                ; C/C++/Obj-C madness</span>
+       <span class=c1>;;clojure           ; java with a lisp</span>
+       <span class=c1>;;common-lisp       ; if you&#39;ve seen one lisp, you&#39;ve seen them all</span>
+       <span class=c1>;;coq               ; proofs-as-programs</span>
+       <span class=c1>;;crystal           ; ruby at the speed of c</span>
+       <span class=c1>;;csharp            ; unity, .NET, and mono shenanigans</span>
+       <span class=c1>;;data              ; config/data formats</span>
+       <span class=c1>;;(dart +flutter)   ; paint ui and not much else</span>
+       <span class=c1>;;elixir            ; erlang done right</span>
+       <span class=c1>;;elm               ; care for a cup of TEA?</span>
+       <span class=nv>emacs-lisp</span>        <span class=c1>; drown in parentheses</span>
+       <span class=c1>;;erlang            ; an elegant language for a more civilized age</span>
+       <span class=c1>;;ess               ; emacs speaks statistics</span>
+       <span class=c1>;;faust             ; dsp, but you get to keep your soul</span>
+       <span class=c1>;;fsharp            ; ML stands for Microsoft&#39;s Language</span>
+       <span class=c1>;;fstar             ; (dependent) types and (monadic) effects and Z3</span>
+       <span class=c1>;;gdscript          ; the language you waited for</span>
+       <span class=c1>;;(go +lsp)         ; the hipster dialect</span>
+       <span class=c1>;;(haskell +dante)  ; a language that&#39;s lazier than I am</span>
+       <span class=c1>;;hy                ; readability of scheme w/ speed of python</span>
+       <span class=c1>;;idris             ; a language you can depend on</span>
+       <span class=nv>json</span>              <span class=c1>; At least it ain&#39;t XML</span>
+       <span class=c1>;;(java +meghanada) ; the poster child for carpal tunnel syndrome</span>
+       <span class=nv>javascript</span>        <span class=c1>; all(hope(abandon(ye(who(enter(here))))))</span>
+       <span class=c1>;;julia             ; a better, faster MATLAB</span>
+       <span class=c1>;;kotlin            ; a better, slicker Java(Script)</span>
+       <span class=c1>;;latex             ; writing papers in Emacs has never been so fun</span>
+       <span class=c1>;;lean</span>
+       <span class=c1>;;factor</span>
+       <span class=c1>;;ledger            ; an accounting system in Emacs</span>
+       <span class=c1>;;lua               ; one-based indices? one-based indices</span>
+       <span class=nv>markdown</span>          <span class=c1>; writing docs for people to ignore</span>
+       <span class=c1>;;nim               ; python + lisp at the speed of c</span>
+       <span class=c1>;;nix               ; I hereby declare &#34;nix geht mehr!&#34;</span>
+       <span class=c1>;;ocaml             ; an objective camel</span>
+       <span class=p>(</span><span class=nv>org</span>              <span class=c1>; organize your plain life in plain text</span>
+        <span class=nv>+pretty</span>
+        <span class=nv>+dragndrop</span>       <span class=c1>; drag &amp; drop files/images into org buffers</span>
+        <span class=c1>;;+journal      ; maintain a simple personal diary / journal using in Emacs.</span>
+        <span class=nv>+roam</span>
+        <span class=nv>+noter</span>
+        <span class=nv>+hugo</span>           <span class=c1>; Enables integration with hugo to export from Emacs well-formed (blackfriday) markdown.</span>
+        <span class=nv>+present</span>        <span class=c1>; using org-mode for presentations</span>
+        <span class=p>)</span>
+       <span class=c1>;;php               ; perl&#39;s insecure younger brother</span>
+       <span class=nv>plantuml</span>          <span class=c1>; diagrams for confusing people more</span>
+       <span class=c1>;;purescript        ; javascript, but functional</span>
+       <span class=c1>;;python            ; beautiful is better than ugly</span>
+       <span class=c1>;;qt                ; the &#39;cutest&#39; gui framework ever</span>
+       <span class=c1>;;racket            ; a DSL for DSLs</span>
+       <span class=c1>;;raku              ; the artist formerly known as perl6</span>
+       <span class=c1>;;rest              ; Emacs as a REST client</span>
+       <span class=c1>;;rst               ; ReST in peace</span>
+       <span class=c1>;;(ruby +rails)     ; 1.step {|i| p &#34;Ruby is #{i.even? ? &#39;love&#39; : &#39;life&#39;}&#34;}</span>
+       <span class=nv>rust</span>              <span class=c1>; Fe2O3.unwrap().unwrap().unwrap().unwrap()</span>
+       <span class=c1>;;scala             ; java, but good</span>
+       <span class=c1>;;scheme            ; a fully conniving family of lisps</span>
+       <span class=nv>sh</span>                <span class=c1>; she sells {ba,z,fi}sh shells on the C xor</span>
+       <span class=c1>;;sml</span>
+       <span class=c1>;;solidity          ; do you need a blockchain? No.</span>
+       <span class=c1>;;swift             ; who asked for emoji variables?</span>
+       <span class=c1>;;terra             ; Earth and Moon in alignment for performance.</span>
+       <span class=c1>;;web               ; the tubes</span>
+       <span class=nv>yaml</span>              <span class=c1>; JSON, but readable</span>
+
+       <span class=nb>:email</span>
+       <span class=c1>;;(mu4e +gmail)</span>
+       <span class=c1>;;notmuch</span>
+       <span class=c1>;;(wanderlust +gmail)</span>
+
+       <span class=nb>:app</span>
+       <span class=nv>calendar</span>
+       <span class=c1>;;irc               ; how neckbeards socialize</span>
+       <span class=c1>;;(rss +org)        ; emacs as an RSS reader</span>
+       <span class=c1>;;twitter           ; twitter client https://twitter.com/vnought</span>
+
+       <span class=nb>:config</span>
+       <span class=nv>literate</span>
+       <span class=p>(</span><span class=nv>default</span> <span class=nv>+bindings</span><span class=p>))</span>
+</code></pre></div><h2 id=一般設定>一般設定</h2><h3 id=個人資訊>個人資訊</h3><p>用來識別我自己的功能。e.g. GPG 設定, Email 客戶端。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nf>user-full-name</span> <span class=s>&#34;Hsin-Yi Chen&#34;</span>
+      <span class=nv>user-mail-address</span> <span class=s>&#34;ossug.hychen@gmail.com&#34;</span>
+      <span class=nv>user-blog-basedir</span> <span class=s>&#34;~/github/hychen/blog/&#34;</span>
+      <span class=nv>user-blog-url</span> <span class=s>&#34;https://hychen.me&#34;</span>
+      <span class=p>)</span>
+</code></pre></div><h3 id=視窗設定>視窗設定</h3><p>如果由Emacs 指令或桌面文件啟動，則在啟動時將視窗最大化。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>if</span> <span class=p>(</span><span class=nf>eq</span> <span class=nv>initial-window-system</span> <span class=ss>&#39;x</span><span class=p>)</span>
+    <span class=p>(</span><span class=nv>toggle-frame-maximized</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>toggle-frame-fullscreen</span><span class=p>))</span>
+</code></pre></div><p>字型設定。 我目前使用 Manaco。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>doom-font</span> <span class=p>(</span><span class=nf>font-spec</span> <span class=nb>:family</span> <span class=s>&#34;Monaco&#34;</span> <span class=nb>:size</span> <span class=mi>16</span> <span class=nb>:weight</span> <span class=ss>&#39;semi-light</span><span class=p>))</span>
+</code></pre></div><p>主題使用預設。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>doom-theme</span> <span class=ss>&#39;doom-one</span><span class=p>)</span>
+</code></pre></div><h2 id=org-mode>Org Mode</h2><p>使用 Dropbox 做跨裝置的檔案同步備份。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>shared-directory</span> <span class=s>&#34;~/Dropbox&#34;</span><span class=p>)</span>
+</code></pre></div><p>Org 文件的預設目錄位置</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>org-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;org&#34;</span> <span class=nv>shared-directory</span><span class=p>))</span>
+</code></pre></div><p>隱藏 ~, *, = 等註記。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-hide-emphasis-markers</span> <span class=no>t</span><span class=p>))</span>
+</code></pre></div><p>能夠使用 <code>SPC t e</code> 顯示或隱藏。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>defun</span> <span class=nv>org-toggle-emphasis</span> <span class=p>()</span>
+  <span class=s>&#34;Toggle hiding/showing of org emphasize markers.&#34;</span>
+  <span class=p>(</span><span class=nb>interactive</span><span class=p>)</span>
+  <span class=p>(</span><span class=nb>if</span> <span class=nv>org-hide-emphasis-markers</span>
+      <span class=p>(</span><span class=nv>set-variable</span> <span class=ss>&#39;org-hide-emphasis-markers</span> <span class=no>nil</span><span class=p>)</span>
+    <span class=p>(</span><span class=nv>set-variable</span> <span class=ss>&#39;org-hide-emphasis-markers</span> <span class=no>t</span><span class=p>)))</span>
+</code></pre></div><h3 id=日記>日記</h3><p>每日日記不僅是作為一天開始的計畫工具，也是一個時間帳本。他促使我深層思考我的時間應該如何花費得更有價值。當我醒來時，我想要坐在桌之前，開始寫今天的日記，想像一下今天會發生什麼事情。寫作不僅助於組織我的思想，還能幫助我計畫我的一天。當我打開日記時，我想看到我應該遵循的晨間慣例，這些慣例是我在一週之初、一月之初、一年之初制訂的，做一個新開始的希望，就像一座燈塔，引導我的靈魂在一個所有算法都在爭奪注意力的世代中生存。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-dailies-capture-templates</span>
+        <span class=o>`</span><span class=p>((</span><span class=s>&#34;d&#34;</span> <span class=s>&#34;default&#34;</span> <span class=nv>entry</span>
+         <span class=nf>#&#39;</span><span class=nv>org-roam-capture--get-point</span>
+         <span class=s>&#34;* %?&#34;</span>
+         <span class=nb>:file-name</span> <span class=s>&#34;daily/%&lt;%Y-%m-%d&gt;&#34;</span>
+         <span class=nb>:head</span> <span class=o>,</span><span class=p>(</span><span class=nf>concat</span> <span class=s>&#34;#+title: %&lt;%Y-%m-%d&gt;\n&#34;</span>
+                        <span class=s>&#34;#+roam_tags: ritual\n\n&#34;</span>
+                        <span class=s>&#34;*Don&#39;t ignore your dreams; don&#39;t work too much; say what you think; cultivate friendships; be happy*\n&#34;</span>
+                        <span class=s>&#34;\n&#34;</span>
+                        <span class=s>&#34;- tags ::\n&#34;</span>
+                        <span class=s>&#34;- month ::\n &#34;</span>
+                        <span class=s>&#34;\n&#34;</span>
+                        <span class=s>&#34;* Morning Routines [/]\n&#34;</span>
+                        <span class=s>&#34; - [ ] Brush my teeth\n&#34;</span>
+                        <span class=s>&#34; - [ ] Folded quilts\n&#34;</span>
+                        <span class=s>&#34; - [ ] Have a cup of coffe\n&#34;</span>
+                        <span class=s>&#34; - [ ] Weighs myself\n&#34;</span>
+                        <span class=s>&#34; - [ ] Listen FT times\n&#34;</span>
+                        <span class=s>&#34; - [ ] Check [[https://fsinsight.com/members-area-crypto/][Crypto Daily]]\n&#34;</span>
+                        <span class=s>&#34; - [ ] Yesterday journal if not done\n&#34;</span>
+                        <span class=s>&#34; - [ ] Review this month&#39;s goal\n&#34;</span>
+                        <span class=s>&#34; - [ ] Restruct TODOs\n&#34;</span>
+                        <span class=s>&#34; - [ ] Plan today\n&#34;</span>
+                        <span class=s>&#34; - [ ] Shave\n&#34;</span>
+                        <span class=s>&#34; - [ ] Put on formal clothes\n&#34;</span>
+                        <span class=s>&#34; - [ ] Go to office before 9:30\n&#34;</span>
+                        <span class=s>&#34;* Evening Routines [/]\n&#34;</span>
+                        <span class=s>&#34; - [ ] Leave office at 18:00\n&#34;</span>
+                        <span class=s>&#34; - [ ] Take a bath\n&#34;</span>
+                        <span class=s>&#34; - [ ] Put on casual clothes\n&#34;</span>
+                        <span class=s>&#34; - [ ] Have dinner on time\n&#34;</span>
+                        <span class=s>&#34; - [ ] Have fun (play games, watch TV etc.)\n&#34;</span>
+                        <span class=s>&#34;* Night Rotuines [/]\n&#34;</span>
+                        <span class=s>&#34; - [ ] Brush my teeth\n&#34;</span>
+                        <span class=s>&#34; - [ ] Prepare my outfit for the next day\n&#34;</span>
+                        <span class=s>&#34; - [ ] Go to bed before 23:30\n&#34;</span>
+                        <span class=s>&#34; - [ ] Read a book at least 30 minutes\n&#34;</span>
+                        <span class=s>&#34;* Day Plan\n&#34;</span>
+                        <span class=s>&#34;* Journaling\n&#34;</span>
+                        <span class=s>&#34;* Brain Dumps\n&#34;</span><span class=p>)</span>
+         <span class=nb>:unnarrowed</span> <span class=no>t</span><span class=p>))))</span>
+</code></pre></div><h3 id=筆記>筆記</h3><h4 id=org-roam>org-roam</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;roam&#34;</span> <span class=nv>org-directory</span><span class=p>)))</span>
+</code></pre></div><h4 id=org-roam-server>org-roam-server</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-roam-server</span> <span class=nb>:recipe</span> <span class=p>(</span><span class=nb>:host</span> <span class=nv>github</span> <span class=nb>:repo</span> <span class=s>&#34;org-roam/org-roam-server&#34;</span> <span class=nb>:files</span> <span class=p>(</span><span class=s>&#34;*&#34;</span><span class=p>)))</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-roam-server</span>
+  <span class=nb>:after</span> <span class=nv>org-roam</span>
+  <span class=nb>:config</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-server-host</span> <span class=s>&#34;127.0.0.1&#34;</span>
+        <span class=nv>org-roam-server-port</span> <span class=mi>8080</span>
+        <span class=nv>org-roam-server-export-inline-images</span> <span class=no>t</span>
+        <span class=nv>org-roam-server-authenticate</span> <span class=no>nil</span>
+        <span class=nv>org-roam-server-network-arrows</span> <span class=no>nil</span>
+        <span class=nv>org-roam-server-network-label-truncate</span> <span class=no>t</span>
+        <span class=nv>org-roam-server-network-label-truncate-length</span> <span class=mi>60</span>
+        <span class=nv>org-roam-server-network-label-wrap-length</span> <span class=mi>20</span><span class=p>)</span>
+  <span class=p>(</span><span class=nb>defun</span> <span class=nv>org-roam-server-open</span> <span class=p>()</span>
+    <span class=s>&#34;Ensure the server is active, then open the roam graph.&#34;</span>
+    <span class=p>(</span><span class=nb>interactive</span><span class=p>)</span>
+    <span class=p>(</span><span class=nv>org-roam-server-mode</span> <span class=mi>1</span><span class=p>)</span>
+    <span class=p>(</span><span class=nv>browse-url-xdg-open</span> <span class=p>(</span><span class=nf>format</span> <span class=s>&#34;http://localhost:%d&#34;</span> <span class=nv>org-roam-server-port</span><span class=p>))))</span>
+</code></pre></div><h3 id=文獻管理>文獻管理</h3><p><a href=https://github.com/org-roam/org-roam-bibtex>Org Roam BibTeX (ORB)</a> with <a href=https://www.zotero.org/>Zotero</a> to manage citations. It allows me to manage my bibliographical notes using Org Roam and access the notes in org-roam-directory via ivy-bibtex, or by opening org-ref’s cite: links.</p><h4 id=zotero>Zotero</h4><p>預設檔案目錄</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>zotero-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;zotero&#34;</span> <span class=nv>shared-directory</span><span class=p>))</span>
+</code></pre></div><h4 id=org-ref>org-ref</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-ref</span><span class=p>)</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>use-package</span> <span class=nv>org-ref</span>
+    <span class=nb>:after</span> <span class=nv>org</span>
+    <span class=nb>:init</span>
+    <span class=nb>:config</span>
+    <span class=p>(</span><span class=nb>setq</span>
+         <span class=c1>; Let ivy makes completion.</span>
+         <span class=nv>org-ref-completion-library</span> <span class=ss>&#39;org-ref-ivy-cite</span>
+         <span class=c1>; Use Helm to get pdf filename.</span>
+         <span class=nv>org-ref-get-pdf-filename-function</span> <span class=ss>&#39;org-ref-get-pdf-filename-helm-bibtex</span>
+         <span class=c1>; Use the bibtext file exported from Zotero.</span>
+         <span class=nv>org-ref-default-bibliography</span> <span class=p>(</span><span class=nf>list</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;library.bib&#34;</span> <span class=nv>zotero-directory</span><span class=p>))</span>
+         <span class=nv>org-ref-bibliography-notes</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;bibnotes.org&#34;</span> <span class=nv>org-roam-directory</span><span class=p>)</span>
+         <span class=c1>; Use org-roam files as my reading notes.</span>
+         <span class=nv>org-ref-notes-directory</span> <span class=nv>org-roam-directory</span>
+         <span class=nv>org-ref-notes-function</span> <span class=ss>&#39;orb-edit-notes</span>
+         <span class=c1>; Add templates for my reading notes.</span>
+         <span class=nv>org-ref-note-title-format</span> <span class=p>(</span><span class=nf>concat</span>
+                                    <span class=s>&#34;* TODO %y - %t\n&#34;</span>
+                                    <span class=s>&#34;:PROPERTIES:\n&#34;</span>
+                                    <span class=s>&#34;:Custom_ID: %k\n&#34;</span>
+                                    <span class=s>&#34;:NOTER_DOCUMENT: %F\n&#34;</span>
+                                    <span class=s>&#34;:ROAM_KEY: cite:%k\n&#34;</span>
+                                    <span class=s>&#34;:AUTHOR: %9a\n&#34;</span>
+                                    <span class=s>&#34;:JOURNAL: %j\n&#34;</span>
+                                    <span class=s>&#34;:YEAR: %y\n&#34;</span>
+                                    <span class=s>&#34;:VOLUME: %v\n&#34;</span>
+                                    <span class=s>&#34;:PAGES: %p\n&#34;</span>
+                                    <span class=s>&#34;:DOI: %D\n&#34;</span>
+                                    <span class=s>&#34;:URL: %U\n&#34;</span>
+                                    <span class=s>&#34;:END:\n\n&#34;</span>
+                                    <span class=p>)</span>
+    <span class=p>))</span>
+</code></pre></div><h4 id=org-roam-bibtex>org-roam-bibtex</h4><p>org-roam-bibtex is not shippied in org module too, so I need to install it.</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-roam-bibtex</span>
+  <span class=nb>:recipe</span> <span class=p>(</span><span class=nb>:host</span> <span class=nv>github</span> <span class=nb>:repo</span> <span class=s>&#34;org-roam/org-roam-bibtex&#34;</span><span class=p>))</span>
+<span class=c1>;; When using org-roam via the `+roam` flag</span>
+<span class=p>(</span><span class=nv>unpin!</span> <span class=nv>org-roam</span> <span class=nv>company-org-roam</span><span class=p>)</span>
+<span class=c1>;; When using bibtex-completion via the `biblio` module</span>
+<span class=p>(</span><span class=nv>unpin!</span> <span class=nv>bibtex-completion</span> <span class=nv>helm-bibtex</span> <span class=nv>ivy-bibtex</span><span class=p>)</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>bibtex-dialect</span> <span class=ss>&#39;biblatex</span><span class=p>)</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-roam-bibtex</span>
+  <span class=nb>:after</span> <span class=nv>org-roam</span>
+  <span class=nb>:hook</span> <span class=p>(</span><span class=nv>org-roam-mode</span> <span class=o>.</span> <span class=nv>org-roam-bibtex-mode</span><span class=p>)</span>
+  <span class=nb>:config</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-bibtex-preformat-keywords</span>
+   <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;=key=&#34;</span> <span class=s>&#34;title&#34;</span> <span class=s>&#34;url&#34;</span> <span class=s>&#34;file&#34;</span> <span class=s>&#34;author-or-editor&#34;</span> <span class=s>&#34;keywords&#34;</span><span class=p>))</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>orb-templates</span>
+        <span class=o>`</span><span class=p>((</span><span class=s>&#34;r&#34;</span> <span class=s>&#34;ref&#34;</span> <span class=nv>plain</span> <span class=p>(</span><span class=nb>function</span> <span class=nv>org-roam-capture--get-point</span><span class=p>)</span>
+           <span class=s>&#34;&#34;</span>
+           <span class=nb>:file-name</span> <span class=s>&#34;lit/${slug}&#34;</span>
+           <span class=nb>:head</span> <span class=o>,</span><span class=p>(</span><span class=nf>concat</span>
+                   <span class=s>&#34;#+TITLE: ${=key=}: ${title}\n&#34;</span>
+                   <span class=s>&#34;#+ROAM_KEY: ${ref}\n\n&#34;</span>
+                   <span class=s>&#34;* ${title}\n&#34;</span>
+                   <span class=s>&#34;  :PROPERTIES:\n&#34;</span>
+                   <span class=s>&#34;  :Custom_ID: ${=key=}\n&#34;</span>
+                   <span class=s>&#34;  :URL: ${url}\n&#34;</span>
+                   <span class=s>&#34;  :AUTHOR: ${author-or-editor}\n&#34;</span>
+                   <span class=s>&#34;  :NOTER_DOCUMENT: %(orb-process-file-field \&#34;${=key=}\&#34;)\n&#34;</span>
+                   <span class=s>&#34;  :NOTER_PAGE: \n&#34;</span>
+                   <span class=s>&#34;  :END:\n&#34;</span><span class=p>)</span>
+           <span class=nb>:unnarrowed</span> <span class=no>t</span><span class=p>))))</span>
+</code></pre></div><h4 id=bibtex-completion>bibtex-completion</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>bibtex-completion</span>
+  <span class=nb>:config</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>bibtex-completion-notes-path</span> <span class=nv>org-roam-directory</span>
+        <span class=nv>bibtex-completion-bibliography</span> <span class=nv>org-ref-default-bibliography</span>
+        <span class=nv>bibtex-completion-pdf-field</span> <span class=s>&#34;file&#34;</span>
+        <span class=nv>bibtex-completion-notes-template-multiple-files</span>
+         <span class=p>(</span><span class=nf>concat</span>
+          <span class=s>&#34;#+title: ${title}\n&#34;</span>
+          <span class=s>&#34;#+roam_key: cite:${=key=}\n&#34;</span>
+          <span class=s>&#34;* TODO Notes\n&#34;</span>
+          <span class=s>&#34;:PROPERTIES:\n&#34;</span>
+          <span class=s>&#34;:Custom_ID: ${=key=}\n&#34;</span>
+          <span class=s>&#34;:NOTER_DOCUMENT: %(orb-process-file-field \&#34;${=key=}\&#34;)\n&#34;</span>
+          <span class=s>&#34;:AUTHOR: ${author-abbrev}\n&#34;</span>
+          <span class=s>&#34;:JOURNAL: ${journaltitle}\n&#34;</span>
+          <span class=s>&#34;:DATE: ${date}\n&#34;</span>
+          <span class=s>&#34;:YEAR: ${year}\n&#34;</span>
+          <span class=s>&#34;:DOI: ${doi}\n&#34;</span>
+          <span class=s>&#34;:URL: ${url}\n&#34;</span>
+          <span class=s>&#34;:END:\n\n&#34;</span>
+          <span class=p>)))</span>
+</code></pre></div><h3 id=代辦事項>代辦事項</h3><h4 id=org-agenda>org-agenda</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-agenda</span>
+  <span class=nb>:defer</span>
+  <span class=nb>:init</span>
+  <span class=c1>;; Org Agenda Files</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-agenda-files</span> <span class=p>(</span><span class=nf>list</span>
+                          <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;todo.org&#34;</span> <span class=nv>org-directory</span><span class=p>)</span>
+                          <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;blog.org&#34;</span> <span class=nv>org-directory</span><span class=p>)</span>
+                          <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;projects.org&#34;</span> <span class=nv>org-directory</span><span class=p>)</span>
+                          <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;habits.org&#34;</span> <span class=nv>org-directory</span><span class=p>)</span>
+                          <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;daily&#34;</span> <span class=nv>org-roam-directory</span><span class=p>)</span>
+                          <span class=p>))</span>
+
+
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-agenda-todo-list-sublevels</span> <span class=no>t</span><span class=p>)</span>
+  <span class=c1>;; Shorter todo list</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-agenda-skip-scheduled-if-done</span> <span class=no>t</span>
+        <span class=nv>org-agenda-skip-deadline-if-done</span> <span class=no>t</span>
+        <span class=nv>org-habit-show-habits-only-for-today</span> <span class=no>t</span>
+        <span class=nv>org-agenda-block-separator</span> <span class=no>nil</span>
+        <span class=nv>org-agenda-compact-blocks</span> <span class=no>t</span>
+        <span class=nv>org-agenda-todo-ignore-scheduled</span> <span class=ss>&#39;future</span>
+        <span class=nv>org-agenda-todo-ignore-deadlines</span> <span class=ss>&#39;future</span>
+        <span class=nv>org-agenda-todo-ignore-timestamp</span> <span class=ss>&#39;future</span>
+        <span class=nv>org-agenda-dim-blocked-tasks</span> <span class=no>t</span>
+        <span class=p>)</span>
+
+  <span class=c1>;; org agenda</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-agenda-time-grid</span>
+        <span class=p>(</span><span class=nb>quote</span>
+         <span class=p>((</span><span class=nv>daily</span> <span class=nv>today</span> <span class=nv>remove-match</span><span class=p>)</span>
+          <span class=p>(</span><span class=mi>700</span> <span class=mi>800</span> <span class=mi>900</span> <span class=mi>1000</span> <span class=mi>1100</span> <span class=mi>1200</span> <span class=mi>1300</span> <span class=mi>1400</span> <span class=mi>1500</span> <span class=mi>1600</span> <span class=mi>1700</span> <span class=mi>1800</span> <span class=mi>1900</span> <span class=mi>2000</span> <span class=mi>2100</span> <span class=mi>2200</span> <span class=mi>2300</span><span class=p>)</span>
+          <span class=s>&#34;......&#34;</span> <span class=s>&#34;----------------&#34;</span><span class=p>)))</span>
+  <span class=p>)</span>
+</code></pre></div><h4 id=org-super-agenda>org-super-agenda</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-super-agenda</span><span class=p>)</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=c1>;; org-super-agenda</span>
+<span class=c1>;; https://www.reddit.com/r/orgmode/comments/erdb40/doomemacs_can_not_make_orgsuperagenda_work/</span>
+<span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-super-agenda</span>
+  <span class=nb>:after</span> <span class=nv>org-agenda</span>
+  <span class=nb>:init</span>
+  <span class=c1>;; for some reason org-agenda evil bindings were being weird with j and k</span>
+  <span class=p>(</span><span class=nv>map!</span> <span class=nb>:map</span> <span class=nv>org-agenda-keymap</span> <span class=s>&#34;j&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-agenda-next-line</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>map!</span> <span class=nb>:map</span> <span class=nv>org-agenda-mode-map</span> <span class=s>&#34;j&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-agenda-next-line</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>map!</span> <span class=nb>:map</span> <span class=nv>org-super-agenda-header-map</span> <span class=s>&#34;j&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-agenda-next-line</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>map!</span> <span class=nb>:map</span> <span class=nv>org-agenda-keymap</span> <span class=s>&#34;k&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-agenda-previous-line</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>map!</span> <span class=nb>:map</span> <span class=nv>org-agenda-mode-map</span> <span class=s>&#34;k&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-agenda-previous-line</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>map!</span> <span class=nb>:map</span> <span class=nv>org-super-agenda-header-map</span> <span class=s>&#34;k&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-agenda-previous-line</span><span class=p>)</span>
+
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-agenda-custom-commands</span>
+        <span class=o>&#39;</span><span class=p>(</span>
+          <span class=p>(</span><span class=s>&#34;r&#34;</span> <span class=s>&#34;Main View&#34;</span>
+           <span class=p>((</span><span class=nv>agenda</span> <span class=s>&#34;&#34;</span> <span class=p>((</span><span class=nv>org-agenda-span</span> <span class=ss>&#39;day</span><span class=p>)</span>
+                        <span class=p>(</span><span class=nv>org-agenda-start-day</span> <span class=s>&#34;+0d&#34;</span><span class=p>)</span>
+                        <span class=p>(</span><span class=nv>org-agenda-overriding-header</span> <span class=s>&#34;&#34;</span><span class=p>)</span>
+                        <span class=p>(</span><span class=nv>org-super-agenda-groups</span>
+                         <span class=o>&#39;</span><span class=p>(</span>
+                           <span class=p>(</span><span class=nb>:discard</span> <span class=p>(</span><span class=nb>:todo</span> <span class=p>(</span><span class=s>&#34;PROJ&#34;</span> <span class=s>&#34;WAIT&#34;</span> <span class=s>&#34;STRT&#34;</span><span class=p>)))</span>
+                           <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Schedule&#34;</span>
+                            <span class=nb>:time-grid</span> <span class=no>t</span>
+                            <span class=nb>:date</span> <span class=nv>today</span>
+                            <span class=nb>:order</span> <span class=mi>1</span>
+                            <span class=nb>:scheduled</span> <span class=nv>today</span>
+                            <span class=nb>:todo</span> <span class=s>&#34;TODAY&#34;</span><span class=p>)</span>
+                           <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Reminder&#34;</span>
+                            <span class=nb>:order</span> <span class=mi>2</span>
+                            <span class=nb>:anything</span>
+                           <span class=p>)</span>
+                           <span class=p>))))</span>
+            <span class=p>(</span><span class=nv>alltodo</span> <span class=s>&#34;&#34;</span> <span class=p>((</span><span class=nv>org-agenda-overriding-header</span> <span class=s>&#34;&#34;</span><span class=p>)</span>
+                         <span class=p>(</span><span class=nv>org-super-agenda-groups</span>
+                          <span class=o>&#39;</span><span class=p>(</span>
+                            <span class=p>(</span><span class=nb>:log</span> <span class=no>t</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:discard</span> <span class=p>(</span><span class=nb>:category</span> <span class=s>&#34;習慣&#34;</span><span class=p>))</span>
+                            <span class=p>(</span><span class=nb>:discard</span> <span class=p>(</span><span class=nb>:todo</span> <span class=s>&#34;SOMEDAY&#34;</span><span class=p>))</span>
+                            <span class=p>(</span><span class=nb>:discard</span> <span class=p>(</span><span class=nb>:todo</span> <span class=s>&#34;IDEA&#34;</span><span class=p>))</span>
+                            <span class=p>(</span><span class=nb>:discard</span> <span class=p>(</span><span class=nb>:todo</span> <span class=s>&#34;PROJ&#34;</span><span class=p>))</span>
+                            <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Next to do&#34;</span>
+                             <span class=nb>:and</span> <span class=p>(</span><span class=nb>:todo</span> <span class=s>&#34;TODO&#34;</span> <span class=nb>:priority&gt;=</span> <span class=s>&#34;A&#34;</span><span class=p>)</span>
+                             <span class=nb>:order</span> <span class=mi>3</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Due Today&#34;</span>
+                             <span class=nb>:deadline</span> <span class=nv>today</span>
+                             <span class=nb>:order</span> <span class=mi>4</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Due Soon&#34;</span>
+                             <span class=nb>:deadline</span> <span class=nv>future</span>
+                             <span class=nb>:order</span> <span class=mi>8</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Started&#34;</span>
+                             <span class=nb>:todo</span> <span class=s>&#34;STRT&#34;</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Overdue&#34;</span>
+                             <span class=nb>:deadline</span> <span class=nv>past</span>
+                             <span class=nb>:order</span> <span class=mi>20</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:name</span> <span class=s>&#34;Waitting&#34;</span>
+                             <span class=nb>:todo</span> <span class=s>&#34;WAIT&#34;</span>
+                             <span class=nb>:order</span> <span class=mi>98</span><span class=p>)</span>
+                            <span class=p>(</span><span class=nb>:discard</span> <span class=p>(</span><span class=nb>:todo</span> <span class=s>&#34;TODO&#34;</span><span class=p>))</span>
+                            <span class=p>))))))</span>
+          <span class=p>))</span>
+
+
+  <span class=nb>:config</span>
+  <span class=p>(</span><span class=nv>org-super-agenda-mode</span><span class=p>)</span>
+  <span class=p>)</span>
+</code></pre></div><h3 id=行事曆>行事曆</h3><h4 id=calfw>calfw</h4><p>行事曆上私人行程以及台灣國定假日。預設不使用 Emacs 提供的國定假日。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>calfw</span>
+  <span class=nb>:defer</span>
+  <span class=nb>:init</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>cfw:display-calendar-holidays</span> <span class=no>nil</span><span class=p>)</span> <span class=c1>; don&#39;t show holidays.</span>
+<span class=p>)</span>
+</code></pre></div><p>提供 <code>my-open-calendar</code> 指令打開行事曆。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>defun</span> <span class=nv>my-open-calendar</span> <span class=p>()</span>
+  <span class=p>(</span><span class=nb>interactive</span><span class=p>)</span>
+  <span class=p>(</span><span class=nv>cfw:open-calendar-buffer</span>
+   <span class=nb>:contents-sources</span>
+   <span class=p>(</span><span class=nf>list</span>
+    <span class=p>(</span><span class=nv>cfw:org-create-source</span> <span class=s>&#34;Green&#34;</span><span class=p>)</span>  <span class=c1>; org-agenda source</span>
+    <span class=p>(</span><span class=nv>cfw:ical-create-source</span> <span class=s>&#34;Personal&#34;</span> <span class=nv>cfw-gcal-personal</span> <span class=s>&#34;Orange&#34;</span><span class=p>)</span>
+    <span class=p>(</span><span class=nv>cfw:ical-create-source</span> <span class=s>&#34;Holidays&#34;</span> <span class=nv>cfw-gcal-holidays-tw</span> <span class=s>&#34;Red&#34;</span><span class=p>)</span>
+   <span class=p>)))</span>
+</code></pre></div><h4 id=calfw-org>calfw-org</h4><p>在行事曆上顯示代辦任務。</p><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>calfw-org</span>
+  <span class=nb>:after</span> <span class=nv>calfw</span>
+  <span class=nb>:init</span>
+  <span class=c1>;; To speed up the loading, restricts items containing a scheduled TODOs that the date range matching the selected date.</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>cfw:org-agenda-schedule-args</span> <span class=o>&#39;</span><span class=p>(</span><span class=nb>:scheduled</span> <span class=nb>:deadline</span><span class=p>))</span><span class=c1>;</span>
+<span class=p>)</span>
+</code></pre></div><h3 id=hugo>Hugo</h3><p>Hugo 是我目前使用的 Blog 系統。發佈流程如下：</p><ol><li>創建一個 orgmode heading 為標題。</li><li>寫文章。</li><li><code>s m e H H</code> 產生 markdown。</li><li><code>s o h</code> 使用 easy-hugo 預覽。</li></ol><h4 id=ox-hugo>ox-hugo</h4><h4 id=easy-hugo>easy-hugo</h4><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>easy-hugo</span><span class=p>)</span>
+</code></pre></div><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>easy-hugo</span>
+  <span class=nb>:init</span>
+  <span class=p>(</span><span class=nb>setq</span> <span class=nv>easy-hugo-basedir</span> <span class=nv>user-blog-basedir</span>
+        <span class=nv>easy-hugo-url</span> <span class=nv>user-blog-url</span><span class=p>)</span>
+  <span class=nb>:config</span>
+  <span class=c1>;; make easy-hugo mode keybinds work</span>
+  <span class=p>(</span><span class=nv>evil-make-overriding-map</span> <span class=nv>easy-hugo-mode-map</span> <span class=ss>&#39;normal</span><span class=p>))</span>
+</code></pre></div><h3 id=plantuml>Plantuml</h3><p>在 Emacs 執行下列命令下載安裝 plantuml。</p><p>plantuml-download-jar</p><h3 id=latex>Latex</h3><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
+  <span class=p>(</span><span class=nb>setq</span>
+   <span class=nv>org-preview-latex-default-process</span> <span class=ss>&#39;imagemagick</span>
+   <span class=c1>;; latex pdf process.</span>
+   <span class=nv>org-latex-pdf-process</span> <span class=o>&#39;</span><span class=p>(</span><span class=s>&#34;latexmk -pdflatex=&#39;xelatex -interaction nonstopmode&#39; -pdf -bibtex -f %f&#34;</span><span class=p>)</span>
+   <span class=c1>;; use user-defined labels.</span>
+   <span class=nv>org-latex-prefer-user-labels</span> <span class=no>t</span>
+   <span class=c1>;; display tables in formal booktabs style.</span>
+   <span class=nv>org-latex-tables-booktabs</span> <span class=no>t</span>
+   <span class=c1>;; 上下標必須加 { }.</span>
+   <span class=nv>org-use-sub-superscripts</span> <span class=s>&#34;{}&#34;</span>
+  <span class=p>))</span>
+</code></pre></div><h2 id=快捷鍵配置>快捷鍵配置</h2><table><thead><tr><th>按鍵組</th><th>功用</th><th>備註</th></tr></thead><tbody><tr><td><code>SPC :</code></td><td>打開命令列</td><td></td></tr><tr><td><code>SPC Tab Tab</code></td><td>顯示 tabbar</td><td></td></tr><tr><td><code>SPC Tab n</code></td><td>建立 workspace</td><td></td></tr><tr><td><code>SPC Tab d</code></td><td>刪除 workspace</td><td></td></tr><tr><td><code>SPC Tab $n</code></td><td>切換到第 $n 個 workspace</td><td></td></tr><tr><td><code>SPC w s</code></td><td>水平切割視窗</td><td></td></tr><tr><td><code>SPC w v</code></td><td>垂直切割視窗</td><td></td></tr><tr><td><code>SPC w m</code></td><td>最大化當前視窗</td><td></td></tr><tr><td><code>SPC o a r</code></td><td>打開 org-agenda Main Repor</td><td></td></tr><tr><td><code>SPC o p</code></td><td>打開專案 Sidebar</td><td>q 關閉</td></tr><tr><td><code>SPC o P</code></td><td>在專案 Sidebar 找檔案</td><td></td></tr><tr><td><code>SPC o v</code></td><td>開啟 Terminal</td><td></td></tr><tr><td><code>SPC o h</code></td><td>開啟 Easy Hugo</td><td></td></tr><tr><td><code>SPC p a</code></td><td>新增專案</td><td></td></tr><tr><td><code>SPC p d</code></td><td>移除專案</td><td></td></tr><tr><td><code>SPC p p</code></td><td>切換專案</td><td></td></tr><tr><td><code>SPC n r f</code></td><td>開起 Roam 筆記</td><td></td></tr><tr><td><code>SPC n r i</code></td><td>插入 Roam 筆記</td><td></td></tr><tr><td><code>SPC n r I</code></td><td>插入 Roam 筆記 (w/ org-capture)</td><td></td></tr><tr><td><code>SPC m e H H</code></td><td>輸出文件或單個 Subtree 到 hugo</td><td></td></tr><tr><td><code>SPC m e H A</code></td><td>輸出文件或全部的 Subtree 到 hugo</td><td></td></tr><tr><td><code>SPC t e</code></td><td>Toogle hidding/showing of org emphasise markers</td><td></td></tr><tr><td><code>SPC h r r</code></td><td>重新讀取 doom emacs 設定檔</td><td></td></tr></tbody></table><div class=highlight><pre class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>map!</span> <span class=nb>:leader</span>
+      <span class=nb>:desc</span> <span class=s>&#34;Easy Hugo&#34;</span>
+      <span class=s>&#34;o h&#34;</span> <span class=nf>#&#39;</span><span class=nv>easy-hugo</span><span class=p>)</span>
+<span class=p>(</span><span class=nv>map!</span> <span class=nb>:leader</span>
+      <span class=nb>:desc</span> <span class=s>&#34;Toogle hidding/showing of org emphasize markers.&#34;</span>
+      <span class=s>&#34;t e&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-toggle-emphasis</span><span class=p>)</span>
+</code></pre></div><h2 id=感謝>感謝</h2><p>設定 Emacs 非是易事。 我從其他先進的設定檔中獲得許多靈感。特別感謝</p><ol><li><a href=https://leanpub.com/lit-config/read#emacs-config-example>Diego Zamboni&rsquo;s Literate Configuration Book</a> and <a href=https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/>his configuration.</a></li><li><a href=https://github.com/dangirsh/.doom.d/>Dan Girshovich&rsquo;s configuration</a>.</li><li><a href=https://github.com/sunnyhasija/Academic-Doom-Emacs-Config>An Academic’s Opinionated DOOM Emacs Config</a></li><li><a href=https://www.gtrun.org/custom/my-agenda.html>我的日程计划安排</a>.</li></ol></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
+<span class=item-content>陳信屹</span></p><p class=copyright-item><span class=item-title>上次更新</span>
+<span class=item-content>2021-07-11</span></p><p class=copyright-item><span class=item-title>授權條款</span>
+<span class=item-content><a rel="license noopener" href=https://creativecommons.org/licenses/by-nc-nd/4.0/ target=_blank>CC BY-NC-ND 4.0</a></span></p></div><footer class=post-footer><div class=post-tags><a href=http://localhost:1313/tags/emacs/>Emacs</a></div><nav class=post-nav><a class=prev href=/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E7%9A%84%E5%BE%B5%E6%89%8D%E6%8C%91%E6%88%B0/><i class=iconfont><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"><path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417l277.93508-310.326815c11.338233-12.190647 11.035334-32.285311-.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"/></svg></i><span class="prev-text nav-default">數位發展部的用人挑戰</span>
+<span class="prev-text nav-mobile">上一篇</span></a></nav></footer></article></div></div></main><footer id=footer class=footer><div class=icon-links><a href=https://twitter.com/hychen rel="me noopener" class=iconfont title=twitter target=_blank><svg class="icon" viewBox="0 0 1264 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36"><path d="M1229.8616 18.043658s-117.852626 63.135335-164.151872 67.344358C960.484169-78.763856 560.627046-7.210476 627.971403 308.466201 278.622548 312.675223 89.216542 47.506814 89.216542 47.506814S-28.636084 236.91282 164.978944 392.646647C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042 50.5082679999998-16.83609 134.688715-143.10676 134.688715-143.10676s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"/></svg></a><a href=https://github.com/hychen rel="me noopener" class=iconfont title=github target=_blank><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36"><path d="M512 12.672c-282.88.0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667.0-12.16-.426667-44.373333-.64-87.04C242.005334 929.664 211.968 830.08 211.968 830.08 188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333.0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333.0.0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667.0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72.0 68.522667-.64 123.562667-.64 140.202666.0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"/></svg></a><a href=http://localhost:1313/index.xml rel="noopener alternate" type=application/rss+xml class=iconfont title=rss target=_blank><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30"><path d="M819.157333 1024C819.157333 574.592 449.408 204.8.0 204.8V0c561.706667.0 1024 462.293333 1024 1024H819.157333zM140.416 743.04a140.8 140.8.0 01140.501333 140.586667A140.928 140.928.0 01140.074667 1024C62.72 1024 0 961.109333.0 883.626667S62.933333 743.082667 140.416 743.04zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667v-199.04c372.352.0 678.784 306.517333 678.784 678.826667z"/></svg></a></div><div class=copyright><span class=power-by>Powered by <a class=hexo-link href=https://gohugo.io>Hugo</a></span>
+<span class=division>|</span>
+<span class=theme-info>Theme - <a class=theme-link href=https://github.com/xianmin/hugo-theme-jane>Jane</a></span>
+<span class=copyright-year>&copy;
+2021
+<span class=heart><i class=iconfont><svg class="icon" viewBox="0 0 1025 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14"><path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7.0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1.0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2.0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3.1-42.5-8-83.6-24-122.2z" fill="#8a8a8a"/></svg></i></span><span class=author>陳信屹</span></span></div></footer><div class=back-to-top id=back-to-top><i class=iconfont><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35"><path d="M510.866688 227.694839 95.449397 629.218702h235.761562L329.15309 958.01517h362.40389L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777h894.052392v131.813095H63.840492V63.962777zm0 0"/></svg></i></div></div><script type=text/javascript src=/lib/jquery/jquery-3.2.1.min.js></script><script type=text/javascript src=/lib/slideout/slideout-1.0.1.min.js></script><script type=text/javascript src=/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin=anonymous></script><script type=text/javascript src=/js/load-photoswipe.js></script><script type=text/javascript src=/lib/photoswipe/photoswipe.min.js></script><script type=text/javascript src=/lib/photoswipe/photoswipe-ui-default.min.js></script></body></html>
