@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://hychen.me/sitemap.xml
+Sitemap: http://hychen.me/sitemap.xml
