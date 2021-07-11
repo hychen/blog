@@ -1,6 +1,6 @@
 ---
 title: "我的 Doom Emacs 設定"
-lastmod: 2021-07-11T01:26:12+08:00
+lastmod: 2021-07-11T19:35:36+08:00
 tags: ["Emacs"]
 categories: ["Literate Configuration"]
 draft: false
@@ -443,6 +443,28 @@ Org 文件的預設目錄位置
 ```
 
 
+### 文件結構樹 {#文件結構樹}
+
+```shell
+cd ~/Dropbox/ && tree org -L 1 --noreport | sort
+```
+
+todo.org
+: 個人代辦事項。
+
+projects.org
+: 專案代辦事項。
+
+blog.org
+: blog 文章。
+
+habits.org
+: 想要陪養的習慣追蹤紀錄。
+
+roam
+: 知識管理系統。
+
+
 ### 日記 {#日記}
 
 每日日記不僅是作為一天開始的計畫工具，也是一個時間帳本。他促使我深層思考我的時間應該如何花費得更有價值。當我醒來時，我想要坐在桌之前，開始寫今天的日記，想像一下今天會發生什麼事情。寫作不僅助於組織我的思想，還能幫助我計畫我的一天。當我打開日記時，我想看到我應該遵循的晨間慣例，這些慣例是我在一週之初、一月之初、一年之初制訂的，做一個新開始的希望，就像一座燈塔，引導我的靈魂在一個所有算法都在爭奪注意力的世代中生存。
@@ -531,7 +553,7 @@ Org 文件的預設目錄位置
 
 ### 文獻管理 {#文獻管理}
 
-[Org Roam BibTeX (ORB)](https://github.com/org-roam/org-roam-bibtex) with [Zotero](https://www.zotero.org/) to manage citations. It allows me to manage my bibliographical notes using Org Roam and access the notes in org-roam-directory via ivy-bibtex, or by opening org-ref’s cite: links.
+主要用 [Org Roam BibTeX（ORB）](https://github.com/org-roam/org-roam-bibtex)與 [Zotero ](https://www.zotero.org/)一起管理引文。它允許我使用 [Org Roam ](https://www.orgroam.com/)管理我的書目註釋，並通過ivy-bibtex訪問org-roam-directory中的註釋，或者通過打開 [org-ref](https://github.com/jkitchin/org-ref) 的cite: 鏈接來訪問。
 
 
 #### Zotero {#zotero}
@@ -824,10 +846,13 @@ Hugo 是我目前使用的 Blog 系統。發佈流程如下：
 1.  創建一個 orgmode heading 為標題。
 2.  寫文章。
 3.  `s m e H H` 產生 markdown。
-4.  `s o h` 使用 easy-hugo 預覽。
+4.  `s o h` 使用 easy-hugo 預覽看結果。
+5.  git push 到 github 上的 <https://github.com/hychen/blog>。  Github Actions 會幫我產生 html 跟 host 在 Github Page 上。
 
 
 #### ox-hugo {#ox-hugo}
+
+Hugo 本身雖支援 org 格式，但是 markdown 渲染效果較好，透過 ox-hugo 可以輸出 markdown 給 Hugo 使用。
 
 
 #### easy-hugo {#easy-hugo}
