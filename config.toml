@@ -61,9 +61,9 @@ defaultContentLanguage = "zh-tw"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "不可觀修行筆記 - 我修不知道; 我觀不可觀。"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "不可觀修行筆記"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["投資", "讀書","電動"]
-  description = "陳信屹投資與讀書的人生觀想 。他修不知道；他觀不可觀。"
+  description = "陳信屹投資與讀書的人生觀想 。"
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
