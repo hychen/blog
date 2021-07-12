@@ -1,6 +1,6 @@
 ---
 title: "我的 Doom Emacs 設定"
-lastmod: 2021-07-11T19:35:36+08:00
+lastmod: 2021-07-12T20:56:41+08:00
 tags: ["Emacs"]
 categories: ["Literate Configuration"]
 draft: false
@@ -445,9 +445,7 @@ Org 文件的預設目錄位置
 
 ### 文件結構樹 {#文件結構樹}
 
-```shell
-cd ~/Dropbox/ && tree org -L 1 --noreport | sort
-```
+偏好文件過於龐大時，才開使分拆。文件數少，用到的認知也少。
 
 todo.org
 : 個人代辦事項。
@@ -464,10 +462,63 @@ habits.org
 roam
 : 知識管理系統。
 
+<!--listend-->
+
+```emacs-lisp
+(after! org
+  (setq org-todo-file (expand-file-name "todo.org" org-directory))
+  (setq org-project-file (expand-file-name "projects.org" org-directory))
+  (setq org-post-file (expand-file-name "blog.org" org-directory))
+  (setq org-habit-file (expand-file-name "habits.org" org-directory)))
+```
+
+
+### 筆記 {#筆記}
+
+受 Roam Research 啟發，以使用 [Zettelkasten](https://zettelkasten.de/introduction/) 卡片盒筆記法組織知識連結知識點為目的配置。
+
+
+#### org-roam {#org-roam}
+
+[org-roam](https://www.orgroam.com/) 是類似 Roam Research 的 org-mode 實現。
+
+```emacs-lisp
+(after! org-roam (setq org-roam-directory (expand-file-name "roam" org-directory)))
+```
+
+
+#### org-roam-server {#org-roam-server}
+
+```emacs-lisp
+(package! org-roam-server :recipe (:host github :repo "org-roam/org-roam-server" :files ("*")))
+```
+
+```emacs-lisp
+(use-package! org-roam-server
+  :after org-roam
+  :config
+  (setq org-roam-server-host "127.0.0.1"
+        org-roam-server-port 8080
+        org-roam-server-export-inline-images t
+        org-roam-server-authenticate nil
+        org-roam-server-network-arrows nil
+        org-roam-server-network-label-truncate t
+        org-roam-server-network-label-truncate-length 60
+        org-roam-server-network-label-wrap-length 20)
+  (defun org-roam-server-open ()
+    "Ensure the server is active, then open the roam graph."
+    (interactive)
+    (org-roam-server-mode 1)
+    (browse-url-xdg-open (format "http://localhost:%d" org-roam-server-port))))
+```
+
 
 ### 日記 {#日記}
 
 每日日記不僅是作為一天開始的計畫工具，也是一個時間帳本。他促使我深層思考我的時間應該如何花費得更有價值。當我醒來時，我想要坐在桌之前，開始寫今天的日記，想像一下今天會發生什麼事情。寫作不僅助於組織我的思想，還能幫助我計畫我的一天。當我打開日記時，我想看到我應該遵循的晨間慣例，這些慣例是我在一週之初、一月之初、一年之初制訂的，做一個新開始的希望，就像一座燈塔，引導我的靈魂在一個所有算法都在爭奪注意力的世代中生存。
+
+
+#### org-roam-daily {#org-roam-daily}
 
 ```emacs-lisp
 (after! org-roam
@@ -512,42 +563,6 @@ roam
                         "* Journaling\n"
                         "* Brain Dumps\n")
          :unnarrowed t))))
-```
-
-
-### 筆記 {#筆記}
-
-
-#### org-roam {#org-roam}
-
-```emacs-lisp
-(after! org-roam (setq org-roam-directory (expand-file-name "roam" org-directory)))
-```
-
-
-#### org-roam-server {#org-roam-server}
-
-```emacs-lisp
-(package! org-roam-server :recipe (:host github :repo "org-roam/org-roam-server" :files ("*")))
-```
-
-```emacs-lisp
-(use-package! org-roam-server
-  :after org-roam
-  :config
-  (setq org-roam-server-host "127.0.0.1"
-        org-roam-server-port 8080
-        org-roam-server-export-inline-images t
-        org-roam-server-authenticate nil
-        org-roam-server-network-arrows nil
-        org-roam-server-network-label-truncate t
-        org-roam-server-network-label-truncate-length 60
-        org-roam-server-network-label-wrap-length 20)
-  (defun org-roam-server-open ()
-    "Ensure the server is active, then open the roam graph."
-    (interactive)
-    (org-roam-server-mode 1)
-    (browse-url-xdg-open (format "http://localhost:%d" org-roam-server-port))))
 ```
 
 
@@ -607,6 +622,23 @@ roam
 ```
 
 
+#### citeproc-org {#citeproc-org}
+
+在 non-Latex 的輸出過程中用 [citeproc-org](https://github.com/andras-simonyi/citeproc-org) 將 org-mode 的引文和書目渲染成 [Citation Style Language](https://citationstyles.org/) (CSL)風格
+
+```emacs-lisp
+(package! citeproc-org)
+```
+
+```emacs-lisp
+(use-package citeproc-org
+  :ensure t
+  :after ox-hugo
+  :config
+  (citeproc-org-setup))
+```
+
+
 #### org-roam-bibtex {#org-roam-bibtex}
 
 org-roam-bibtex is not shippied in org module too, so I need to install it.
@@ -618,10 +650,6 @@ org-roam-bibtex is not shippied in org module too, so I need to install it.
 (unpin! org-roam company-org-roam)
 ;; When using bibtex-completion via the `biblio` module
 (unpin! bibtex-completion helm-bibtex ivy-bibtex)
-```
-
-```emacs-lisp
-(setq bibtex-dialect 'biblatex)
 ```
 
 ```emacs-lisp
@@ -854,6 +882,36 @@ Hugo 是我目前使用的 Blog 系統。發佈流程如下：
 
 Hugo 本身雖支援 org 格式，但是 markdown 渲染效果較好，透過 ox-hugo 可以輸出 markdown 給 Hugo 使用。
 
+參考 ox-hugo 的 [Org Capture Setup](https://ox-hugo.scripter.co/doc/org-capture-setup/) 設定 template。
+
+```emacs-lisp
+;; Populates only the EXPORT_FILE_NAME property in the inserted headline.
+(after! org-capture
+  (defun org-hugo-new-subtree-post-capture-template ()
+    "Returns `org-capture' template string for new Hugo post.
+See `org-capture-templates' for more information."
+    (let* ((title (read-from-minibuffer "Post Title: ")) ;Prompt to enter the post title
+           (fname (org-hugo-slug title)))
+      (mapconcat #'identity
+                 `(
+                   ,(concat "* TODO " title)
+                   ":PROPERTIES:"
+                   ,(concat ":EXPORT_FILE_NAME: " fname)
+                   ":END:"
+                   "%?\n")          ;Place the cursor here finally
+                 "\n")))
+
+  (add-to-list 'org-capture-templates
+               '("h"                ;`org-capture' binding + h
+                 "Hugo post"
+                 entry
+                 ;; It is assumed that below file is present in `org-directory'
+                 ;; and that it has a "Blog Ideas" heading. It can even be a
+                 ;; symlink pointing to the actual location of all-posts.org!
+                 (file org-post-file)
+                 (function org-hugo-new-subtree-post-capture-template))))
+```
+
 
 #### easy-hugo {#easy-hugo}
 
@@ -899,31 +957,32 @@ plantuml-download-jar
 
 ## 快捷鍵配置 {#快捷鍵配置}
 
-| 按鍵組        | 功用                                            | 備註 |
-|------------|-----------------------------------------------|----|
-| `SPC :`       | 打開命令列                                      |      |
-| `SPC Tab Tab` | 顯示 tabbar                                     |      |
-| `SPC Tab n`   | 建立 workspace                                  |      |
-| `SPC Tab d`   | 刪除 workspace                                  |      |
-| `SPC Tab $n`  | 切換到第 $n 個 workspace                        |      |
-| `SPC w s`     | 水平切割視窗                                    |      |
-| `SPC w v`     | 垂直切割視窗                                    |      |
-| `SPC w m`     | 最大化當前視窗                                  |      |
-| `SPC o a r`   | 打開 org-agenda Main Repor                      |      |
-| `SPC o p`     | 打開專案 Sidebar                                | q 關閉 |
-| `SPC o P`     | 在專案 Sidebar 找檔案                           |      |
-| `SPC o v`     | 開啟 Terminal                                   |      |
-| `SPC o h`     | 開啟 Easy Hugo                                  |      |
-| `SPC p a`     | 新增專案                                        |      |
-| `SPC p d`     | 移除專案                                        |      |
-| `SPC p p`     | 切換專案                                        |      |
-| `SPC n r f`   | 開起 Roam 筆記                                  |      |
-| `SPC n r i`   | 插入 Roam 筆記                                  |      |
-| `SPC n r I`   | 插入 Roam 筆記 (w/ org-capture)                 |      |
-| `SPC m e H H` | 輸出文件或單個 Subtree 到 hugo                  |      |
-| `SPC m e H A` | 輸出文件或全部的 Subtree 到 hugo                |      |
-| `SPC t e`     | Toogle hidding/showing of org emphasise markers |      |
-| `SPC h r r`   | 重新讀取 doom emacs 設定檔                      |      |
+| 按鍵組        | 功用                                            | 來源   |
+|------------|-----------------------------------------------|------|
+| `SPC :`       | 打開命令列                                      | doom   |
+| `SPC X`       | 執行 org-catpure                                | doom   |
+| `SPC Tab Tab` | 顯示 tabbar                                     | doom   |
+| `SPC Tab n`   | 建立 workspace                                  | doom   |
+| `SPC Tab d`   | 刪除 workspace                                  | doom   |
+| `SPC Tab $n`  | 切換到第 $n 個 workspace                        | doom   |
+| `SPC w s`     | 水平切割視窗                                    | doom   |
+| `SPC w v`     | 垂直切割視窗                                    | doom   |
+| `SPC w m`     | 最大化當前視窗                                  | doom   |
+| `SPC o a r`   | 打開 org-agenda Main Repor                      | custom |
+| `SPC o p`     | 打開專案 Sidebar                                | doom   |
+| `SPC o P`     | 在專案 Sidebar 找檔案                           | doom   |
+| `SPC o v`     | 開啟 Terminal                                   | doom   |
+| `SPC o h`     | 開啟 Easy Hugo                                  | custom |
+| `SPC p a`     | 新增專案                                        | doom   |
+| `SPC p d`     | 移除專案                                        | doom   |
+| `SPC p p`     | 切換專案                                        | doom   |
+| `SPC n r f`   | 開起 Roam 筆記                                  | doom   |
+| `SPC n r i`   | 插入 Roam 筆記                                  | doom   |
+| `SPC n r I`   | 插入 Roam 筆記 (w/ org-capture)                 | doom   |
+| `SPC m e H H` | 輸出文件或單個 Subtree 到 hugo                  | doom   |
+| `SPC m e H A` | 輸出文件或全部的 Subtree 到 hugo                | doom   |
+| `SPC t e`     | Toogle hidding/showing of org emphasise markers | custom |
+| `SPC h r r`   | 重新讀取 doom emacs 設定檔                      |        |
 
 ```emacs-lisp
 (map! :leader
