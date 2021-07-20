@@ -1,8 +1,9 @@
 ---
 title: "我的 Doom Emacs 設定"
-lastmod: 2021-07-12T20:56:41+08:00
+date: 2021-07-01
+lastmod: 2021-07-20T09:50:30+08:00
 tags: ["Emacs"]
-categories: ["Literate Configuration"]
+categories: ["設定檔"]
 draft: false
 ---
 
@@ -445,7 +446,7 @@ Org 文件的預設目錄位置
 
 ### 文件結構樹 {#文件結構樹}
 
-偏好文件過於龐大時，才開使分拆。文件數少，用到的認知也少。
+偏好文件過於龐大時，才開使分拆。文件數少，每日消耗的認知也少。
 
 todo.org
 : 個人代辦事項。
@@ -641,7 +642,7 @@ roam
 
 #### org-roam-bibtex {#org-roam-bibtex}
 
-org-roam-bibtex is not shippied in org module too, so I need to install it.
+讓我能用我的 bibtex 文件在 org-roam 建立筆記。
 
 ```emacs-lisp
 (package! org-roam-bibtex
@@ -707,6 +708,14 @@ org-roam-bibtex is not shippied in org module too, so I need to install it.
 
 ### 代辦事項 {#代辦事項}
 
+記錄完成時間。
+
+```emacs-lisp
+(after! org
+  (setq org-log-done t)
+  (setq org-log-into-drawer t))
+```
+
 
 #### org-agenda {#org-agenda}
 
@@ -716,28 +725,22 @@ org-roam-bibtex is not shippied in org module too, so I need to install it.
   :init
   ;; Org Agenda Files
   (setq org-agenda-files (list
-                          (expand-file-name "todo.org" org-directory)
-                          (expand-file-name "blog.org" org-directory)
-                          (expand-file-name "projects.org" org-directory)
-                          (expand-file-name "habits.org" org-directory)
-                          (expand-file-name "daily" org-roam-directory)
-                          ))
+                          org-todo-file
+                          org-project-file
+                          org-post-file
+                          org-habit-file
+                          org-roam-directory))
 
-
-  (setq org-agenda-todo-list-sublevels t)
   ;; Shorter todo list
   (setq org-agenda-skip-scheduled-if-done t
         org-agenda-skip-deadline-if-done t
-        org-habit-show-habits-only-for-today t
-        org-agenda-block-separator nil
-        org-agenda-compact-blocks t
         org-agenda-todo-ignore-scheduled 'future
         org-agenda-todo-ignore-deadlines 'future
         org-agenda-todo-ignore-timestamp 'future
         org-agenda-dim-blocked-tasks t
-        )
+        org-agenda-todo-list-sublevels t)
 
-  ;; org agenda
+  ;; Prettify time grid
   (setq org-agenda-time-grid
         (quote
          ((daily today remove-match)
