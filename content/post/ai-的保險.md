@@ -1,5 +1,6 @@
 +++
 title = "AI 的保險"
-categories = ["文章"]
+tags = ["人工智慧"]
+categories = ["觀想"]
 draft = true
 +++

@@ -2,7 +2,7 @@
 title = "程式語言中 Assignment 與 Binding 的差別"
 date = 2016-04-04
 tags = ["程式語言"]
-categories = ["文章"]
+categories = ["觀想"]
 draft = false
 +++
 
