@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不可觀修行筆記 —— 我修不知道;我觀不可觀。</title><link>http://hychen.me/</link><description>Recent content on 不可觀修行筆記 —— 我修不知道;我觀不可觀。</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 23 Jul 2021 02:25:00 +0800</lastBuildDate><atom:link href="http://hychen.me/index.xml" rel="self" type="application/rss+xml"/><item><title>數位發展部不應設址台南</title><link>http://hychen.me/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E4%B8%8D%E6%87%89%E8%A8%AD%E5%9D%80%E5%8F%B0%E5%8D%97/</link><pubDate>Fri, 23 Jul 2021 02:25:00 +0800</pubDate><guid>http://hychen.me/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E4%B8%8D%E6%87%89%E8%A8%AD%E5%9D%80%E5%8F%B0%E5%8D%97/</guid><description>&lt;p>先說結論，數位發展部設在台南，經費絕對打水漂，成立初衷一個都辦不到，變成硬體加值部。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>不可觀修行筆記 —— 我修不知道;我觀不可觀。</title><link>http://hychen.me/</link><description>Recent content on 不可觀修行筆記 —— 我修不知道;我觀不可觀。</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Fri, 27 Aug 2021 16:49:00 +0800</lastBuildDate><atom:link href="http://hychen.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Jobs-to-be-done 有兩種？</title><link>http://hychen.me/post/jobs-to-be-done-%E6%9C%89%E5%85%A9%E7%A8%AE/</link><pubDate>Fri, 27 Aug 2021 16:49:00 +0800</pubDate><guid>http://hychen.me/post/jobs-to-be-done-%E6%9C%89%E5%85%A9%E7%A8%AE/</guid><description>&lt;p>如同〈公地悲劇〉這個術語，實際上有兩篇（1968, 1993）論文討論，看法敻然不同，造成多數人在議論時指涉混淆。&lt;/p>
+&lt;p>Ulwick 是 《Jobs to Be Done: A Roadmap for Customer-Centered Innovation》一書的作者，這本書在臺灣新創圈受到熱烈推薦。
+然而大多數人不知道的是，Ulwick 在 twitter 上卻被質疑錯誤詮釋了 Christensen 的 Jobs-to-be-done 的概念，而後 Christensen 也做出了澄清。&lt;/p>
+&lt;p>簡單來說，Jobs-to-be-done 這個術語
+Christensen 跟 Ulwick 各自提出了兩種不同詮釋的 Jobs to be Done。這產生了混肴。對此，Alan Klement 於 2020 年撰有&lt;a href="http://hychen.me/Users/hychen/Zotero/storage/NAW3BX87/know-the-two-very-different-interpretations-of-jobs-to-be-done-5a18b748bd89.html">一文&lt;/a>給出說明。&lt;/p>
+&lt;p>這兩種 Jobs-to-be-done 的詮釋分別是:&lt;/p>
+&lt;ol>
+&lt;li>Jobs-As-Progress&lt;/li>
+&lt;li>Jobs-As-Activities&lt;/li>
+&lt;/ol>
+&lt;p>Jobs-As-Progress 是 Clayton Christensen, Bob Moseta, Alan Klement 提出的一種理論，這個模型指出消費者不想做任何工作，他們實際上想要的是正向改變他們的人生。&lt;/p>
+&lt;p>因此，產品開發者應該專注在如何幫助消費者達成改變。理想狀況下，消費者不需要做任何事情。Klemenet 同時提到，這個理論仍在發展中。
+任職 Facebook 新產品實驗部門，同時也是天使投資人的 Mohanty 基於這個理論給出了一個&lt;a href="https://review.firstround.com/build-products-that-solve-real-problems-with-this-lightweight-jtbd-framework">適用於 startup 的 JBTD 範本&lt;/a>。&lt;/p>
+&lt;p>Jobs-As-Activities 則是由 Ulwick 提出的一種實踐型方法論， 這個模型指出消費者模型購買產品，是因為他們想透過產品進行他們手上的工作。因此，產品開發ㄓ惡應該專注在他們怎麼使用產品，如何讓他們更有效率。&lt;/p>
+&lt;p>這個模型源自於 Ulwick 在 1991 年提出，計有
+84 個階段的的策略與發明流程——ODI (&lt;a href="#org2dfa473">Ulwick, n.d.&lt;/a>)。&lt;/p>
+&lt;p>我認為將這兩種不同的概念分別以 Changes-To-be-done，以及 Activities-To-be-done 分開稱呼，在討論上會比較容易精準指涉，Job 一詞實在太過語意不清。&lt;/p>
+&lt;p>至於哪一種較好？ 我無法給出定論。只是在學習這類知識時，釐清術語的定義頗為重要。據我考察的結果，Intercom 在進行產品開發時，不是採用 Ulwick 概念下的 Jobs-to-be-done (&lt;a href="#org2606c8e">Traynor, Adams, and Keating, n.d.&lt;/a>) ， 這裡到是很多臺灣人撰寫推薦文時，錯誤地將之列為範例。&lt;/p>
+&lt;h2 id="bibliography">Bibliography&lt;/h2>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->Traynor, Des, Paul Adams, and Geoffrey Keating. n.d. &lt;em>Intercom on Jobs-to-Be-Done&lt;/em>. Kindle. Amazon.&lt;/p>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->Ulwick, Anthony W. n.d. “Outcome-Driven Innovation® (ODI): Jobs-to-Be-Done Theory in Practice,” 27.&lt;/p></description></item><item><title>數位發展部不應設址台南</title><link>http://hychen.me/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E4%B8%8D%E6%87%89%E8%A8%AD%E5%9D%80%E5%8F%B0%E5%8D%97/</link><pubDate>Fri, 23 Jul 2021 02:25:00 +0800</pubDate><guid>http://hychen.me/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E4%B8%8D%E6%87%89%E8%A8%AD%E5%9D%80%E5%8F%B0%E5%8D%97/</guid><description>&lt;p>先說結論，數位發展部設在台南，經費絕對打水漂，成立初衷一個都辦不到，變成硬體加值部。&lt;/p>
 &lt;p>台南不適合，也沒有能力讓數位發展部可以發揮他被期許扮演的角色。何已見得，即便是資源豐沛的台北，面臨數位發展課題都遭遇人才不足，遑論曾為資訊荒漠的台南。觀乎台南對於數位發展的想像，不拖民進黨過去為人詬病的「硬體加值服務」想像。這樣的想像，是導致陳菊任內出現高雄軟體園區沒有網路，這類荒謬到難以置信的狀況原因之一。行文至此，不是想責備任何人，而是想點出基層做政策規劃的系統性問題。黃偉哲市長與蔡麗青執行長倡議過程中，言必稱台積電與綠能，顯然與郭老師負責籌備的數位發展部設立初衷有點脫節。數位發展部承載的期望很多，但短期內迫切需要發揮的功能有兩者，一為數位轉型法規調適，二為強化國家資安。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;p>中央政府博士雖多，卻沒有人可以在議題掃描到 &lt;a href="https://www.ndc.gov.tw/Content%5FList.aspx?n=49C4A38DD9249E3E">GDPR&lt;/a>，就能推出未來「數位疆土」（degital nation）防禦跟數位經濟的貿易戰會是重要課題，並據此提出對策，問題在哪? &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>各位可以想想。假若數位發展部在總統大選前就已成立，並落址台南，我很肯定蔡總統政見裡的這兩個主軸，不會受到重視，而會被硬體視角凝視忽略掉。&lt;/p>
 &lt;p>數位發展部設址台南，有兩個明顯缺點：&lt;/p>
