@@ -1,7 +1,6 @@
 ---
 title: "我的 Doom Emacs 設定"
-date: 2021-07-01
-lastmod: 2021-07-20T09:50:30+08:00
+lastmod: 2021-10-09T10:59:25+08:00
 tags: ["Emacs"]
 categories: ["設定檔"]
 draft: false
@@ -191,7 +190,8 @@ Doom [不推薦使用 Emacs 內建的機制](https://github.com/hlissner/doom-em
 
 ## Doom 模組 {#doom-模組}
 
-如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。下面這段代碼被寫入 `init.el` 中，以選擇要加載的模組。
+如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。
+下面這段代碼被寫入 `init.el` 中，以選擇要加載的模組。
 
 ```emacs-lisp
 (doom! :input
@@ -298,7 +298,7 @@ Doom [不推薦使用 Emacs 內建的機制](https://github.com/hlissner/doom-em
        ;;crystal           ; ruby at the speed of c
        ;;csharp            ; unity, .NET, and mono shenanigans
        ;;data              ; config/data formats
-       ;;(dart +flutter)   ; paint ui and not much else
+       (dart +flutter)   ; paint ui and not much else
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
@@ -330,7 +330,7 @@ Doom [不推薦使用 Emacs 內建的機制](https://github.com/hlissner/doom-em
         +pretty
         +dragndrop       ; drag & drop files/images into org buffers
         ;;+journal      ; maintain a simple personal diary / journal using in Emacs.
-        +roam
+        +roam2 ;; org-roam v2
         +noter
         +hugo           ; Enables integration with hugo to export from Emacs well-formed (blackfriday) markdown.
         +present        ; using org-mode for presentations
@@ -490,27 +490,29 @@ roam
 
 #### org-roam-server {#org-roam-server}
 
+org-roam-server 目前不相容 org-raom v2。
+
 ```emacs-lisp
-(package! org-roam-server :recipe (:host github :repo "org-roam/org-roam-server" :files ("*")))
+;(package! org-roam-server :recipe (:host github :repo "org-roam/org-roam-server" :files ("*")))
 ```
 
 ```emacs-lisp
-(use-package! org-roam-server
-  :after org-roam
-  :config
-  (setq org-roam-server-host "127.0.0.1"
-        org-roam-server-port 8080
-        org-roam-server-export-inline-images t
-        org-roam-server-authenticate nil
-        org-roam-server-network-arrows nil
-        org-roam-server-network-label-truncate t
-        org-roam-server-network-label-truncate-length 60
-        org-roam-server-network-label-wrap-length 20)
-  (defun org-roam-server-open ()
-    "Ensure the server is active, then open the roam graph."
-    (interactive)
-    (org-roam-server-mode 1)
-    (browse-url-xdg-open (format "http://localhost:%d" org-roam-server-port))))
+;(use-package! org-roam-server
+;  :after org-roam
+;  :config
+;  (setq org-roam-server-host "127.0.0.1"
+;        org-roam-server-port 8080
+;        org-roam-server-export-inline-images t
+;        org-roam-server-authenticate nil
+;        org-roam-server-network-arrows nil
+;        org-roam-server-network-label-truncate t
+;        org-roam-server-network-label-truncate-length 60
+;        org-roam-server-network-label-wrap-length 20)
+;  (defun org-roam-server-open ()
+;    "Ensure the server is active, then open the roam graph."
+;    (interactive)
+;    (org-roam-server-mode 1)
+;    (browse-url-xdg-open (format "http://localhost:%d" org-roam-server-port))))
 ```
 
 
@@ -524,45 +526,33 @@ roam
 ```emacs-lisp
 (after! org-roam
   (setq org-roam-dailies-capture-templates
-        `(("d" "default" entry
-         #'org-roam-capture--get-point
-         "* %?"
-         :file-name "daily/%<%Y-%m-%d>"
-         :head ,(concat "#+title: %<%Y-%m-%d>\n"
-                        "#+roam_tags: ritual\n\n"
+        `(("d" "default" entry"* %?"
+        :if-new (file+head "%<%Y-%m-%d>.org"
+                      ,(concat "#+title: %<%Y-%m-%d>\n"
+                        "\n"
                         "*Don't ignore your dreams; don't work too much; say what you think; cultivate friendships; be happy*\n"
                         "\n"
-                        "- tags ::\n"
-                        "- month ::\n "
-                        "\n"
-                        "* Morning Routines [/]\n"
-                        " - [ ] Brush my teeth\n"
-                        " - [ ] Folded quilts\n"
-                        " - [ ] Have a cup of coffe\n"
-                        " - [ ] Weighs myself\n"
-                        " - [ ] Listen FT times\n"
-                        " - [ ] Check [[https://fsinsight.com/members-area-crypto/][Crypto Daily]]\n"
-                        " - [ ] Yesterday journal if not done\n"
-                        " - [ ] Review this month's goal\n"
-                        " - [ ] Restruct TODOs\n"
-                        " - [ ] Plan today\n"
-                        " - [ ] Shave\n"
-                        " - [ ] Put on formal clothes\n"
-                        " - [ ] Go to office before 9:30\n"
-                        "* Evening Routines [/]\n"
-                        " - [ ] Leave office at 18:00\n"
-                        " - [ ] Take a bath\n"
-                        " - [ ] Put on casual clothes\n"
-                        " - [ ] Have dinner on time\n"
-                        " - [ ] Have fun (play games, watch TV etc.)\n"
-                        "* Night Rotuines [/]\n"
-                        " - [ ] Brush my teeth\n"
-                        " - [ ] Prepare my outfit for the next day\n"
-                        " - [ ] Go to bed before 23:30\n"
-                        " - [ ] Read a book at least 30 minutes\n"
-                        "* Day Plan\n"
-                        "* Journaling\n"
-                        "* Brain Dumps\n")
+                        "* 晨間儀式 [/]\n"
+                        " - [ ] 刷牙確保未來能一直享用美食\n"
+                        " - [ ] 刮鬍子消除頹廢感\n"
+                        " - [ ] 摺棉被強化自己是愛整潔之人的認同感\n"
+                        " - [ ] 量體重避免過度飲食\n"
+                        " - [ ] 製作媲美餐廳販售等級的早餐\n"
+                        " - [ ] 沖泡一杯香味濃郁的咖啡開始啟動大腦\n"
+                        " - [ ] 打開金融時報的 App ，挑一篇有興趣的文章聽朗讀，讓身體逐漸清醒\n"
+                        " - [ ] 閱讀 Fsinsight 的 [[https://fsinsight.com/members-area-crypto/][Crypto Daily]]了解當日行情\n"
+                        " - [ ] 安排本日行程，決定今天最重要的事情\n"
+                        "  - [ ] 查看日曆上已安排的行程\n"
+                        "  - [ ] 回顧本月目標，整理待辦事項\n"
+                        "  - [ ] 計畫今天要完成的事情\n"
+                        "* 重要事件\n"
+                        "* 雜念\n"
+                        "#+begin_comment\n"
+                        "- 今天從起床到現在，我經歷了什麼？\n"
+                        "- 今天有哪三樣事情我覺得感恩？\n"
+                        "- 今天有哪一樣事情我可以做得更好？具體地，我可以如何做得更好？\n"
+                        "#+end_comment\n"
+                        ))
          :unnarrowed t))))
 ```
 
@@ -648,9 +638,29 @@ roam
 (package! org-roam-bibtex
   :recipe (:host github :repo "org-roam/org-roam-bibtex"))
 ;; When using org-roam via the `+roam` flag
-(unpin! org-roam company-org-roam)
+(unpin! org-roam)
 ;; When using bibtex-completion via the `biblio` module
 (unpin! bibtex-completion helm-bibtex ivy-bibtex)
+```
+
+筆記的模板尚未決定，以下是目前考量的模板。閃念筆計紀錄在每日筆記中有它的好處，但寫在另一個專門的檔案也有好處。
+寫在每日筆記的缺點是每天晚上必須清理，否則就會忘記，不是很適合我這種有拖延症的人。
+
+```emacs-lisp
+(setq online-note-tpl
+      (concat
+       "#+title: {title}\n"
+       "#+filetags: online\n"
+       "#+roam_refs:{refs}\n\n"
+       "* 文章綜述\n"
+       "** 為什麼讀這個？\n"
+       "** 作者寫這篇文章的目的是什麼？\n"
+       "** 作者所述與我相關的是什麼？\n"
+       "** 作者所述有多可信，為何？\n"
+       "** 這篇文章於我何用？\n"
+       "** 閃念筆記\n"
+       "** 文獻筆記\n"
+       ))
 ```
 
 ```emacs-lisp
@@ -979,6 +989,7 @@ plantuml-download-jar
 | `SPC p a`     | 新增專案                                        | doom   |
 | `SPC p d`     | 移除專案                                        | doom   |
 | `SPC p p`     | 切換專案                                        | doom   |
+|               |                                                 |        |
 | `SPC n r f`   | 開起 Roam 筆記                                  | doom   |
 | `SPC n r i`   | 插入 Roam 筆記                                  | doom   |
 | `SPC n r I`   | 插入 Roam 筆記 (w/ org-capture)                 | doom   |
