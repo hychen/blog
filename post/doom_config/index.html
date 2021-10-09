@@ -24,12 +24,11 @@
 <meta property="og:description" content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://hychen.me/post/doom_config/"><meta property="article:section" content="post">
-<meta property="article:published_time" content="2021-07-01T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-07-20T09:50:30+08:00">
+<meta property="article:modified_time" content="2021-10-09T10:59:25+08:00">
 <meta itemprop=name content="我的 Doom Emacs 設定">
-<meta itemprop=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta itemprop=datePublished content="2021-07-01T00:00:00+00:00">
-<meta itemprop=dateModified content="2021-07-20T09:50:30+08:00">
-<meta itemprop=wordCount content="4656">
+<meta itemprop=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經">
+<meta itemprop=dateModified content="2021-10-09T10:59:25+08:00">
+<meta itemprop=wordCount content="5137">
 <meta itemprop=keywords content="Emacs,"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="我的 Doom Emacs 設定">
 <meta name=twitter:description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
@@ -128,8 +127,8 @@
 <header class=post-header>
 <h1 class=post-title>我的 Doom Emacs 設定</h1>
 <div class=post-meta>
-<time datetime=2021-07-01 class=post-time>
-2021-07-01
+<time datetime=2021-10-09 class=post-time>
+2021-10-09
 </time>
 <div class=post-category>
 <a href=http://hychen.me/categories/%E8%A8%AD%E5%AE%9A%E6%AA%94/> 設定檔 </a>
@@ -331,7 +330,8 @@
 </blockquote>
 <p>所有需要的設定都寫在這個檔案。</p>
 <h2 id=doom-模組>Doom 模組</h2>
-<p>如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。下面這段代碼被寫入 <code>init.el</code> 中，以選擇要加載的模組。</p>
+<p>如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。
+下面這段代碼被寫入 <code>init.el</code> 中，以選擇要加載的模組。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>doom!</span> <span class=nb>:input</span>
        <span class=c1>;;chinese</span>
        <span class=c1>;;japanese</span>
@@ -436,7 +436,7 @@
        <span class=c1>;;crystal           ; ruby at the speed of c</span>
        <span class=c1>;;csharp            ; unity, .NET, and mono shenanigans</span>
        <span class=c1>;;data              ; config/data formats</span>
-       <span class=c1>;;(dart +flutter)   ; paint ui and not much else</span>
+       <span class=p>(</span><span class=nv>dart</span> <span class=nv>+flutter</span><span class=p>)</span>   <span class=c1>; paint ui and not much else</span>
        <span class=c1>;;elixir            ; erlang done right</span>
        <span class=c1>;;elm               ; care for a cup of TEA?</span>
        <span class=nv>emacs-lisp</span>        <span class=c1>; drown in parentheses</span>
@@ -468,7 +468,7 @@
         <span class=nv>+pretty</span>
         <span class=nv>+dragndrop</span>       <span class=c1>; drag &amp; drop files/images into org buffers</span>
         <span class=c1>;;+journal      ; maintain a simple personal diary / journal using in Emacs.</span>
-        <span class=nv>+roam</span>
+        <span class=nv>+roam2</span> <span class=c1>;; org-roam v2</span>
         <span class=nv>+noter</span>
         <span class=nv>+hugo</span>           <span class=c1>; Enables integration with hugo to export from Emacs well-formed (blackfriday) markdown.</span>
         <span class=nv>+present</span>        <span class=c1>; using org-mode for presentations</span>
@@ -564,67 +564,56 @@
 <p><a href=https://www.orgroam.com/>org-roam</a> 是類似 Roam Research 的 org-mode 實現。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;roam&#34;</span> <span class=nv>org-directory</span><span class=p>)))</span>
 </code></pre></div><h4 id=org-roam-server>org-roam-server</h4>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-roam-server</span> <span class=nb>:recipe</span> <span class=p>(</span><span class=nb>:host</span> <span class=nv>github</span> <span class=nb>:repo</span> <span class=s>&#34;org-roam/org-roam-server&#34;</span> <span class=nb>:files</span> <span class=p>(</span><span class=s>&#34;*&#34;</span><span class=p>)))</span>
-</code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-roam-server</span>
-  <span class=nb>:after</span> <span class=nv>org-roam</span>
-  <span class=nb>:config</span>
-  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-server-host</span> <span class=s>&#34;127.0.0.1&#34;</span>
-        <span class=nv>org-roam-server-port</span> <span class=mi>8080</span>
-        <span class=nv>org-roam-server-export-inline-images</span> <span class=no>t</span>
-        <span class=nv>org-roam-server-authenticate</span> <span class=no>nil</span>
-        <span class=nv>org-roam-server-network-arrows</span> <span class=no>nil</span>
-        <span class=nv>org-roam-server-network-label-truncate</span> <span class=no>t</span>
-        <span class=nv>org-roam-server-network-label-truncate-length</span> <span class=mi>60</span>
-        <span class=nv>org-roam-server-network-label-wrap-length</span> <span class=mi>20</span><span class=p>)</span>
-  <span class=p>(</span><span class=nb>defun</span> <span class=nv>org-roam-server-open</span> <span class=p>()</span>
-    <span class=s>&#34;Ensure the server is active, then open the roam graph.&#34;</span>
-    <span class=p>(</span><span class=nb>interactive</span><span class=p>)</span>
-    <span class=p>(</span><span class=nv>org-roam-server-mode</span> <span class=mi>1</span><span class=p>)</span>
-    <span class=p>(</span><span class=nv>browse-url-xdg-open</span> <span class=p>(</span><span class=nf>format</span> <span class=s>&#34;http://localhost:%d&#34;</span> <span class=nv>org-roam-server-port</span><span class=p>))))</span>
+<p>org-roam-server 目前不相容 org-raom v2。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=c1>;(package! org-roam-server :recipe (:host github :repo &#34;org-roam/org-roam-server&#34; :files (&#34;*&#34;)))</span>
+</code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=c1>;(use-package! org-roam-server</span>
+<span class=c1>;  :after org-roam</span>
+<span class=c1>;  :config</span>
+<span class=c1>;  (setq org-roam-server-host &#34;127.0.0.1&#34;</span>
+<span class=c1>;        org-roam-server-port 8080</span>
+<span class=c1>;        org-roam-server-export-inline-images t</span>
+<span class=c1>;        org-roam-server-authenticate nil</span>
+<span class=c1>;        org-roam-server-network-arrows nil</span>
+<span class=c1>;        org-roam-server-network-label-truncate t</span>
+<span class=c1>;        org-roam-server-network-label-truncate-length 60</span>
+<span class=c1>;        org-roam-server-network-label-wrap-length 20)</span>
+<span class=c1>;  (defun org-roam-server-open ()</span>
+<span class=c1>;    &#34;Ensure the server is active, then open the roam graph.&#34;</span>
+<span class=c1>;    (interactive)</span>
+<span class=c1>;    (org-roam-server-mode 1)</span>
+<span class=c1>;    (browse-url-xdg-open (format &#34;http://localhost:%d&#34; org-roam-server-port))))</span>
 </code></pre></div><h3 id=日記>日記</h3>
 <p>每日日記不僅是作為一天開始的計畫工具，也是一個時間帳本。他促使我深層思考我的時間應該如何花費得更有價值。當我醒來時，我想要坐在桌之前，開始寫今天的日記，想像一下今天會發生什麼事情。寫作不僅助於組織我的思想，還能幫助我計畫我的一天。當我打開日記時，我想看到我應該遵循的晨間慣例，這些慣例是我在一週之初、一月之初、一年之初制訂的，做一個新開始的希望，就像一座燈塔，引導我的靈魂在一個所有算法都在爭奪注意力的世代中生存。</p>
 <h4 id=org-roam-daily>org-roam-daily</h4>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span>
   <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-dailies-capture-templates</span>
-        <span class=o>`</span><span class=p>((</span><span class=s>&#34;d&#34;</span> <span class=s>&#34;default&#34;</span> <span class=nv>entry</span>
-         <span class=nf>#&#39;</span><span class=nv>org-roam-capture--get-point</span>
-         <span class=s>&#34;* %?&#34;</span>
-         <span class=nb>:file-name</span> <span class=s>&#34;daily/%&lt;%Y-%m-%d&gt;&#34;</span>
-         <span class=nb>:head</span> <span class=o>,</span><span class=p>(</span><span class=nf>concat</span> <span class=s>&#34;#+title: %&lt;%Y-%m-%d&gt;\n&#34;</span>
-                        <span class=s>&#34;#+roam_tags: ritual\n\n&#34;</span>
+        <span class=o>`</span><span class=p>((</span><span class=s>&#34;d&#34;</span> <span class=s>&#34;default&#34;</span> <span class=nv>entry</span><span class=s>&#34;* %?&#34;</span>
+        <span class=nb>:if-new</span> <span class=p>(</span><span class=nv>file+head</span> <span class=s>&#34;%&lt;%Y-%m-%d&gt;.org&#34;</span>
+                      <span class=o>,</span><span class=p>(</span><span class=nf>concat</span> <span class=s>&#34;#+title: %&lt;%Y-%m-%d&gt;\n&#34;</span>
+                        <span class=s>&#34;\n&#34;</span>
                         <span class=s>&#34;*Don&#39;t ignore your dreams; don&#39;t work too much; say what you think; cultivate friendships; be happy*\n&#34;</span>
                         <span class=s>&#34;\n&#34;</span>
-                        <span class=s>&#34;- tags ::\n&#34;</span>
-                        <span class=s>&#34;- month ::\n &#34;</span>
-                        <span class=s>&#34;\n&#34;</span>
-                        <span class=s>&#34;* Morning Routines [/]\n&#34;</span>
-                        <span class=s>&#34; - [ ] Brush my teeth\n&#34;</span>
-                        <span class=s>&#34; - [ ] Folded quilts\n&#34;</span>
-                        <span class=s>&#34; - [ ] Have a cup of coffe\n&#34;</span>
-                        <span class=s>&#34; - [ ] Weighs myself\n&#34;</span>
-                        <span class=s>&#34; - [ ] Listen FT times\n&#34;</span>
-                        <span class=s>&#34; - [ ] Check [[https://fsinsight.com/members-area-crypto/][Crypto Daily]]\n&#34;</span>
-                        <span class=s>&#34; - [ ] Yesterday journal if not done\n&#34;</span>
-                        <span class=s>&#34; - [ ] Review this month&#39;s goal\n&#34;</span>
-                        <span class=s>&#34; - [ ] Restruct TODOs\n&#34;</span>
-                        <span class=s>&#34; - [ ] Plan today\n&#34;</span>
-                        <span class=s>&#34; - [ ] Shave\n&#34;</span>
-                        <span class=s>&#34; - [ ] Put on formal clothes\n&#34;</span>
-                        <span class=s>&#34; - [ ] Go to office before 9:30\n&#34;</span>
-                        <span class=s>&#34;* Evening Routines [/]\n&#34;</span>
-                        <span class=s>&#34; - [ ] Leave office at 18:00\n&#34;</span>
-                        <span class=s>&#34; - [ ] Take a bath\n&#34;</span>
-                        <span class=s>&#34; - [ ] Put on casual clothes\n&#34;</span>
-                        <span class=s>&#34; - [ ] Have dinner on time\n&#34;</span>
-                        <span class=s>&#34; - [ ] Have fun (play games, watch TV etc.)\n&#34;</span>
-                        <span class=s>&#34;* Night Rotuines [/]\n&#34;</span>
-                        <span class=s>&#34; - [ ] Brush my teeth\n&#34;</span>
-                        <span class=s>&#34; - [ ] Prepare my outfit for the next day\n&#34;</span>
-                        <span class=s>&#34; - [ ] Go to bed before 23:30\n&#34;</span>
-                        <span class=s>&#34; - [ ] Read a book at least 30 minutes\n&#34;</span>
-                        <span class=s>&#34;* Day Plan\n&#34;</span>
-                        <span class=s>&#34;* Journaling\n&#34;</span>
-                        <span class=s>&#34;* Brain Dumps\n&#34;</span><span class=p>)</span>
+                        <span class=s>&#34;* 晨間儀式 [/]\n&#34;</span>
+                        <span class=s>&#34; - [ ] 刷牙確保未來能一直享用美食\n&#34;</span>
+                        <span class=s>&#34; - [ ] 刮鬍子消除頹廢感\n&#34;</span>
+                        <span class=s>&#34; - [ ] 摺棉被強化自己是愛整潔之人的認同感\n&#34;</span>
+                        <span class=s>&#34; - [ ] 量體重避免過度飲食\n&#34;</span>
+                        <span class=s>&#34; - [ ] 製作媲美餐廳販售等級的早餐\n&#34;</span>
+                        <span class=s>&#34; - [ ] 沖泡一杯香味濃郁的咖啡開始啟動大腦\n&#34;</span>
+                        <span class=s>&#34; - [ ] 打開金融時報的 App ，挑一篇有興趣的文章聽朗讀，讓身體逐漸清醒\n&#34;</span>
+                        <span class=s>&#34; - [ ] 閱讀 Fsinsight 的 [[https://fsinsight.com/members-area-crypto/][Crypto Daily]]了解當日行情\n&#34;</span>
+                        <span class=s>&#34; - [ ] 安排本日行程，決定今天最重要的事情\n&#34;</span>
+                        <span class=s>&#34;  - [ ] 查看日曆上已安排的行程\n&#34;</span>
+                        <span class=s>&#34;  - [ ] 回顧本月目標，整理待辦事項\n&#34;</span>
+                        <span class=s>&#34;  - [ ] 計畫今天要完成的事情\n&#34;</span>
+                        <span class=s>&#34;* 重要事件\n&#34;</span>
+                        <span class=s>&#34;* 雜念\n&#34;</span>
+                        <span class=s>&#34;#+begin_comment\n&#34;</span>
+                        <span class=s>&#34;- 今天從起床到現在，我經歷了什麼？\n&#34;</span>
+                        <span class=s>&#34;- 今天有哪三樣事情我覺得感恩？\n&#34;</span>
+                        <span class=s>&#34;- 今天有哪一樣事情我可以做得更好？具體地，我可以如何做得更好？\n&#34;</span>
+                        <span class=s>&#34;#+end_comment\n&#34;</span>
+                        <span class=p>))</span>
          <span class=nb>:unnarrowed</span> <span class=no>t</span><span class=p>))))</span>
 </code></pre></div><h3 id=文獻管理>文獻管理</h3>
 <p>主要用 <a href=https://github.com/org-roam/org-roam-bibtex>Org Roam BibTeX（ORB）</a>與 <a href=https://www.zotero.org/>Zotero </a>一起管理引文。它允許我使用 <a href=https://www.orgroam.com/>Org Roam </a>管理我的書目註釋，並通過ivy-bibtex訪問org-roam-directory中的註釋，或者通過打開 <a href=https://github.com/jkitchin/org-ref>org-ref</a> 的cite: 鏈接來訪問。</p>
@@ -678,9 +667,25 @@
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-roam-bibtex</span>
   <span class=nb>:recipe</span> <span class=p>(</span><span class=nb>:host</span> <span class=nv>github</span> <span class=nb>:repo</span> <span class=s>&#34;org-roam/org-roam-bibtex&#34;</span><span class=p>))</span>
 <span class=c1>;; When using org-roam via the `+roam` flag</span>
-<span class=p>(</span><span class=nv>unpin!</span> <span class=nv>org-roam</span> <span class=nv>company-org-roam</span><span class=p>)</span>
+<span class=p>(</span><span class=nv>unpin!</span> <span class=nv>org-roam</span><span class=p>)</span>
 <span class=c1>;; When using bibtex-completion via the `biblio` module</span>
 <span class=p>(</span><span class=nv>unpin!</span> <span class=nv>bibtex-completion</span> <span class=nv>helm-bibtex</span> <span class=nv>ivy-bibtex</span><span class=p>)</span>
+</code></pre></div><p>筆記的模板尚未決定，以下是目前考量的模板。閃念筆計紀錄在每日筆記中有它的好處，但寫在另一個專門的檔案也有好處。
+寫在每日筆記的缺點是每天晚上必須清理，否則就會忘記，不是很適合我這種有拖延症的人。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nb>setq</span> <span class=nv>online-note-tpl</span>
+      <span class=p>(</span><span class=nf>concat</span>
+       <span class=s>&#34;#+title: {title}\n&#34;</span>
+       <span class=s>&#34;#+filetags: online\n&#34;</span>
+       <span class=s>&#34;#+roam_refs:{refs}\n\n&#34;</span>
+       <span class=s>&#34;* 文章綜述\n&#34;</span>
+       <span class=s>&#34;** 為什麼讀這個？\n&#34;</span>
+       <span class=s>&#34;** 作者寫這篇文章的目的是什麼？\n&#34;</span>
+       <span class=s>&#34;** 作者所述與我相關的是什麼？\n&#34;</span>
+       <span class=s>&#34;** 作者所述有多可信，為何？\n&#34;</span>
+       <span class=s>&#34;** 這篇文章於我何用？\n&#34;</span>
+       <span class=s>&#34;** 閃念筆記\n&#34;</span>
+       <span class=s>&#34;** 文獻筆記\n&#34;</span>
+       <span class=p>))</span>
 </code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-roam-bibtex</span>
   <span class=nb>:after</span> <span class=nv>org-roam</span>
   <span class=nb>:hook</span> <span class=p>(</span><span class=nv>org-roam-mode</span> <span class=o>.</span> <span class=nv>org-roam-bibtex-mode</span><span class=p>)</span>
@@ -1010,6 +1015,11 @@
 <td>doom</td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td><code>SPC n r f</code></td>
 <td>開起 Roam 筆記</td>
 <td>doom</td>
@@ -1069,7 +1079,7 @@
 <p class=copyright-item>
 <span class=item-title>上次更新</span>
 <span class=item-content>
-2021-07-20
+2021-10-09
 </span>
 </p>
 <p class=copyright-item>
@@ -1082,14 +1092,8 @@
 <a href=http://hychen.me/tags/emacs/>Emacs</a>
 </div>
 <nav class=post-nav>
-<a class=prev href=/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E4%B8%8D%E6%87%89%E8%A8%AD%E5%9D%80%E5%8F%B0%E5%8D%97/>
-<i class=iconfont><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"><path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417l277.93508-310.326815c11.338233-12.190647 11.035334-32.285311-.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"/></svg>
-</i>
-<span class="prev-text nav-default">數位發展部不應設址台南</span>
-<span class="prev-text nav-mobile">上一篇</span>
-</a>
-<a class=next href=/post/%E6%95%B8%E4%BD%8D%E7%99%BC%E5%B1%95%E9%83%A8%E6%87%89%E8%A9%B2%E8%A8%AD%E5%9D%80%E6%96%B0%E5%8C%97%E6%96%B0%E8%8E%8A/>
-<span class="next-text nav-default">數位發展部應設址新北新莊</span>
+<a class=next href=/post/%E8%87%BA%E5%8D%97%E8%88%8A%E5%9F%8E%E5%8D%80%E8%B6%8A%E4%BE%86%E8%B6%8A%E9%9B%A3%E4%BB%A5%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BE%8E%E9%BA%97%E5%A4%A9%E9%9A%9B%E7%B7%9A/>
+<span class="next-text nav-default">臺南舊城區越來越難以保存的美麗天際線</span>
 <span class="prev-text nav-mobile">下一篇</span>
 <i class=iconfont><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"><path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697c-11.777231-11.500939-30.216186-10.304694-41.178865 2.712784z"/></svg>
 </i>
