@@ -1,11 +1,26 @@
-<!doctype html><html lang=zh-tw itemscope itemtype=http://schema.org/WebPage><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>我的 Doom Emacs 設定 - 不可觀修行筆記 —— 我修不知道;我觀不可觀。</title><meta name=renderer content="webkit"><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=yes"><meta name=MobileOptimized content="width"><meta name=HandheldFriendly content="true"><meta name=applicable-device content="pc,mobile"><meta name=theme-color content="#f8f5ec"><meta name=msapplication-navbutton-color content="#f8f5ec"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="#f8f5ec"><meta name=mobile-web-app-capable content="yes"><meta name=author content="陳信屹"><meta name=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta name=keywords content="投資,讀書,電動"><meta name=generator content="Hugo 0.98.0"><link rel=canonical href=http://hychen.me/post/doom_config/><link rel=icon href=/favicon.ico><link rel=stylesheet href=/sass/jane.min.fa4b2b9f31b5c6d0b683db81157a9226e17b06e61911791ab547242a4a0556f2.css integrity="sha256-+ksrnzG1xtC2g9uBFXqSJuF7BuYZEXkatUckKkoFVvI=" media=screen crossorigin=anonymous><meta property="og:title" content="我的 Doom Emacs 設定"><meta property="og:description" content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta property="og:type" content="article"><meta property="og:url" content="http://hychen.me/post/doom_config/"><meta property="article:section" content="post"><meta property="article:modified_time" content="2021-10-09T10:59:25+08:00"><meta itemprop=name content="我的 Doom Emacs 設定"><meta itemprop=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><meta itemprop=dateModified content="2021-10-09T10:59:25+08:00"><meta itemprop=wordCount content="5137"><meta itemprop=keywords content="Emacs,"><meta name=twitter:card content="summary"><meta name=twitter:title content="我的 Doom Emacs 設定"><meta name=twitter:description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body><div id=mobile-navbar class=mobile-navbar><div class=mobile-header-logo><a href=/ class=logo>不可觀修行筆記</a></div><div class=mobile-navbar-icon><span></span>
-<span></span>
-<span></span></div></div><nav id=mobile-menu class="mobile-menu slideout-menu"><ul class=mobile-menu-list><li class=mobile-menu-item><a class=menu-item-link href=http://hychen.me/>主頁</a></li><li class=mobile-menu-item><a class=menu-item-link href=http://hychen.me/post/>歸檔</a></li><li class=mobile-menu-item><a class=menu-item-link href=http://hychen.me/tags/>標籤</a></li><li class=mobile-menu-item><a class=menu-item-link href=http://hychen.me/categories/>分類</a></li></ul></nav><link rel=stylesheet href=/lib/photoswipe/photoswipe.min.css><link rel=stylesheet href=/lib/photoswipe/default-skin/default-skin.min.css><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header id=header class="header container"><div class=logo-wrapper><a href=/ class=logo>不可觀修行筆記</a></div><nav class=site-navbar><ul id=menu class=menu><li class=menu-item><a class=menu-item-link href=http://hychen.me/>主頁</a></li><li class=menu-item><a class=menu-item-link href=http://hychen.me/post/>歸檔</a></li><li class=menu-item><a class=menu-item-link href=http://hychen.me/tags/>標籤</a></li><li class=menu-item><a class=menu-item-link href=http://hychen.me/categories/>分類</a></li></ul></nav></header><div id=mobile-panel><main id=main class="main bg-llight"><div class=content-wrapper><div id=content class="content container"><article class="post bg-white"><header class=post-header><h1 class=post-title>我的 Doom Emacs 設定</h1><div class=post-meta><time datetime=2021-10-09 class=post-time>2021-10-09</time><div class=post-category><a href=http://hychen.me/categories/%E8%A8%AD%E5%AE%9A%E6%AA%94/>設定檔</a></div></div></header><div class=post-toc id=post-toc><h2 class=post-toc-title>文章目錄</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><a href=#原則>原則</a></li><li><a href=#doom-設定檔概要>Doom 設定檔概要</a></li><li><a href=#設定檔檔頭>設定檔檔頭</a></li><li><a href=#自定義變數>自定義變數</a></li><li><a href=#doom-模組>Doom 模組</a></li><li><a href=#一般設定>一般設定</a><ul><li><a href=#個人資訊>個人資訊</a></li><li><a href=#視窗設定>視窗設定</a></li></ul></li><li><a href=#org-mode>Org Mode</a><ul><li><a href=#文件結構樹>文件結構樹</a></li><li><a href=#筆記>筆記</a></li><li><a href=#日記>日記</a></li><li><a href=#文獻管理>文獻管理</a></li><li><a href=#代辦事項>代辦事項</a></li><li><a href=#行事曆>行事曆</a></li><li><a href=#hugo>Hugo</a></li><li><a href=#plantuml>Plantuml</a></li><li><a href=#latex>Latex</a></li></ul></li><li><a href=#快捷鍵配置>快捷鍵配置</a></li><li><a href=#感謝>感謝</a></li></ul></nav></div></div><div class=post-content><p>這是一份「文學編程」（literate）org 文件。 當 <a href=https://github.com/hlissner/doom-emacs/tree/develop/modules/config/literate>literate</a> 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經驗。</p><h2 id=原則>原則</h2><ol><li>所有的設定檔都應該有註解;</li><li>所有的模組宣告必須寫在 <code>init.el</code>.</li><li>所有的 package! 宣告必須寫在 <code>packages.el</code>.</li><li>所有的其他 LISP code 比需寫在 <code>config.el</code>.</li></ol><h2 id=doom-設定檔概要>Doom 設定檔概要</h2><p>Doom Emacs 使用下面三個檔案:</p><dl><dt>init.el</dt><dd>定義哪些 Doom 模組會被讀取。</dd><dt>packages.el</dt><dd>定義哪些套件應該被安裝。</dd><dt>config.el</dt><dd>包含所有自定的設定檔和程試碼。</dd></dl><p>所有的設定檔從這個檔案產生，並且盡可能清楚。</p><h2 id=設定檔檔頭>設定檔檔頭</h2><p>這些檔案檔頭來自安裝doom時產生的初始化文件，包含一些 Emacs-LISP 相關的指標，如詞法綁定，或者關於文件內容的說明。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;;; init.el -*- lexical-binding: t; -*-</span>
+<!doctype html><html lang=zh-tw><head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"><meta charset=utf-8><meta name=generator content="Hugo 0.98.0"><meta name=theme-color content="#fff"><meta name=color-scheme content="light dark"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=format-detection content="telephone=no, date=no, address=no, email=no"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><title>我的 Doom Emacs 設定 | 不可觀修行筆記</title><link rel=stylesheet href=/css/meme.min.09c5312eebd54a7b6eb9c92e6f7a9f701c90da1055979b5ec0fa7c4c51b44099.css><script src=/js/meme.min.c2f5eec2d93b9454b1e72c50a3ca3a6189150493a987de43ac7dead8f5f901b6.js></script>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"></noscript><meta name=author content="陳信屹"><meta name=description content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟……"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=mask-icon href=/icons/safari-pinned-tab.svg color=#2a6df4><link rel=apple-touch-icon sizes=180x180 href=/icons/apple-touch-icon.png><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-title content="不可觀修行筆記"><meta name=apple-mobile-web-app-status-bar-style content="black"><meta name=mobile-web-app-capable content="yes"><meta name=application-name content="不可觀修行筆記"><meta name=msapplication-starturl content="../../"><meta name=msapplication-TileColor content="#fff"><meta name=msapplication-TileImage content="../../icons/mstile-150x150.png"><link rel=manifest href=/manifest.json><link rel=canonical href=https://hychen.me/post/doom_config/><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","datePublished":"2021-01-01T20:17:43+00:00","dateModified":"2021-10-09T10:59:25+08:00","url":"https://hychen.me/post/doom_config/","headline":"我的 Doom Emacs 設定","description":"這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟……","inLanguage":"zh-TW","articleSection":"post","wordCount":5786,"image":"https://hychen.me/icons/apple-touch-icon.png","author":{"@type":"Person","url":"https://hychen.me/","name":"陳信屹"},"license":"[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)","publisher":{"@type":"Organization","name":"不可觀修行筆記","logo":{"@type":"ImageObject","url":"https://hychen.me/icons/apple-touch-icon.png"},"url":"https://hychen.me/"},"mainEntityOfPage":{"@type":"WebSite","@id":"https://hychen.me/"}}</script><meta name=twitter:card content="summary"><meta name=twitter:site content="@hychen"><meta name=twitter:creator content="@hychen"><meta property="og:title" content="我的 Doom Emacs 設定"><meta property="og:description" content="這是一份「文學編程」（literate）org 文件。 當 literate 模組被啟用，Doom Emacs 會在啟……"><meta property="og:url" content="https://hychen.me/post/doom_config/"><meta property="og:site_name" content="不可觀修行筆記"><meta property="og:locale" content="zh-tw"><meta property="og:image" content="https://hychen.me/icons/apple-touch-icon.png"><meta property="og:type" content="article"><meta property="article:published_time" content="2021-01-01T20:17:43+00:00"><meta property="article:modified_time" content="2021-10-09T10:59:25+08:00"><meta property="article:section" content="post"></head><body><div class=container><nav class=nav><ul class=menu id=menu><li class=menu-item><a href=/><span class=menu-item-name>首頁</span></a></li><li class="menu-item active"><a href=/post/><span class=menu-item-name>文章</span></a></li><li class=menu-item><a href=/categories/><span class=menu-item-name>分類</span></a></li><li class=menu-item><a href=/tags/><span class=menu-item-name>標籤</span></a></li><li class=menu-item><a href><span class=menu-item-name>關於</span></a></li></ul></nav><main class="main single" id=main><div class=main-inner><article class="content post h-entry" data-align=justify data-type=post data-toc-num=true><h1 class="post-title p-name">我的 Doom Emacs 設定</h1><div class=post-meta><time datetime=2021-10-09T10:59:25+08:00 class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M4e2 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627.0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627.0-12 5.373-12 12v52H48C21.49 64 0 85.49.0 112v352c0 26.51 21.49 48 48 48h352c26.51.0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 4e2H54a6 6 0 01-6-6V160h352v298a6 6 0 01-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2021/10/9</time>
+<span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49.0 112v288c0 26.51 21.49 48 48 48h416c26.51.0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href=/categories/%E8%A8%AD%E5%AE%9A%E6%AA%94/ class="category-link p-category">設定檔</a></span>
+<span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3.0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9.0l60.1 60.1c18.8 18.7 18.8 49.1.0 67.9zM284.2 99.8 21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3.0-17l-111-111c-4.8-4.7-12.4-4.7-17.1.0zM124.1 339.9c-5.5-5.5-5.5-14.3.0-19.8l154-154c5.5-5.5 14.3-5.5 19.8.0s5.5 14.3.0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8.0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;5786</span>
+<span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5.0-2e2-89.5-2e2-2e2S145.5 56 256 56s2e2 89.5 2e2 2e2-89.5 2e2-2e2 2e2zm61.8-104.4-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6.0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;12&nbsp;分鐘</span></div><div class="post-body e-content"><p>這是一份「文學編程」（literate）org 文件。 當 <a href=https://github.com/hlissner/doom-emacs/tree/develop/modules/config/literate target=_blank rel=noopener>literate</a> 模組被啟用，Doom Emacs 會在啟動時或設定檔改變自動 tangle。讀者應具備對 Emacs 的使用經驗。</p><h2 id=原則><a href=#原則 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>原則</h2><ol><li>所有的設定檔都應該有註解;</li><li>所有的模組宣告必須寫在 <code>init.el</code>.</li><li>所有的 package! 宣告必須寫在 <code>packages.el</code>.</li><li>所有的其他 LISP code 比需寫在 <code>config.el</code>.</li></ol><h2 id=doom-設定檔概要><a href=#doom-設定檔概要 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Doom 設定檔概要</h2><p>Doom Emacs 使用下面三個檔案:</p><dl><dt>init.el</dt><dd>定義哪些 Doom 模組會被讀取。</dd><dt>packages.el</dt><dd>定義哪些套件應該被安裝。</dd><dt>config.el</dt><dd>包含所有自定的設定檔和程試碼。</dd></dl><p>所有的設定檔從這個檔案產生，並且盡可能清楚。</p><h2 id=設定檔檔頭><a href=#設定檔檔頭 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>設定檔檔頭</h2><p>這些檔案檔頭來自安裝doom時產生的初始化文件，包含一些 Emacs-LISP 相關的指標，如詞法綁定，或者關於文件內容的說明。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;;; init.el -*- lexical-binding: t; -*-</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; DO NOT EDIT THIS FILE DIRECTLY</span>
 </span></span><span class=line><span class=cl><span class=c1>;; This is a file generated from a literate programing source file.</span>
@@ -23,7 +38,61 @@
 </span></span><span class=line><span class=cl><span class=c1>;;</span>
 </span></span><span class=line><span class=cl><span class=c1>;;      Alternatively, press &#39;gd&#39; (or &#39;C-c c d&#39;) on a module to browse its</span>
 </span></span><span class=line><span class=cl><span class=c1>;;      directory (for easy access to its source code).</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; -*- no-byte-compile: t; -*-</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; -*- no-byte-compile: t; -*-</span>
 </span></span><span class=line><span class=cl><span class=c1>;;; $DOOMDIR/packages.el</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; DO NOT EDIT THIS FILE DIRECTLY</span>
@@ -77,7 +146,65 @@
 </span></span><span class=line><span class=cl><span class=c1>;;(unpin! pinned-package another-pinned-package)</span>
 </span></span><span class=line><span class=cl><span class=c1>;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)</span>
 </span></span><span class=line><span class=cl><span class=c1>;;(unpin! t)</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;;; config.el -*- lexical-binding: t; -*-</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;;; config.el -*- lexical-binding: t; -*-</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>;; DO NOT EDIT THIS FILE DIRECTLY</span>
 </span></span><span class=line><span class=cl><span class=c1>;; This is a file generated from a literate programing source file.</span>
@@ -135,8 +262,184 @@
 </span></span><span class=line><span class=cl><span class=c1>;;</span>
 </span></span><span class=line><span class=cl><span class=c1>;; You can also try &#39;gd&#39; (or &#39;C-c c d&#39;) to jump to their definition and see how</span>
 </span></span><span class=line><span class=cl><span class=c1>;; they are implemented.</span>
-</span></span></code></pre></div><h2 id=自定義變數>自定義變數</h2><p>Doom <a href=https://github.com/hlissner/doom-emacs/blob/develop/docs/getting%5Fstarted.org#configure>不推薦使用 Emacs 內建的機制</a>:</p><blockquote><p>Note: do not use M-x customize or the customize API in general. Doom is designed to be configured programmatically from your config.el, which can conflict with Customize’s way of modifying variables.</p><p>If you’re concerned about defcustom setters, Doom has a setq! macro that will trigger them.</p></blockquote><p>所有需要的設定都寫在這個檔案。</p><h2 id=doom-模組>Doom 模組</h2><p>如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。
-下面這段代碼被寫入 <code>init.el</code> 中，以選擇要加載的模組。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>doom!</span> <span class=nb>:input</span>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=自定義變數><a href=#自定義變數 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>自定義變數</h2><p>Doom <a href=https://github.com/hlissner/doom-emacs/blob/develop/docs/getting%5Fstarted.org#configure target=_blank rel=noopener>不推薦使用 Emacs 內建的機制</a>:</p><blockquote><p>Note: do not use M-x customize or the customize API in general. Doom is designed to be configured programmatically from your config.el, which can conflict with Customize’s way of modifying variables.</p><p>If you’re concerned about defcustom setters, Doom has a setq! macro that will trigger them.</p></blockquote><p>所有需要的設定都寫在這個檔案。</p><h2 id=doom-模組><a href=#doom-模組 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Doom 模組</h2><p>如同 Spaceemacs, Doom Emacs 的社群提供大量設定好的配置讓我們使用。
+下面這段代碼被寫入 <code>init.el</code> 中，以選擇要加載的模組。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>doom!</span> <span class=nb>:input</span>
 </span></span><span class=line><span class=cl>       <span class=c1>;;chinese</span>
 </span></span><span class=line><span class=cl>       <span class=c1>;;japanese</span>
 </span></span><span class=line><span class=cl>       <span class=c1>;;layout            ; auie,ctsrnm is the superior home row</span>
@@ -312,33 +615,75 @@
 </span></span><span class=line><span class=cl>       <span class=nb>:config</span>
 </span></span><span class=line><span class=cl>       <span class=nv>literate</span>
 </span></span><span class=line><span class=cl>       <span class=p>(</span><span class=nv>default</span> <span class=nv>+bindings</span><span class=p>))</span>
-</span></span></code></pre></div><h2 id=一般設定>一般設定</h2><h3 id=個人資訊>個人資訊</h3><p>用來識別我自己的功能。e.g. GPG 設定, Email 客戶端。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nf>user-full-name</span> <span class=s>&#34;Hsin-Yi Chen&#34;</span>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=一般設定><a href=#一般設定 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>一般設定</h2><h3 id=個人資訊><a href=#個人資訊 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>個人資訊</h3><p>用來識別我自己的功能。e.g. GPG 設定, Email 客戶端。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nf>user-full-name</span> <span class=s>&#34;Hsin-Yi Chen&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=nv>user-mail-address</span> <span class=s>&#34;ossug.hychen@gmail.com&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=nv>user-blog-basedir</span> <span class=s>&#34;~/github/hychen/blog/&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=nv>user-blog-url</span> <span class=s>&#34;https://hychen.me&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=p>)</span>
-</span></span></code></pre></div><h3 id=視窗設定>視窗設定</h3><p>如果由Emacs 指令或桌面文件啟動，則在啟動時將視窗最大化。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>if</span> <span class=p>(</span><span class=nf>eq</span> <span class=nv>initial-window-system</span> <span class=ss>&#39;x</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=視窗設定><a href=#視窗設定 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>視窗設定</h3><p>如果由Emacs 指令或桌面文件啟動，則在啟動時將視窗最大化。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>if</span> <span class=p>(</span><span class=nf>eq</span> <span class=nv>initial-window-system</span> <span class=ss>&#39;x</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nv>toggle-frame-maximized</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nv>toggle-frame-fullscreen</span><span class=p>))</span>
-</span></span></code></pre></div><p>字型設定。 我目前使用 Manaco。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>doom-font</span> <span class=p>(</span><span class=nf>font-spec</span> <span class=nb>:family</span> <span class=s>&#34;Monaco&#34;</span> <span class=nb>:size</span> <span class=mi>16</span> <span class=nb>:weight</span> <span class=ss>&#39;semi-light</span><span class=p>))</span>
-</span></span></code></pre></div><p>主題使用預設。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>doom-theme</span> <span class=ss>&#39;doom-one</span><span class=p>)</span>
-</span></span></code></pre></div><h2 id=org-mode>Org Mode</h2><p>使用 Dropbox 做跨裝置的檔案同步備份。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>shared-directory</span> <span class=s>&#34;~/Dropbox&#34;</span><span class=p>)</span>
-</span></span></code></pre></div><p>Org 文件的預設目錄位置</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>org-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;org&#34;</span> <span class=nv>shared-directory</span><span class=p>))</span>
-</span></span></code></pre></div><p>隱藏 ~, *, = 等註記。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-hide-emphasis-markers</span> <span class=no>t</span><span class=p>))</span>
-</span></span></code></pre></div><p>能夠使用 <code>SPC t e</code> 顯示或隱藏。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>defun</span> <span class=nv>org-toggle-emphasis</span> <span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>字型設定。 我目前使用 Manaco。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>doom-font</span> <span class=p>(</span><span class=nf>font-spec</span> <span class=nb>:family</span> <span class=s>&#34;Monaco&#34;</span> <span class=nb>:size</span> <span class=mi>16</span> <span class=nb>:weight</span> <span class=ss>&#39;semi-light</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>主題使用預設。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>doom-theme</span> <span class=ss>&#39;doom-one</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=org-mode><a href=#org-mode class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Org Mode</h2><p>使用 Dropbox 做跨裝置的檔案同步備份。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>shared-directory</span> <span class=s>&#34;~/Dropbox&#34;</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>Org 文件的預設目錄位置</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>org-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;org&#34;</span> <span class=nv>shared-directory</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>隱藏 ~, *, = 等註記。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-hide-emphasis-markers</span> <span class=no>t</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>能夠使用 <code>SPC t e</code> 顯示或隱藏。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>defun</span> <span class=nv>org-toggle-emphasis</span> <span class=p>()</span>
 </span></span><span class=line><span class=cl>  <span class=s>&#34;Toggle hiding/showing of org emphasize markers.&#34;</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>interactive</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>if</span> <span class=nv>org-hide-emphasis-markers</span>
 </span></span><span class=line><span class=cl>      <span class=p>(</span><span class=nv>set-variable</span> <span class=ss>&#39;org-hide-emphasis-markers</span> <span class=no>nil</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nv>set-variable</span> <span class=ss>&#39;org-hide-emphasis-markers</span> <span class=no>t</span><span class=p>)))</span>
-</span></span></code></pre></div><h3 id=文件結構樹>文件結構樹</h3><p>偏好文件過於龐大時，才開使分拆。文件數少，每日消耗的認知也少。</p><dl><dt>todo.org</dt><dd>個人代辦事項。</dd><dt>projects.org</dt><dd>專案代辦事項。</dd><dt>blog.org</dt><dd>blog 文章。</dd><dt>habits.org</dt><dd>想要陪養的習慣追蹤紀錄。</dd><dt>roam</dt><dd>知識管理系統。</dd></dl><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=文件結構樹><a href=#文件結構樹 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>文件結構樹</h3><p>偏好文件過於龐大時，才開使分拆。文件數少，每日消耗的認知也少。</p><dl><dt>todo.org</dt><dd>個人代辦事項。</dd><dt>projects.org</dt><dd>專案代辦事項。</dd><dt>blog.org</dt><dd>blog 文章。</dd><dt>habits.org</dt><dd>想要陪養的習慣追蹤紀錄。</dd><dt>roam</dt><dd>知識管理系統。</dd></dl><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-todo-file</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;todo.org&#34;</span> <span class=nv>org-directory</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-project-file</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;projects.org&#34;</span> <span class=nv>org-directory</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-post-file</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;blog.org&#34;</span> <span class=nv>org-directory</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-habit-file</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;habits.org&#34;</span> <span class=nv>org-directory</span><span class=p>)))</span>
-</span></span></code></pre></div><h3 id=筆記>筆記</h3><p>受 Roam Research 啟發，以使用 <a href=https://zettelkasten.de/introduction/>Zettelkasten</a> 卡片盒筆記法組織知識連結知識點為目的配置。</p><h4 id=org-roam>org-roam</h4><p><a href=https://www.orgroam.com/>org-roam</a> 是類似 Roam Research 的 org-mode 實現。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;roam&#34;</span> <span class=nv>org-directory</span><span class=p>)))</span>
-</span></span></code></pre></div><h4 id=org-roam-server>org-roam-server</h4><p>org-roam-server 目前不相容 org-raom v2。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;(package! org-roam-server :recipe (:host github :repo &#34;org-roam/org-roam-server&#34; :files (&#34;*&#34;)))</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;(use-package! org-roam-server</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=筆記><a href=#筆記 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>筆記</h3><p>受 Roam Research 啟發，以使用 <a href=https://zettelkasten.de/introduction/ target=_blank rel=noopener>Zettelkasten</a> 卡片盒筆記法組織知識連結知識點為目的配置。</p><h4 id=org-roam><a href=#org-roam class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-roam</h4><p><a href=https://www.orgroam.com/ target=_blank rel=noopener>org-roam</a> 是類似 Roam Research 的 org-mode 實現。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span> <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;roam&#34;</span> <span class=nv>org-directory</span><span class=p>)))</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=org-roam-server><a href=#org-roam-server class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-roam-server</h4><p>org-roam-server 目前不相容 org-raom v2。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;(package! org-roam-server :recipe (:host github :repo &#34;org-roam/org-roam-server&#34; :files (&#34;*&#34;)))</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;(use-package! org-roam-server</span>
 </span></span><span class=line><span class=cl><span class=c1>;  :after org-roam</span>
 </span></span><span class=line><span class=cl><span class=c1>;  :config</span>
 </span></span><span class=line><span class=cl><span class=c1>;  (setq org-roam-server-host &#34;127.0.0.1&#34;</span>
@@ -354,7 +699,37 @@
 </span></span><span class=line><span class=cl><span class=c1>;    (interactive)</span>
 </span></span><span class=line><span class=cl><span class=c1>;    (org-roam-server-mode 1)</span>
 </span></span><span class=line><span class=cl><span class=c1>;    (browse-url-xdg-open (format &#34;http://localhost:%d&#34; org-roam-server-port))))</span>
-</span></span></code></pre></div><h3 id=日記>日記</h3><p>每日日記不僅是作為一天開始的計畫工具，也是一個時間帳本。他促使我深層思考我的時間應該如何花費得更有價值。當我醒來時，我想要坐在桌之前，開始寫今天的日記，想像一下今天會發生什麼事情。寫作不僅助於組織我的思想，還能幫助我計畫我的一天。當我打開日記時，我想看到我應該遵循的晨間慣例，這些慣例是我在一週之初、一月之初、一年之初制訂的，做一個新開始的希望，就像一座燈塔，引導我的靈魂在一個所有算法都在爭奪注意力的世代中生存。</p><h4 id=org-roam-daily>org-roam-daily</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=日記><a href=#日記 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>日記</h3><p>每日日記不僅是作為一天開始的計畫工具，也是一個時間帳本。他促使我深層思考我的時間應該如何花費得更有價值。當我醒來時，我想要坐在桌之前，開始寫今天的日記，想像一下今天會發生什麼事情。寫作不僅助於組織我的思想，還能幫助我計畫我的一天。當我打開日記時，我想看到我應該遵循的晨間慣例，這些慣例是我在一週之初、一月之初、一年之初制訂的，做一個新開始的希望，就像一座燈塔，引導我的靈魂在一個所有算法都在爭奪注意力的世代中生存。</p><h4 id=org-roam-daily><a href=#org-roam-daily class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-roam-daily</h4><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-roam</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-roam-dailies-capture-templates</span>
 </span></span><span class=line><span class=cl>        <span class=o>`</span><span class=p>((</span><span class=s>&#34;d&#34;</span> <span class=s>&#34;default&#34;</span> <span class=nv>entry</span><span class=s>&#34;* %?&#34;</span>
 </span></span><span class=line><span class=cl>        <span class=nb>:if-new</span> <span class=p>(</span><span class=nv>file+head</span> <span class=s>&#34;%&lt;%Y-%m-%d&gt;.org&#34;</span>
@@ -384,9 +759,43 @@
 </span></span><span class=line><span class=cl>                        <span class=s>&#34;#+end_comment\n&#34;</span>
 </span></span><span class=line><span class=cl>                        <span class=p>))</span>
 </span></span><span class=line><span class=cl>         <span class=nb>:unnarrowed</span> <span class=no>t</span><span class=p>))))</span>
-</span></span></code></pre></div><h3 id=文獻管理>文獻管理</h3><p>主要用 <a href=https://github.com/org-roam/org-roam-bibtex>Org Roam BibTeX（ORB）</a>與 <a href=https://www.zotero.org/>Zotero </a>一起管理引文。它允許我使用 <a href=https://www.orgroam.com/>Org Roam </a>管理我的書目註釋，並通過ivy-bibtex訪問org-roam-directory中的註釋，或者通過打開 <a href=https://github.com/jkitchin/org-ref>org-ref</a> 的cite: 鏈接來訪問。</p><h4 id=zotero>Zotero</h4><p>預設檔案目錄</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>zotero-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;zotero&#34;</span> <span class=nv>shared-directory</span><span class=p>))</span>
-</span></span></code></pre></div><h4 id=org-ref>org-ref</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-ref</span><span class=p>)</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>use-package</span> <span class=nv>org-ref</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=文獻管理><a href=#文獻管理 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>文獻管理</h3><p>主要用 <a href=https://github.com/org-roam/org-roam-bibtex target=_blank rel=noopener>Org Roam BibTeX（ORB）</a>與 <a href=https://www.zotero.org/ target=_blank rel=noopener>Zotero </a>一起管理引文。它允許我使用 <a href=https://www.orgroam.com/ target=_blank rel=noopener>Org Roam </a>管理我的書目註釋，並通過ivy-bibtex訪問org-roam-directory中的註釋，或者通過打開 <a href=https://github.com/jkitchin/org-ref target=_blank rel=noopener>org-ref</a> 的cite: 鏈接來訪問。</p><h4 id=zotero><a href=#zotero class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Zotero</h4><p>預設檔案目錄</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>zotero-directory</span> <span class=p>(</span><span class=nf>expand-file-name</span> <span class=s>&#34;zotero&#34;</span> <span class=nv>shared-directory</span><span class=p>))</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=org-ref><a href=#org-ref class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-ref</h4><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-ref</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>use-package</span> <span class=nv>org-ref</span>
 </span></span><span class=line><span class=cl>    <span class=nb>:after</span> <span class=nv>org</span>
 </span></span><span class=line><span class=cl>    <span class=nb>:init</span>
 </span></span><span class=line><span class=cl>    <span class=nb>:config</span>
@@ -418,20 +827,46 @@
 </span></span><span class=line><span class=cl>                                    <span class=s>&#34;:END:\n\n&#34;</span>
 </span></span><span class=line><span class=cl>                                    <span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=p>))</span>
-</span></span></code></pre></div><h4 id=citeproc-org>citeproc-org</h4><p>在 non-Latex 的輸出過程中用 <a href=https://github.com/andras-simonyi/citeproc-org>citeproc-org</a> 將 org-mode 的引文和書目渲染成 <a href=https://citationstyles.org/>Citation Style Language</a> (CSL)風格</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>citeproc-org</span><span class=p>)</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>use-package</span> <span class=nv>citeproc-org</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=citeproc-org><a href=#citeproc-org class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>citeproc-org</h4><p>在 non-Latex 的輸出過程中用 <a href=https://github.com/andras-simonyi/citeproc-org target=_blank rel=noopener>citeproc-org</a> 將 org-mode 的引文和書目渲染成 <a href=https://citationstyles.org/ target=_blank rel=noopener>Citation Style Language</a> (CSL)風格</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>citeproc-org</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>use-package</span> <span class=nv>citeproc-org</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:ensure</span> <span class=no>t</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:after</span> <span class=nv>ox-hugo</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:config</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nv>citeproc-org-setup</span><span class=p>))</span>
-</span></span></code></pre></div><h4 id=org-roam-bibtex>org-roam-bibtex</h4><p>讓我能用我的 bibtex 文件在 org-roam 建立筆記。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-roam-bibtex</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=org-roam-bibtex><a href=#org-roam-bibtex class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-roam-bibtex</h4><p>讓我能用我的 bibtex 文件在 org-roam 建立筆記。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-roam-bibtex</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:recipe</span> <span class=p>(</span><span class=nb>:host</span> <span class=nv>github</span> <span class=nb>:repo</span> <span class=s>&#34;org-roam/org-roam-bibtex&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl><span class=c1>;; When using org-roam via the `+roam` flag</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>unpin!</span> <span class=nv>org-roam</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=c1>;; When using bibtex-completion via the `biblio` module</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>unpin!</span> <span class=nv>bibtex-completion</span> <span class=nv>helm-bibtex</span> <span class=nv>ivy-bibtex</span><span class=p>)</span>
-</span></span></code></pre></div><p>筆記的模板尚未決定，以下是目前考量的模板。閃念筆計紀錄在每日筆記中有它的好處，但寫在另一個專門的檔案也有好處。
-寫在每日筆記的缺點是每天晚上必須清理，否則就會忘記，不是很適合我這種有拖延症的人。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>online-note-tpl</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>筆記的模板尚未決定，以下是目前考量的模板。閃念筆計紀錄在每日筆記中有它的好處，但寫在另一個專門的檔案也有好處。
+寫在每日筆記的缺點是每天晚上必須清理，否則就會忘記，不是很適合我這種有拖延症的人。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>setq</span> <span class=nv>online-note-tpl</span>
 </span></span><span class=line><span class=cl>      <span class=p>(</span><span class=nf>concat</span>
 </span></span><span class=line><span class=cl>       <span class=s>&#34;#+title: {title}\n&#34;</span>
 </span></span><span class=line><span class=cl>       <span class=s>&#34;#+filetags: online\n&#34;</span>
@@ -445,7 +880,29 @@
 </span></span><span class=line><span class=cl>       <span class=s>&#34;** 閃念筆記\n&#34;</span>
 </span></span><span class=line><span class=cl>       <span class=s>&#34;** 文獻筆記\n&#34;</span>
 </span></span><span class=line><span class=cl>       <span class=p>))</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-roam-bibtex</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-roam-bibtex</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:after</span> <span class=nv>org-roam</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:hook</span> <span class=p>(</span><span class=nv>org-roam-mode</span> <span class=o>.</span> <span class=nv>org-roam-bibtex-mode</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:config</span>
@@ -467,7 +924,28 @@
 </span></span><span class=line><span class=cl>                   <span class=s>&#34;  :NOTER_PAGE: \n&#34;</span>
 </span></span><span class=line><span class=cl>                   <span class=s>&#34;  :END:\n&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>           <span class=nb>:unnarrowed</span> <span class=no>t</span><span class=p>))))</span>
-</span></span></code></pre></div><h4 id=bibtex-completion>bibtex-completion</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>bibtex-completion</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=bibtex-completion><a href=#bibtex-completion class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>bibtex-completion</h4><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>bibtex-completion</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:config</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>bibtex-completion-notes-path</span> <span class=nv>org-roam-directory</span>
 </span></span><span class=line><span class=cl>        <span class=nv>bibtex-completion-bibliography</span> <span class=nv>org-ref-default-bibliography</span>
@@ -488,10 +966,40 @@
 </span></span><span class=line><span class=cl>          <span class=s>&#34;:URL: ${url}\n&#34;</span>
 </span></span><span class=line><span class=cl>          <span class=s>&#34;:END:\n\n&#34;</span>
 </span></span><span class=line><span class=cl>          <span class=p>)))</span>
-</span></span></code></pre></div><h3 id=代辦事項>代辦事項</h3><p>記錄完成時間。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=代辦事項><a href=#代辦事項 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>代辦事項</h3><p>記錄完成時間。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-log-done</span> <span class=no>t</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>org-log-into-drawer</span> <span class=no>t</span><span class=p>))</span>
-</span></span></code></pre></div><h4 id=org-agenda>org-agenda</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-agenda</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=org-agenda><a href=#org-agenda class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-agenda</h4><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-agenda</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:defer</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:init</span>
 </span></span><span class=line><span class=cl>  <span class=c1>;; Org Agenda Files</span>
@@ -518,8 +1026,75 @@
 </span></span><span class=line><span class=cl>          <span class=p>(</span><span class=mi>700</span> <span class=mi>800</span> <span class=mi>900</span> <span class=mi>1000</span> <span class=mi>1100</span> <span class=mi>1200</span> <span class=mi>1300</span> <span class=mi>1400</span> <span class=mi>1500</span> <span class=mi>1600</span> <span class=mi>1700</span> <span class=mi>1800</span> <span class=mi>1900</span> <span class=mi>2000</span> <span class=mi>2100</span> <span class=mi>2200</span> <span class=mi>2300</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>          <span class=s>&#34;......&#34;</span> <span class=s>&#34;----------------&#34;</span><span class=p>)))</span>
 </span></span><span class=line><span class=cl>  <span class=p>)</span>
-</span></span></code></pre></div><h4 id=org-super-agenda>org-super-agenda</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-super-agenda</span><span class=p>)</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; org-super-agenda</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=org-super-agenda><a href=#org-super-agenda class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>org-super-agenda</h4><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>org-super-agenda</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; org-super-agenda</span>
 </span></span><span class=line><span class=cl><span class=c1>;; https://www.reddit.com/r/orgmode/comments/erdb40/doomemacs_can_not_make_orgsuperagenda_work/</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>org-super-agenda</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:after</span> <span class=nv>org-agenda</span>
@@ -585,12 +1160,26 @@
 </span></span><span class=line><span class=cl>  <span class=nb>:config</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nv>org-super-agenda-mode</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=p>)</span>
-</span></span></code></pre></div><h3 id=行事曆>行事曆</h3><h4 id=calfw>calfw</h4><p>行事曆上私人行程以及台灣國定假日。預設不使用 Emacs 提供的國定假日。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>calfw</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=行事曆><a href=#行事曆 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>行事曆</h3><h4 id=calfw><a href=#calfw class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>calfw</h4><p>行事曆上私人行程以及台灣國定假日。預設不使用 Emacs 提供的國定假日。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>calfw</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:defer</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:init</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>cfw:display-calendar-holidays</span> <span class=no>nil</span><span class=p>)</span> <span class=c1>; don&#39;t show holidays.</span>
 </span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span></code></pre></div><p>提供 <code>my-open-calendar</code> 指令打開行事曆。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>defun</span> <span class=nv>my-open-calendar</span> <span class=p>()</span>
+</span></span></code></pre></td></tr></table></div></div></div><p>提供 <code>my-open-calendar</code> 指令打開行事曆。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nb>defun</span> <span class=nv>my-open-calendar</span> <span class=p>()</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>interactive</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nv>cfw:open-calendar-buffer</span>
 </span></span><span class=line><span class=cl>   <span class=nb>:contents-sources</span>
@@ -599,13 +1188,44 @@
 </span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nv>cfw:ical-create-source</span> <span class=s>&#34;Personal&#34;</span> <span class=nv>cfw-gcal-personal</span> <span class=s>&#34;Orange&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nv>cfw:ical-create-source</span> <span class=s>&#34;Holidays&#34;</span> <span class=nv>cfw-gcal-holidays-tw</span> <span class=s>&#34;Red&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>   <span class=p>)))</span>
-</span></span></code></pre></div><h4 id=calfw-org>calfw-org</h4><p>在行事曆上顯示代辦任務。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>calfw-org</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=calfw-org><a href=#calfw-org class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>calfw-org</h4><p>在行事曆上顯示代辦任務。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>calfw-org</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:after</span> <span class=nv>calfw</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:init</span>
 </span></span><span class=line><span class=cl>  <span class=c1>;; To speed up the loading, restricts items containing a scheduled TODOs that the date range matching the selected date.</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>cfw:org-agenda-schedule-args</span> <span class=o>&#39;</span><span class=p>(</span><span class=nb>:scheduled</span> <span class=nb>:deadline</span><span class=p>))</span><span class=c1>;</span>
 </span></span><span class=line><span class=cl><span class=p>)</span>
-</span></span></code></pre></div><h3 id=hugo>Hugo</h3><p>Hugo 是我目前使用的 Blog 系統。發佈流程如下：</p><ol><li>創建一個 orgmode heading 為標題。</li><li>寫文章。</li><li><code>s m e H H</code> 產生 markdown。</li><li><code>s o h</code> 使用 easy-hugo 預覽看結果。</li><li>git push 到 github 上的 <a href=https://github.com/hychen/blog>https://github.com/hychen/blog</a>。 Github Actions 會幫我產生 html 跟 host 在 Github Page 上。</li></ol><h4 id=ox-hugo>ox-hugo</h4><p>Hugo 本身雖支援 org 格式，但是 markdown 渲染效果較好，透過 ox-hugo 可以輸出 markdown 給 Hugo 使用。</p><p>參考 ox-hugo 的 <a href=https://ox-hugo.scripter.co/doc/org-capture-setup/>Org Capture Setup</a> 設定 template。</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; Populates only the EXPORT_FILE_NAME property in the inserted headline.</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=hugo><a href=#hugo class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Hugo</h3><p>Hugo 是我目前使用的 Blog 系統。發佈流程如下：</p><ol><li>創建一個 orgmode heading 為標題。</li><li>寫文章。</li><li><code>s m e H H</code> 產生 markdown。</li><li><code>s o h</code> 使用 easy-hugo 預覽看結果。</li><li>git push 到 github 上的 <a href=https://github.com/hychen/blog target=_blank rel=noopener>https://github.com/hychen/blog</a>。 Github Actions 會幫我產生 html 跟 host 在 Github Page 上。</li></ol><h4 id=ox-hugo><a href=#ox-hugo class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>ox-hugo</h4><p>Hugo 本身雖支援 org 格式，但是 markdown 渲染效果較好，透過 ox-hugo 可以輸出 markdown 給 Hugo 使用。</p><p>參考 ox-hugo 的 <a href=https://ox-hugo.scripter.co/doc/org-capture-setup/ target=_blank rel=noopener>Org Capture Setup</a> 設定 template。</p><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=c1>;; Populates only the EXPORT_FILE_NAME property in the inserted headline.</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org-capture</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>defun</span> <span class=nv>org-hugo-new-subtree-post-capture-template</span> <span class=p>()</span>
 </span></span><span class=line><span class=cl>    <span class=s>&#34;Returns </span><span class=ss>`org-capture&#39;</span><span class=s> template string for new Hugo post.
@@ -630,15 +1250,35 @@
 </span></span><span class=line><span class=cl>                 <span class=c1>;; symlink pointing to the actual location of all-posts.org!</span>
 </span></span><span class=line><span class=cl>                 <span class=p>(</span><span class=nv>file</span> <span class=nv>org-post-file</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>                 <span class=p>(</span><span class=nb>function</span> <span class=nv>org-hugo-new-subtree-post-capture-template</span><span class=p>))))</span>
-</span></span></code></pre></div><h4 id=easy-hugo>easy-hugo</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>easy-hugo</span><span class=p>)</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>easy-hugo</span>
+</span></span></code></pre></td></tr></table></div></div></div><h4 id=easy-hugo><a href=#easy-hugo class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>easy-hugo</h4><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>package!</span> <span class=nv>easy-hugo</span><span class=p>)</span>
+</span></span></code></pre></td></tr></table></div></div></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>use-package!</span> <span class=nv>easy-hugo</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:init</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span> <span class=nv>easy-hugo-basedir</span> <span class=nv>user-blog-basedir</span>
 </span></span><span class=line><span class=cl>        <span class=nv>easy-hugo-url</span> <span class=nv>user-blog-url</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=nb>:config</span>
 </span></span><span class=line><span class=cl>  <span class=c1>;; make easy-hugo mode keybinds work</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nv>evil-make-overriding-map</span> <span class=nv>easy-hugo-mode-map</span> <span class=ss>&#39;normal</span><span class=p>))</span>
-</span></span></code></pre></div><h3 id=plantuml>Plantuml</h3><p>在 Emacs 執行下列命令下載安裝 plantuml。</p><p>plantuml-download-jar</p><h3 id=latex>Latex</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
+</span></span></code></pre></td></tr></table></div></div></div><h3 id=plantuml><a href=#plantuml class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Plantuml</h3><p>在 Emacs 執行下列命令下載安裝 plantuml。</p><p>plantuml-download-jar</p><h3 id=latex><a href=#latex class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>Latex</h3><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>after!</span> <span class=nv>org</span>
 </span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nb>setq</span>
 </span></span><span class=line><span class=cl>   <span class=nv>org-preview-latex-default-process</span> <span class=ss>&#39;imagemagick</span>
 </span></span><span class=line><span class=cl>   <span class=c1>;; latex pdf process.</span>
@@ -650,26 +1290,17 @@
 </span></span><span class=line><span class=cl>   <span class=c1>;; 上下標必須加 { }.</span>
 </span></span><span class=line><span class=cl>   <span class=nv>org-use-sub-superscripts</span> <span class=s>&#34;{}&#34;</span>
 </span></span><span class=line><span class=cl>  <span class=p>))</span>
-</span></span></code></pre></div><h2 id=快捷鍵配置>快捷鍵配置</h2><table><thead><tr><th>按鍵組</th><th>功用</th><th>來源</th></tr></thead><tbody><tr><td><code>SPC :</code></td><td>打開命令列</td><td>doom</td></tr><tr><td><code>SPC X</code></td><td>執行 org-catpure</td><td>doom</td></tr><tr><td><code>SPC Tab Tab</code></td><td>顯示 tabbar</td><td>doom</td></tr><tr><td><code>SPC Tab n</code></td><td>建立 workspace</td><td>doom</td></tr><tr><td><code>SPC Tab d</code></td><td>刪除 workspace</td><td>doom</td></tr><tr><td><code>SPC Tab $n</code></td><td>切換到第 $n 個 workspace</td><td>doom</td></tr><tr><td><code>SPC w s</code></td><td>水平切割視窗</td><td>doom</td></tr><tr><td><code>SPC w v</code></td><td>垂直切割視窗</td><td>doom</td></tr><tr><td><code>SPC w m</code></td><td>最大化當前視窗</td><td>doom</td></tr><tr><td><code>SPC o a r</code></td><td>打開 org-agenda Main Repor</td><td>custom</td></tr><tr><td><code>SPC o p</code></td><td>打開專案 Sidebar</td><td>doom</td></tr><tr><td><code>SPC o P</code></td><td>在專案 Sidebar 找檔案</td><td>doom</td></tr><tr><td><code>SPC o v</code></td><td>開啟 Terminal</td><td>doom</td></tr><tr><td><code>SPC o h</code></td><td>開啟 Easy Hugo</td><td>custom</td></tr><tr><td><code>SPC p a</code></td><td>新增專案</td><td>doom</td></tr><tr><td><code>SPC p d</code></td><td>移除專案</td><td>doom</td></tr><tr><td><code>SPC p p</code></td><td>切換專案</td><td>doom</td></tr><tr><td></td><td></td><td></td></tr><tr><td><code>SPC n r f</code></td><td>開起 Roam 筆記</td><td>doom</td></tr><tr><td><code>SPC n r i</code></td><td>插入 Roam 筆記</td><td>doom</td></tr><tr><td><code>SPC n r I</code></td><td>插入 Roam 筆記 (w/ org-capture)</td><td>doom</td></tr><tr><td><code>SPC m e H H</code></td><td>輸出文件或單個 Subtree 到 hugo</td><td>doom</td></tr><tr><td><code>SPC m e H A</code></td><td>輸出文件或全部的 Subtree 到 hugo</td><td>doom</td></tr><tr><td><code>SPC t e</code></td><td>Toogle hidding/showing of org emphasise markers</td><td>custom</td></tr><tr><td><code>SPC h r r</code></td><td>重新讀取 doom emacs 設定檔</td><td></td></tr></tbody></table><div class=highlight><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>map!</span> <span class=nb>:leader</span>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=快捷鍵配置><a href=#快捷鍵配置 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>快捷鍵配置</h2><div class=table-container><table><thead><tr><th>按鍵組</th><th>功用</th><th>來源</th></tr></thead><tbody><tr><td><code>SPC :</code></td><td>打開命令列</td><td>doom</td></tr><tr><td><code>SPC X</code></td><td>執行 org-catpure</td><td>doom</td></tr><tr><td><code>SPC Tab Tab</code></td><td>顯示 tabbar</td><td>doom</td></tr><tr><td><code>SPC Tab n</code></td><td>建立 workspace</td><td>doom</td></tr><tr><td><code>SPC Tab d</code></td><td>刪除 workspace</td><td>doom</td></tr><tr><td><code>SPC Tab $n</code></td><td>切換到第 $n 個 workspace</td><td>doom</td></tr><tr><td><code>SPC w s</code></td><td>水平切割視窗</td><td>doom</td></tr><tr><td><code>SPC w v</code></td><td>垂直切割視窗</td><td>doom</td></tr><tr><td><code>SPC w m</code></td><td>最大化當前視窗</td><td>doom</td></tr><tr><td><code>SPC o a r</code></td><td>打開 org-agenda Main Repor</td><td>custom</td></tr><tr><td><code>SPC o p</code></td><td>打開專案 Sidebar</td><td>doom</td></tr><tr><td><code>SPC o P</code></td><td>在專案 Sidebar 找檔案</td><td>doom</td></tr><tr><td><code>SPC o v</code></td><td>開啟 Terminal</td><td>doom</td></tr><tr><td><code>SPC o h</code></td><td>開啟 Easy Hugo</td><td>custom</td></tr><tr><td><code>SPC p a</code></td><td>新增專案</td><td>doom</td></tr><tr><td><code>SPC p d</code></td><td>移除專案</td><td>doom</td></tr><tr><td><code>SPC p p</code></td><td>切換專案</td><td>doom</td></tr><tr><td></td><td></td><td></td></tr><tr><td><code>SPC n r f</code></td><td>開起 Roam 筆記</td><td>doom</td></tr><tr><td><code>SPC n r i</code></td><td>插入 Roam 筆記</td><td>doom</td></tr><tr><td><code>SPC n r I</code></td><td>插入 Roam 筆記 (w/ org-capture)</td><td>doom</td></tr><tr><td><code>SPC m e H H</code></td><td>輸出文件或單個 Subtree 到 hugo</td><td>doom</td></tr><tr><td><code>SPC m e H A</code></td><td>輸出文件或全部的 Subtree 到 hugo</td><td>doom</td></tr><tr><td><code>SPC t e</code></td><td>Toogle hidding/showing of org emphasise markers</td><td>custom</td></tr><tr><td><code>SPC h r r</code></td><td>重新讀取 doom emacs 設定檔</td><td></td></tr></tbody></table></div><div class=highlight><div class=chroma><div class=table-container><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-emacs-lisp data-lang=emacs-lisp><span class=line><span class=cl><span class=p>(</span><span class=nv>map!</span> <span class=nb>:leader</span>
 </span></span><span class=line><span class=cl>      <span class=nb>:desc</span> <span class=s>&#34;Easy Hugo&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=s>&#34;o h&#34;</span> <span class=nf>#&#39;</span><span class=nv>easy-hugo</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>(</span><span class=nv>map!</span> <span class=nb>:leader</span>
 </span></span><span class=line><span class=cl>      <span class=nb>:desc</span> <span class=s>&#34;Toogle hidding/showing of org emphasize markers.&#34;</span>
 </span></span><span class=line><span class=cl>      <span class=s>&#34;t e&#34;</span> <span class=nf>#&#39;</span><span class=nv>org-toggle-emphasis</span><span class=p>)</span>
-</span></span></code></pre></div><h2 id=感謝>感謝</h2><p>設定 Emacs 非是易事。 我從其他先進的設定檔中獲得許多靈感。特別感謝</p><ol><li><a href=https://leanpub.com/lit-config/read#emacs-config-example>Diego Zamboni&rsquo;s Literate Configuration Book</a> and <a href=https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/>his configuration.</a></li><li><a href=https://github.com/dangirsh/.doom.d/>Dan Girshovich&rsquo;s configuration</a>.</li><li><a href=https://github.com/sunnyhasija/Academic-Doom-Emacs-Config>An Academic’s Opinionated DOOM Emacs Config</a></li><li><a href=https://www.gtrun.org/custom/my-agenda.html>我的日程计划安排</a>.</li></ol></div><div class=post-copyright><p class=copyright-item><span class=item-title>文章作者</span>
-<span class=item-content>陳信屹</span></p><p class=copyright-item><span class=item-title>上次更新</span>
-<span class=item-content>2021-10-09</span></p><p class=copyright-item><span class=item-title>授權條款</span>
-<span class=item-content><a rel="license noopener" href=https://creativecommons.org/licenses/by-nc-nd/4.0/ target=_blank>CC BY-NC-ND 4.0</a></span></p></div><footer class=post-footer><div class=post-tags><a href=http://hychen.me/tags/emacs/>Emacs</a></div><nav class=post-nav><a class=next href=/post/%E8%87%BA%E5%8D%97%E8%88%8A%E5%9F%8E%E5%8D%80%E8%B6%8A%E4%BE%86%E8%B6%8A%E9%9B%A3%E4%BB%A5%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BE%8E%E9%BA%97%E5%A4%A9%E9%9A%9B%E7%B7%9A/><span class="next-text nav-default">臺南舊城區越來越難以保存的美麗天際線</span>
-<span class="prev-text nav-mobile">下一篇</span>
-<i class=iconfont><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"><path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697c-11.777231-11.500939-30.216186-10.304694-41.178865 2.712784z"/></svg></i></a></nav></footer></article></div></div></main><footer id=footer class=footer><div class=icon-links><a href=https://twitter.com/hychen rel="me noopener" class=iconfont title=twitter target=_blank><svg class="icon" viewBox="0 0 1264 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36"><path d="M1229.8616 18.043658s-117.852626 63.135335-164.151872 67.344358C960.484169-78.763856 560.627046-7.210476 627.971403 308.466201 278.622548 312.675223 89.216542 47.506814 89.216542 47.506814S-28.636084 236.91282 164.978944 392.646647C127.097743 396.85567 55.544363 371.601535 55.544363 371.601535S26.081207 535.753407 253.368414 615.724832c-21.045112 29.463156-113.643603 8.418045-113.643603 8.418045s25.254134 143.10676 231.496229 180.987961c-143.10676 130.479693-387.230056 92.598492-370.393967 105.225559 206.242095 189.406006 1119.599946 231.496229 1128.01799-643.98042 50.5082679999998-16.83609 134.688715-143.10676 134.688715-143.10676s-130.479693 37.881201-138.897738 33.672179C1225.652577 98.015083 1229.8616 18.043658 1229.8616 18.043658"/></svg></a><a href=https://github.com/hychen rel="me noopener" class=iconfont title=github target=_blank><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36"><path d="M512 12.672c-282.88.0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667.0-12.16-.426667-44.373333-.64-87.04C242.005334 929.664 211.968 830.08 211.968 830.08 188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333.0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333.0.0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667.0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72.0 68.522667-.64 123.562667-.64 140.202666.0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"/></svg></a><a href=http://hychen.me/index.xml rel="noopener alternate" type=application/rss+xml class=iconfont title=rss target=_blank><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30"><path d="M819.157333 1024C819.157333 574.592 449.408 204.8.0 204.8V0c561.706667.0 1024 462.293333 1024 1024H819.157333zM140.416 743.04a140.8 140.8.0 01140.501333 140.586667A140.928 140.928.0 01140.074667 1024C62.72 1024 0 961.109333.0 883.626667S62.933333 743.082667 140.416 743.04zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667v-199.04c372.352.0 678.784 306.517333 678.784 678.826667z"/></svg></a></div><div class=copyright><span class=power-by>Powered by <a class=hexo-link href=https://gohugo.io>Hugo</a></span>
-<span class=division>|</span>
-<span class=theme-info>Theme - <a class=theme-link href=https://github.com/xianmin/hugo-theme-jane>Jane</a></span>
-<span class=copyright-year>&copy;
-2021 -
-2022
-<span class=heart><i class=iconfont><svg class="icon" viewBox="0 0 1025 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14"><path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7.0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1.0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2.0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3.1-42.5-8-83.6-24-122.2z" fill="#8a8a8a"/></svg></i></span><span class=author>陳信屹</span></span></div></footer><div class=back-to-top id=back-to-top><i class=iconfont><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35"><path d="M510.866688 227.694839 95.449397 629.218702h235.761562L329.15309 958.01517h362.40389L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777h894.052392v131.813095H63.840492V63.962777zm0 0"/></svg></i></div></div><script type=text/javascript src=/lib/jquery/jquery-3.2.1.min.js></script>
-<script type=text/javascript src=/lib/slideout/slideout-1.0.1.min.js></script>
-<script type=text/javascript src=/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin=anonymous></script>
-<script type=text/javascript src=/js/load-photoswipe.js></script>
-<script type=text/javascript src=/lib/photoswipe/photoswipe.min.js></script>
-<script type=text/javascript src=/lib/photoswipe/photoswipe-ui-default.min.js></script></body></html>
+</span></span></code></pre></td></tr></table></div></div></div><h2 id=感謝><a href=#感謝 class=anchor-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96.0-59.27-59.26-59.27-155.7.0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757.0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037.0 01-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482.0 0120.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96.0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454.0 0020.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037.0 00-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639.0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a>感謝</h2><p>設定 Emacs 非是易事。 我從其他先進的設定檔中獲得許多靈感。特別感謝</p><ol><li><a href=https://leanpub.com/lit-config/read#emacs-config-example target=_blank rel=noopener>Diego Zamboni's Literate Configuration Book</a> and <a href=https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/ target=_blank rel=noopener>his configuration.</a></li><li><a href=https://github.com/dangirsh/.doom.d/ target=_blank rel=noopener>Dan Girshovich's configuration</a>.</li><li><a href=https://github.com/sunnyhasija/Academic-Doom-Emacs-Config target=_blank rel=noopener>An Academic’s Opinionated DOOM Emacs Config</a></li><li><a href=https://www.gtrun.org/custom/my-agenda.html target=_blank rel=noopener>我的日程计划安排</a>.</li></ol></div><ul class=post-copyright><li class="copyright-item author"><span class=copyright-item-text>作者</span>：<a href=https://hychen.me/ class="p-author h-card" target=_blank rel=noopener>陳信屹</a></li><li class="copyright-item link"><span class=copyright-item-text>連結</span>：<a href=/post/doom_config/ target=_blank rel=noopener>https://hychen.me/post/doom_config/</a></li><li class="copyright-item license"><span class=copyright-item-text>許可</span>：<a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a></li></ul></article><div class=updated-badge-container><span title="Updated @ 2021-10-09 10:59:25 +0800" style=cursor:help><svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2021-10-09</text><text x="915" y="140" textLength="650" transform="scale(.1)">2021-10-09</text></g></svg></span></div><div class=post-tags><a href=/tags/emacs/ rel=tag class=post-tags-link><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49.0 48 0h204.118a48 48 0 0133.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137.0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882.0L14.059 286.059A48 48 0 010 252.118zM112 64c-26.51.0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Emacs</a></div><ul class=post-nav><li class=post-nav-next><a href=/post/%E8%87%BA%E5%8D%97%E8%88%8A%E5%9F%8E%E5%8D%80%E8%B6%8A%E4%BE%86%E8%B6%8A%E9%9B%A3%E4%BB%A5%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BE%8E%E9%BA%97%E5%A4%A9%E9%9A%9B%E7%B7%9A/ rel=next>臺南舊城區越來越難以保存的美麗天際線 ></a></li></ul></div></main><div id=back-to-top class=back-to-top><a href=#><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6.0-33.9L207 39c9.4-9.4 24.6-9.4 33.9.0l194.3 194.3c9.4 9.4 9.4 24.6.0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3.0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a></div><footer id=footer class=footer><div class=footer-inner><div class=site-info>©&nbsp;2021–2022&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3.0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;陳信屹</div><div class=site-copyright><a href=https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh target=_blank rel=noopener>CC BY-NC-SA 4.0</a></div></div></footer></div><script src=https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js></script>
+<script>let imgNodes=document.querySelectorAll("div.post-body img");imgNodes=Array.from(imgNodes).filter(e=>e.parentNode.tagName!=="A"),mediumZoom(imgNodes,{background:"hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)"})</script><script src=https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js type=module defer></script></body></html>
