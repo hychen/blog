@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.100.2 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Sun, 12 Jun 2022 10:50:33 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>經營 DAO 的人或許該讀讀錢穆的《中國歷代政治得失》</title><link>https://hychen.me/post/%E7%B6%93%E7%87%9F-dao-%E7%9A%84%E4%BA%BA%E6%88%96%E8%A8%B1%E8%A9%B2%E8%AE%80%E8%AE%80%E9%8C%A2%E7%A9%86%E7%9A%84%E4%B8%AD%E5%9C%8B%E6%AD%B7%E4%BB%A3%E6%94%BF%E6%B2%BB%E5%BE%97%E5%A4%B1/</link><guid isPermaLink="true">https://hychen.me/post/%E7%B6%93%E7%87%9F-dao-%E7%9A%84%E4%BA%BA%E6%88%96%E8%A8%B1%E8%A9%B2%E8%AE%80%E8%AE%80%E9%8C%A2%E7%A9%86%E7%9A%84%E4%B8%AD%E5%9C%8B%E6%AD%B7%E4%BB%A3%E6%94%BF%E6%B2%BB%E5%BE%97%E5%A4%B1/</guid><pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>如今代議式民主遭人詬病已久。在臺灣，任何剛開始思考改善代議制度的人，往往從投票制度的改善開始著手，並普遍喜愛「流動式民主」（Liquid democracy）概念，我也不例外。但在經歷過這麼多年的「鄉民參與」(因為公民參與是專有名詞，所以這邊使用鄉民參與)，知道這方向的侷限後，便放棄了深入研究這方向。&lt;a href="https://g0v.tw/">g0v&lt;/a> 曾在內部推過 &lt;a href="https://liquidfeedback.com/en/">Liquid Feedback&lt;/a> 這套系統，最後以失敗告場，主要是因為「參與動力不足」。參與動力不足，也是如今 DAO tooling 工具比 DAO 多、絕大多數 DAO 都死城的原因之一。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.100.2 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Sun, 12 Jun 2022 14:27:03 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>我所知道的卡片筆記法及當前的理解</title><link>https://hychen.me/post/%E6%88%91%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84%E5%8D%A1%E7%89%87%E7%AD%86%E8%A8%98%E6%B3%95%E5%8F%8A%E7%95%B6%E5%89%8D%E7%9A%84%E7%90%86%E8%A7%A3/</link><guid isPermaLink="true">https://hychen.me/post/%E6%88%91%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84%E5%8D%A1%E7%89%87%E7%AD%86%E8%A8%98%E6%B3%95%E5%8F%8A%E7%95%B6%E5%89%8D%E7%9A%84%E7%90%86%E8%A7%A3/</guid><pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>卡片筆記法（Zettelkasten) 是一個將筆記以一種特別的編碼系統，將筆記互相連結成一個網狀結構的筆記系統，其概念核心是做筆記的目的是發展思想，而非蒐集。它最早只流行於德語學術圈，因為發明者德國社會學家盧曼（ Niklas Luhmann） 的高產而受到矚目，而後因為 &lt;a href="https://roamresearch.com/">Roam Research&lt;/a> 軟體的走紅被普羅大眾認識，這類型的筆記軟體被稱為雙鏈筆記軟體。&lt;/p>
+&lt;p>不少筆記方法受該卡片筆記法啟發，例如 2020 年 Andy Matuschak 認為現代人目前每日吸收的資訊遠超過盧曼生活的年代，使用該方法上有其不足，而做出改良，提出的&lt;a href="https://notes.andymatuschak.org/Evergreen_notes?stackedNotes=z2HUE4ABbQjUNjrNemvkTCsLa1LPDRuwh1tXC&amp;amp;stackedNotes=z68tVM68dEAuH4acs7HY6K76tTVzBdoBGKMZB">常綠筆記法（Evergreen Note）&lt;/a>。&lt;/p>
+&lt;h2 id="入門的閱讀順序">入門的閱讀順序&lt;/h2>
+&lt;p>以下所寫，非我學習之順序，而是我建議新手的學習流程。&lt;/p>
+&lt;p>對於不以學術寫作為目的學卡片筆記法的人來說，要入門，第一篇該讀的是&lt;a href="https://readingoutpost.com/zettelkasten-6-steps/">〈正確使用卡片盒筆記法（Zettelkasten）的六個關鍵步驟 | 閱讀前哨站〉&lt;/a>，第二篇是閱讀&lt;a href="https://luhmann.surge.sh/communicating-with-slip-boxes">〈Communicating with Slip Boxes by Niklas Luhmann〉&lt;/a>掌握該系統背後的設計理念。此外，&lt;a href="https://assets.niklas-luhmann-archiv.de/branchview/">Luhman Archive &lt;/a>上頭放了盧曼所有的筆記，也很值得參考，遺憾的是要求讀者需要懂德文。&lt;/p>
+&lt;p>至於目前普遍推崇的 Sönke 所寫的&lt;a href="https://weread.qq.com/web/reader/3d8326d072552e803d87c41kc81322c012c81e728d9d180">《卡片笔记写作法：如何实现从阅读到写作》&lt;/a>， 不少重要概念在 Sonke 的書中沒解釋到，我覺得對此書更好的理解是 Snoke 自己的學術寫作方法論，而非盧曼的。對非學術圈的人來說，讀本書意義不大，理論過多，難以依樣畫葫蘆，開箱即用。&lt;/p>
+&lt;p>據傳，德國大學對卡片筆記法的研究仍在進行，要到 2030 才會公布研究結果，因此下面只能敘述對此方法論的推論跟我採用的方式。&lt;/p>
+&lt;h2 id="使用原則">使用原則&lt;/h2>
+&lt;p>使用這方法時的目標是不是盡可能地蒐集世界上的一切資訊，而是專注淬鍊你所關心的點子、爭論，以及討論。在應用時，要遵守下列原則才能夠掌握跟創造知識：&lt;/p>
+&lt;ol>
+&lt;li>將滑箱看成是可以做知識交流的研究夥伴。（細節請閱讀 Communicating with Slip Boxes by Niklas Luhmann）&lt;/li>
+&lt;li>每一條筆記只記錄一個想法&lt;/li>
+&lt;li>筆記內容不可複製貼上，需用自己的話重新詮釋&lt;/li>
+&lt;li>鏈接筆記一定要說明原因&lt;/li>
+&lt;li>筆記內容沒有價值，有價值的是連結的關係，以及關係的關係。&lt;/li>
+&lt;li>不使用標籤組織筆記間的關係&lt;/li>
+&lt;li>筆記若沒有與知識網路連接上會找不到，但這樣的結果是預期的。&lt;/li>
+&lt;/ol>
+&lt;h2 id="方法論簡介">方法論簡介&lt;/h2>
+&lt;p>這個方法可能是由兩種「滑箱」（slip-box）組成：&lt;/p>
+&lt;ol>
+&lt;li>Main Box 放想法、爭論、理論的筆記。&lt;/li>
+&lt;li>Reference Box 放引用筆記。&lt;/li>
+&lt;/ol>
+&lt;p>以及四種筆記卡片構成：&lt;/p>
+&lt;ol>
+&lt;li>閃念筆記（Fleet Note）&lt;/li>
+&lt;li>文獻筆記（Literature Note）&lt;/li>
+&lt;li>引用筆記（Refernece Note）&lt;/li>
+&lt;li>永久筆記（Permanent Notes）&lt;/li>
+&lt;/ol>
+&lt;p>還有兩種元檔案方便搜尋：&lt;/p>
+&lt;ol>
+&lt;li>索引表&lt;/li>
+&lt;li>樞紐筆記&lt;/li>
+&lt;/ol>
+&lt;p>最後，所有筆記使用一種特殊的編碼系統組織起來，惟在目前的研究中，盧曼採用的編碼方式仍然存在爭議。&lt;/p>
+&lt;h2 id="兩種滑箱">兩種滑箱&lt;/h2>
+&lt;p>Main Box 放各種筆記，可以使用如今流行的筆記軟體，我採用的是 &lt;a href="https://www.orgroam.com/">org-roam&lt;/a>。
+Reference Box 管理書目資訊，我採用 &lt;a href="https://www.zotero.org/">Zotero&lt;/a>，並透過 &lt;a href="https://www.bibtex.org/">Bibtex&lt;/a> 輸出，在 &lt;a href="https://www.orgroam.com/">org-roam&lt;/a> 中引用。感興趣的人可以參考 &lt;a href="https://hychen.me/post/doom_config/#%E7%AD%86%E8%A8%98">我的 org-mode 設定&lt;/a>。&lt;/p>
+&lt;h2 id="四種卡片">四種卡片&lt;/h2>
+&lt;p>四種卡片分別是閃念筆記，文獻筆記、引用筆記、索引筆記。引用筆記目前只看到 Shu Omi 提到，功能似乎跟文獻筆記衝突，作法亦不相同，因此這邊只說明其他三者。&lt;/p>
+&lt;p>閃念筆記是一種暫時性的筆記型態，功用是記下之後需要大快時間處理的知識，作為視覺提醒的線索。用條列或是關鍵字的方式記下，通常是在閱讀時，或是在洗澡時、走路時在腦袋浮現出的想法。&lt;/p>
+&lt;p>閃念筆記需要在幾日之後進行回顧整理成，然後刪掉避免混淆自己對想法單一來源的認知。&lt;/p>
+&lt;p>文獻筆記的撰寫目的是寫下這則文獻帶給你的想法、值得紀錄的重點、以後會用到的素材，然後在筆記的尾端註明詳細的文獻來源細節。註明清楚文獻的出處，是為了讓未來的自己和讀者，對這些內容得以進行檢驗和驗證。這也是一種筆記內建的回饋機制。長度不要超過三行，並加上出處，之後才能抽出思想成為永久筆記。&lt;/p>
+&lt;p>永久筆記則只記錄一個想法，是知識網路中的最小可復用單位，在整理這部分筆記是需要回答的問題是：&lt;/p>
+&lt;ol>
+&lt;li>我知道了什麼？ What I know?&lt;/li>
+&lt;li>這可以被其他解釋嗎？ Can this be explained by something else？&lt;/li>
+&lt;li>對 X 來說，Y的意義是什麼？ What does X mean for Y？&lt;/li>
+&lt;li>有什麼東西能用這個想法解釋？ 再來，這東西值得作為一個關鍵字讓你能找到其他筆記的關係嗎？ How can I use this idea to explain something else? additionally it's important to find keywords in your notes to find connections among notes？&lt;/li>
+&lt;/ol>
+&lt;h2 id="兩種元檔案">兩種元檔案&lt;/h2>
+&lt;p>兩種元檔案分別是索引表跟樞紐筆記。&lt;/p>
+&lt;p>索引表以清單的方式組織，目的是讓你能找到你個人最關心最重要的筆記，有點類似早期的入口網站，也有點類似 GTD 中的下一步清單概念。這類型的筆記取代了標籤的功能。&lt;/p>
+&lt;p>由於很相似超文本，因此多數人想當然爾認為這個系統使用了標籤（tag），但盧曼並沒有在他的筆記使用到任何一個標籤。相反的，是採用索引表方式。每一個條目後面的編號都很少，有時只有一個。盧曼在其「系統」這一個條目只有一個筆記為入口，卻發展出一個龐大而豐富的系統理論。&lt;/p>
+&lt;p>樞紐筆記作用於將筆記以主題作為關聯，並且揭露出筆記與筆記之間的階層關係。換言之，這樣的筆記具有目錄結構以及相對應的「心智圖」（mind map）。&lt;/p>
+&lt;h2 id="編碼爭議及我的看法">編碼爭議及我的看法&lt;/h2>
+&lt;p>Zettelkasten 中對於每個筆記都會給予唯一識別符。筆記的唯一識別符的作用是類似 &lt;a href="https://git-scm.com/">Git&lt;/a> 的 Commit ID，作用在於連接思想的分支。如果是單純的「超文本」（hyper text），是無法描繪思想跟思想的相關強弱。&lt;/p>
+&lt;p>我們可以說，這個筆記系統可以看作是一個「狀態樹」（state tree），每增加一個筆記，就是對一個想法做增補，逐步發展出自己的觀點，草稿，最後再將這些完成的筆記卡片排序成為正式文稿。這相當解釋了為什麼原始版本的「樞紐筆記」(hub notes)放的，不是所有該主題相關的筆記，而是解釋這個主題的筆記入口。&lt;/p>
+&lt;p>將筆記系統設計成狀態樹的好處是，你很容易可以追蹤（trace）一個想法的來源跟演化過程。會做這樣的設計，我想是因為人文學科不如理工學科每個概念都能精確定義，有時必須透過廣泛描述或是間接指涉，完整交代「脈絡」（context）才能讓讀者與作者能在名詞上產生共識，因此人文領域尤其強調要交代思想的系譜，原創者採用這個方法，將寫作過程切割成一小塊小塊的思想筆記，到寫作時刻只需要煩惱怎麼把思想筆記以正確的排序，做線性的表達。&lt;/p>
+&lt;p>現在的筆記軟體多使用 UUID 或是 Timestamp 實作，然而從 2015 年開始，便開始有如下爭論&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://forum.zettelkasten.de/discussion/2125/no-luhmann-was-not-about-folgezettel">No, Luhmann Was Not About Folgezettel, 2015&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.researchgate.net/publication/322931870_Introduction_into_Luhmanns_Zettelkasten-Thinking_and_its_Technical_Implementation">Introduction to Luhmann’s Zettelkasten-thinking and its technical implementation, 2015&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://forum.zettelkasten.de/discussion/976/the-case-for-a-digital-folgezettel">The case for a digital folgezettel, 2020&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://forum.zettelkasten.de/discussion/978/is-there-a-benefit-to-luhmann-ids-vs-date-time-ids">Is there a benefit to Luhmann IDs vs. Date/Time IDs?, 2020&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://twitter.com/louielu_tw/status/1501485240363020291">Louis Lu&lt;/a> 認為 Luhman ID 包括下面幾種特性：&lt;/p>
+&lt;ul>
+&lt;li>Add Suppliment, Next&lt;/li>
+&lt;li>Link following similar to NL-Archiv, 包含:
+&lt;ul>
+&lt;li>Backward, Forward the Note&lt;/li>
+&lt;li>Forward to Suppliment&lt;/li>
+&lt;li>Tree view for the notes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>並認為最大的好處是可以找到入口位置，否則會有筆記找不到的狀況。&lt;/p>
+&lt;p>我則採用樞紐筆記解決這樣的問題，並認為這兩種 ID 可以直接共存，一種是為了主題輸出為編碼，另一種是為了抓住靈感。&lt;/p>
+&lt;p>在我應用卡片筆記法的過程中，用 UUID 定位不太是問題，只是目錄 最好筆記軟體能幫我產生出來，另一個挑戰是要把連結分類，例如屬於術語的連結結構是一組、論述的連結結構是一組。 這種編碼的好處，我現在還感受不到，因為你可以用連結的方式來模擬這種巢狀結構。比如說 1,1c1 跟 1,1c2 只會在 1,1c 中連結到，這樣我在找資料時，就是先打開 1,1c 再按連結到 1,1c1 或是 1,1c2。&lt;/p>
+&lt;h2 id="難在要用連結還是標籤如何建立筆記的關係">難在要用連結還是標籤如何建立筆記的關係&lt;/h2>
+&lt;p>在記錄筆記時發現用「標籤」（tag）容易犯下“想當然耳”分類毛病，直接把可能是一個新的東西，用舊的「心智基模」（shcema）來理解。且不時出現困惑 - 我現在要用標籤還是要用連結關聯這些筆記的疑惑。而這些疑問都在〈Communicating with Slip Boxes〉得到解答。&lt;/p>
+&lt;p>在「1. 連結的可能性（Verweisungsmöglichkeiten）」這一節，盧曼提到&lt;/p>
+&lt;blockquote>
+&lt;p>Often the context in which we are working suggests a multiplicity of links to other notes. This is especially the case when the card index is already voluminous. In such cases it is important to capture the connections radially, as it were, but at the same time also by right away recording back links in the slips that are being linked to.&lt;/p>
+&lt;/blockquote>
+&lt;p>而標籤沒有方向性，所以我自己的理解是「標籤應該被連結」取代，以強迫自己重頭看檢視永久筆記的內容是不是不具有原子（atomic） 性質，是不是沒有處理過，放了超過一種思想(thought)，導致同質性內容無限增生。&lt;/p>
+&lt;p>所以盧曼還提到了因為連結沒有順序，再在「3. Register」這一節引入了一個 register 的概念：&lt;/p>
+&lt;blockquote>
+&lt;p>Considering the absence of a systematic order, we must regulate the process of rediscovery of notes, for we cannot rely on our memory of numbers. (The alternation of numbers and alphabetic characters in numbering the slips helps memory and is an optical aid when we search for them, but it is insufficient. Therefore we need a register of keywords that we constantly update. The [fixed] numbers of the particular slips is also indispensable for the register.&lt;/p>
+&lt;/blockquote>
+&lt;p>所以用 register 在開始記錄筆記之前，就規範發現筆記的過程，但我們通常在軟體內使用 標籤，就是不想使用瀏覽目錄方式來找到我們想要的筆記，傾向於搜尋，而不使用分類（category）。&lt;/p>
+&lt;p>這會跟這個方法有衝突，因為標籤是沒有唯一性。相反地，盧曼在記筆記的過程不用標籤分類，而把分類的步驟放在 register 這個階段，才開始做有順序的組織。這樣他在之後輸出文章的時候，只要決定怎麼安排筆記的順序即可。&lt;/p>
+&lt;p>標籤並不是一個很好的關聯知識的方式。&lt;/p>
+&lt;p>標籤的用途是可以做多重指涉，但在資料搜集之後的很長一段時間，例如半年後，你會因為不常使用導致相關記憶衰退，忘記當初採用哪一個 name convention 來下標籤，在後續使用標籤搜尋時，反而會加重認知負擔。&lt;/p>
+&lt;p>舉例來說，我們在下標籤，會盡可能把想到，可能相關的名稱都加上，比如說一個資料跟專案管理有關，你可能會加上 PM, Project Management, 專案管理等標籤，但這三個 標籤雖然在抽象理解上是指向同一件東西，但當下下標籤時，是將它視為三個不一樣的東西。會採用這種作法是為了不要做精確分類，把處理歧異性的認知負荷遞延到搜尋階段。而用樞紐筆記或是索引表的方式關聯，雖然在一開始的策略仍然是先放了再說，但在命名時會避開在使用名稱指涉對象時，採用到「多重指涉」的方式。&lt;/p>
+&lt;p>在我對此系統的理解中，用連結取代標籤，能去除掉過早分類筆記的決策認知負擔； register （索引表跟樞紐筆記）解決搜尋問題，只保留自己關心的筆記，這部分不超過 10 個，因為在做筆記的過程中，你會不斷抽象，把知識點連接起來，將原始的素材的同質性內容不斷抽取融合，留下對自己有貢獻的東西。&lt;/p>
+&lt;h2 id="難在如何寫文獻筆記以及整理出永久筆記">難在如何寫文獻筆記以及整理出永久筆記&lt;/h2>
+&lt;p>大多數人在應用卡片筆記法時，最大的困惱是怎麼寫文獻筆記，以及怎麼整理出永久筆記。我也不例外，即便到現在，對於卡片筆記法中的文獻筆記怎麼過渡到永久筆記這環節，還是覺得很棘手。&lt;/p>
+&lt;p>根據 &lt;a href="https://readingoutpost.com/zettelkasten-6-steps/">〈正確使用卡片盒筆記法（Zettelkasten）的六個關鍵步驟〉&lt;/a>一文，盧曼本人的做法如下：&lt;/p>
+&lt;blockquote>
+&lt;p>短篇幅的 Literature Note 的筆記上面只有一個想法，在底端寫下文獻的「名稱、作者、年份和頁數」。中等和長篇幅的 Literature Note 則是標註「頁數、想法」，每一條重點只有一到兩行的文字敘述，然後一連串排列下去。然後，他會把這些筆記全部收納在另一個卡片盒裡（Literature Slip-box），以文獻作者名稱的字母排序。如同他在這篇文章〈Learning How to Read〉說過的：「我們要怎麼記得自己讀過的東西？其中一種可能是，用人物的名字排序來記憶。」&lt;/p>
+&lt;/blockquote>
+&lt;p>在如今資訊爆炸的時代，該方法不合我使用，因此在紀錄文獻筆記時，來源出處透過 &lt;a href="https://www.zotero.org/">Zotero&lt;/a> 管理，內容則不如盧曼採用條列式，而是先檢視閱讀，撰寫文綜核心五問 (&lt;wallaceCriticalReadingWriting2016>)：&lt;/p>
+&lt;ol>
+&lt;li>為什麼讀這個？ Why am I reading this?&lt;/li>
+&lt;li>作者寫這篇文章的目的是什麼？ What are the authors trying to achieve in writing this?&lt;/li>
+&lt;li>作者所述與我的研究的相關之處是什麼？ What are the authors claiming that is relevant to my work?&lt;/li>
+&lt;li>作者的這些闡述的有多可信，為什麼呢？ How convincing are these claims and why?&lt;/li>
+&lt;li>這篇文章對我有什麼用？ In conclusion, what use can I make of it?&lt;/li>
+&lt;/ol>
+&lt;p>要不要閱讀這件事情，比記錄閱讀筆記還重要。&lt;/p>
+&lt;p>在檢視閱讀時，會記錄閱讀時的閃念筆記，然後再開始做逐篇筆記，最後做文獻綜述。這些過程結束後，才有辦法拆成永久筆記。時間耗費很長，我基本上認為這樣的讀法，一年讀不到十本書。弔詭的是我看一個主題相關的閱讀素材是，是會跳躍、平行的看的，例如看投資相關的書，我會同時看 5 本以上，查一個技術問題怎麼實作，也會同時看個 4-5 篇相關文章⋯⋯&lt;/p>
+&lt;p>因此要不要投入這麼多的精力肢解筆記成一個一個節點，是一個困難的選擇問題。目前我沒有比較好的答案。也許在回答什麼叫做讀完一本書以前，我沒辦法處理如何從文獻筆記過渡到永久筆記的選擇問題。有些書在不同的時間點中，會看出不同的「意思」來。好比道德經，我在 17-22 歲時讀，覺得是逃避塵世，追求心靈平靜的心靈雞湯，後來碰了一點政治，才意識到，原來是一本帝王學。&lt;/p>
+&lt;h2 id="從扎根理論學習">從扎根理論學習&lt;/h2>
+&lt;p>我在研究如何使用 Zettelkasten 做筆記時，意識到將文獻筆記轉錄到永久筆記的過程，與扎根理論有異曲同工之妙，特別是開放編碼的部分，只是 Zettelkasten 原方法論沒有明確的個編碼操作方式。那麼什麼是編碼呢？&lt;/p>
+&lt;p>我們可以這樣理解。理解文本的語句，是一個分析行為，也就是為編碼。林本茂指出，《質性研究分析》一書中，描述&lt;/p>
+&lt;blockquote>
+&lt;p>編碼就是分析。分析要做的就是檢閱一組札記（已轉謄的或是已綜合的），有意義的切割他們，但要保留部分與部分之間的關係。這意味著你要區分與連結你已取用的資料，以及你所做的相關省思。代碼（codes）就是標籤，它們是意義的單位，你把這個標籤指定給所蒐集到的描述性或推理性的資料。通常代碼可以指定給長短不一的文字——字詞、片語、句子，或段落（連結或不連結至某地點的均可）。代碼可以是平鋪直敘的，也可以是較複雜的（例如一個譬喻）。&lt;/p>
+&lt;/blockquote>
+&lt;p>把一個概念寫成一張卡片，並用連結指過去就是「把這個標籤指定給所蒐集到的描述性或推理性的資料」。至於編碼的種類有哪幾種呢？ Miles 和 Huberman 將代碼分為三種層次，分別是描述性、詮釋性、主題性。&lt;/p>
+&lt;blockquote>
+&lt;p>描述性的代碼是低詮釋性的，研究者只是把一類現象歸給一個詞彙。而詮釋性代碼則涉及到 較為深層的意義或動機的掌握。主題／主旨代碼推理性與解釋性 更高，通常也是一個詞彙，這個詞彙會指出這個被類推的主題或組型 。&lt;/p>
+&lt;/blockquote>
+&lt;p>撰寫永久筆記的方式，便很類同編碼過程。&lt;/p>
+&lt;h2 id="小結">小結&lt;/h2>
+&lt;p>卡片筆記法非常適合習慣於拼圖式思考處理複雜主題的人使用。在法律中，有一個馬賽克理論可以用來向人說明拼圖式思考跟線性思考的差異，即&lt;/p>
+&lt;blockquote>
+&lt;p>持續長期追蹤，資訊被一點一滴地蒐集起來，就像拼一片一片的馬賽克一樣，乍看之下微不足道、瑣碎的圖案，但拼聚在一起後就會呈現一個寬廣、全面的圖像。&lt;/p>
+&lt;/blockquote>
+&lt;p>現如今我筆記方式也跟原本差距慎大，因此之後將我的筆記方式稱為「不知道筆記法」吧。&lt;/p></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category><category domain="https://hychen.me/tags/zettelkasten/">Zettelkasten</category></item><item><title>經營 DAO 的人或許該讀讀錢穆的《中國歷代政治得失》</title><link>https://hychen.me/post/%E7%B6%93%E7%87%9F-dao-%E7%9A%84%E4%BA%BA%E6%88%96%E8%A8%B1%E8%A9%B2%E8%AE%80%E8%AE%80%E9%8C%A2%E7%A9%86%E7%9A%84%E4%B8%AD%E5%9C%8B%E6%AD%B7%E4%BB%A3%E6%94%BF%E6%B2%BB%E5%BE%97%E5%A4%B1/</link><guid isPermaLink="true">https://hychen.me/post/%E7%B6%93%E7%87%9F-dao-%E7%9A%84%E4%BA%BA%E6%88%96%E8%A8%B1%E8%A9%B2%E8%AE%80%E8%AE%80%E9%8C%A2%E7%A9%86%E7%9A%84%E4%B8%AD%E5%9C%8B%E6%AD%B7%E4%BB%A3%E6%94%BF%E6%B2%BB%E5%BE%97%E5%A4%B1/</guid><pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>如今代議式民主遭人詬病已久。在臺灣，任何剛開始思考改善代議制度的人，往往從投票制度的改善開始著手，並普遍喜愛「流動式民主」（Liquid democracy）概念，我也不例外。但在經歷過這麼多年的「鄉民參與」(因為公民參與是專有名詞，所以這邊使用鄉民參與)，知道這方向的侷限後，便放棄了深入研究這方向。&lt;a href="https://g0v.tw/">g0v&lt;/a> 曾在內部推過 &lt;a href="https://liquidfeedback.com/en/">Liquid Feedback&lt;/a> 這套系統，最後以失敗告場，主要是因為「參與動力不足」。參與動力不足，也是如今 DAO tooling 工具比 DAO 多、絕大多數 DAO 都死城的原因之一。&lt;/p>
 &lt;p>其實「投票制度」的改善是經營 DAO 中最不重要的事情， DAO 的「forkbility」才是核心課題，不具備「forkbility」的 DAO，都很有「洗白式開放」（openwashing）的嫌疑。「洗白式開放」意味「僅做了表面開放的形式，實質上並沒有接受他人意見、真的讓人參與的空間」。這麼多治理模型中，&lt;a href="https://molochdao.com/">Moloch&lt;/a> 的「憤怒退出」（rage out) 是我認為一個比較好的解法。&lt;/p>
 &lt;p>可 DAO 核心團隊太開放，給予太多的 forkbility，又可能保留不住價值，導致 DAO 的死亡，如何調和，難上加難，我沒答案。&lt;/p>
 &lt;p>關於「參與治理」這件事，有些人認為這在社會學領域已有大量工作完成，工程師應該跟「審議式民主」（deliberative democracy）這一流派學習。我持反面看法。&lt;/p>
