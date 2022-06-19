@@ -720,7 +720,7 @@ uglyURLs = false
     # 注意：只支援 HSL 顏色值
 
     # 文章的內容寬度
-    postWidth = 36
+    postWidth = 42
     # 說明：如果留空（""），則用 42 作為預設值
     #      單位：em
 
@@ -967,7 +967,7 @@ uglyURLs = false
     ######################################
     ## 字號（單位：px）
 
-    fontSize = 18
+    fontSize = 16
 
     ######################################
     ## 製表符的寬度
@@ -1389,3 +1389,5 @@ uglyURLs = false
     fofVideoWebm = ""
     fofVideoMp4 = ""
     # 說明：影片地址可留空（""）
+    
+    enableHeti = true 
