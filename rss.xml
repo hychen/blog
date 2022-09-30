@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.104.0 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Sun, 25 Sep 2022 18:05:29 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>記阿怪陳志翰</title><link>https://hychen.me/post/%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</link><guid isPermaLink="true">https://hychen.me/post/%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</guid><pubDate>Mon, 26 Sep 2022 01:04:00 +0800</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>我有一個君子之交淡如水的朋友，叫阿怪。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.104.2 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Fri, 30 Sep 2022 02:46:34 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>記阿怪陳志翰</title><link>https://hychen.me/post/%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</link><guid isPermaLink="true">https://hychen.me/post/%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</guid><pubDate>Mon, 26 Sep 2022 01:04:00 +0800</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>我有一個君子之交淡如水的朋友，叫阿怪。&lt;/p>
 &lt;p>阿怪出道非常早，也曾風光一時，幫很多人寫過知名歌曲。代表作是台北小巨蛋到現在都禁止演唱的歌，張惠妹的《三天三夜》。作為一個平日都以 ID 互相稱呼的阿宅。我是非常非常晚才知道他的本名，叫做陳志翰。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/xGgSLk8nWRs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
@@ -109,8 +109,17 @@ alt="Figure 3: 攝於 Hacking Thursday 聚會，李四元（fourdollars）進行
 &lt;h2 id="在臺灣百花齊放的-dao">在臺灣百花齊放的 DAO&lt;/h2>
 &lt;p>首先談談「去中心化組織」（DAO）。&lt;/p>
 &lt;p>從整個台灣的權力結構來看，最後政府對「去中心化組織」（DAO） 的定義不會只有區塊鏈社群，或精准點（以太社群的觀點）的定義。以議事權力大小來分，很大機會會以「網路治理」這一派的觀點為準，因為這一派多有台灣半官方法人高管的身份，國際影響力也大於區塊鏈社群。&lt;/p>
-&lt;p>甚至台灣原有的開放源碼社群影響力也大於現在的區塊鏈社群。&lt;/p>
-&lt;p>其實，從陳水扁總統年代開始，採用 DAO 經營的社群就跟政府有很密切的互動。當年還有不少社群的人，作為技術官僚位處高位，而在蔡英文總統上台後，也曾被重用。（ICOS 的議程甚至包含軟體產業策略發展，差別在於，以前都是 BSD 社群的人嫌棄 Linux 的人都在搞政治，現在換 BSD 社群的人都在搞政治。）&lt;/p>
+&lt;p>甚至台灣原有的「自由軟體/開放源碼社群」影響力也大於現在的區塊鏈社群。&lt;/p>
+&lt;blockquote>
+&lt;p>自由軟體被成功地轉譯(translate)成國碼，依據各自的需求，透過各自的網絡關係，操著適宜的語言，將自由軟體盡情地轉譯：對於自由軟體產業的人而言，透過自己的網絡關係，不斷地召喚國家，『free software』=『free the nation』而『open = chance』；而對於教育議題的人而言，『free software』 = 『teach you freedom』，而『open = equal、share』的教育理念，並且『建立自主的資訊產業」』以及『建立自主的資訊教育』這兩個國家都是無法推擋的理由&lt;/p>
+&lt;p>~ 摘自「叛碼或國碼？—台灣自由軟體運動的發展與挑戰(1991-2004)」&lt;/p>
+&lt;/blockquote>
+&lt;p>其實，從陳水扁總統年代開始，採用 DAO 模式經營的社群就跟政府有很密切的互動。當年還有不少社群的人，作為技術官僚位處高位，而在蔡英文總統上台後，也曾被重用。（ICOS 的議程甚至包含軟體產業策略發展，差別在於，以前都是 BSD 社群的人嫌棄 Linux 的人都在搞政治，現在換 BSD 社群的人都在搞政治。）&lt;/p>
+&lt;figure>&lt;img src="https://hychen.me/ox-hugo/oss_community_network.png"
+alt="Figure 1: 摘自「叛碼或國碼？—台灣自由軟體運動的發展與挑戰(1991-2004)」， 葛皇濱做圖"/>&lt;figcaption>
+&lt;p>&lt;span class="figure-number">Figure 1: &lt;/span>摘自「叛碼或國碼？—台灣自由軟體運動的發展與挑戰(1991-2004)」， 葛皇濱做圖&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
 &lt;p>而在技術社群以外，還有沒有像 DAO 的群體呢？有的，那就是公民審議圈口中的公民團體。&lt;/p>
 &lt;p>政府認為的 DAO 跟「多元宇宙」若只有 &lt;a href="https://pdis.nat.gov.tw/zh-TW/blog/%E7%82%BA%E4%BD%95%E6%88%91%E6%98%AF%E5%A4%9A%E5%85%83%E5%AE%87%E5%AE%99%E4%BA%BA/">RadicalxChange&lt;/a> 的定義，那格局就小了，太小了。台灣的經驗有其以外，跳脫「西方的凝視」外的其他嘗試。明明可以把自己的弄的各方來朝，卻總是把自己做成附庸，真是哀其不幸，怒其不爭。&lt;/p>
 &lt;h2 id="多元宇宙不能代表台灣經驗">多元宇宙不能代表台灣經驗&lt;/h2>
