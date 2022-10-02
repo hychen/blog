@@ -196,7 +196,7 @@ uglyURLs = false
     #     pre = "internal"
     #     post = "home"
     [[menu.main]]
-        pageref = "/post/"
+        pageref = "/posts/"
         name = "文章"
         weight = 2
         #pre = "internal"
@@ -214,7 +214,7 @@ uglyURLs = false
         #pre = "internal"
         #post = "tags"
     [[menu.main]]
-        pageref = "/post/20220514014035-我的部落格"
+        pageref = "/posts/20220514014035-我的部落格"
         name = "關於"
         weight = 5
         #pre = "internal"
@@ -320,7 +320,7 @@ uglyURLs = false
       "我修不知道。",
       "我觀不可觀。",
       "----",
-      "[文章](/post) ｜ [分類](/categories)",
+      "[文章](/posts) ｜ [分類](/categories)",
       "----",
     ]
     # 底部連結的內間距，單位：em
