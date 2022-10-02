@@ -49,6 +49,7 @@ uglyURLs = false
     categories = "/categories/:slug/"
     tags = "/tags/:slug/"
 
+
 # 類別
 [taxonomies]
     category = "categories"
