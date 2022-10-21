@@ -988,12 +988,12 @@ uglyURLs = false
     enableParagraphIndent = true
 
     # 是否縮排第一段（全域性設定）
-    indentFirstParagraph = false
+    indentFirstParagraph = true
     # 說明：文章的 Front Matter 中的 `indentFirstParagraph`
     #      的優先順序高於此處
 
     # 分段樣式（全域性設定）
-    paragraphStyle = "margin"
+    paragraphStyle = "indent"
     # 說明：段間距式（margin）或段首縮排（indent）
     #      文章的 Front Matter 中的 `indent`
     #      的優先順序高於此處
@@ -1010,7 +1010,7 @@ uglyURLs = false
     ## 首字下沉
 
     # 是否開啟（全域性設定）
-    enableDropCap = false
+    enableDropCap = true
     # 說明：文章的 Front Matter 中的 `dropCap`
     #      的優先順序高於此處
 
@@ -1056,7 +1056,7 @@ uglyURLs = false
     enablePostCopyright = true
 
     # 是否顯示（全域性設定）
-    displayPostCopyright = true
+    displayPostCopyright = false
     # 說明：文章的 Front Matter 中的 `displayCopyright`
     #      的優先順序高於此處
 
@@ -1390,5 +1390,5 @@ uglyURLs = false
     fofVideoWebm = ""
     fofVideoMp4 = ""
     # 說明：影片地址可留空（""）
-    
-    enableHeti = true 
+
+    enableHeti = true
