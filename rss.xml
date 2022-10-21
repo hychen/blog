@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.104.3 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Fri, 21 Oct 2022 04:26:15 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>法律管不到的地方 - Web 3 名稱註冊的權利</title><link>https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</link><guid isPermaLink="true">https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</guid><pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>名子非常重要。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.104.3 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Fri, 21 Oct 2022 04:49:58 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>法律管不到的地方 - Web 3 名稱註冊的權利</title><link>https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</link><guid isPermaLink="true">https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</guid><pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>名子非常重要。&lt;/p>
 &lt;p>尤其是在數位時代，網路上的名子，有時候比「本名」還真。乘載的不只是我們在網路上的信譽，更朔造我們的&lt;a href="https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/">人格&lt;/a>。&lt;/p>
 &lt;p>&lt;a href="https://hychen.me/posts/20221002194604-%E5%85%B6%E5%AF%A6_%E8%87%BA%E7%81%A3_web_3_%E7%94%A2%E6%A5%AD%E9%9C%80%E8%A6%81_%E6%95%B8%E4%BD%8D%E4%B8%AD%E4%BB%8B%E6%B3%95_%E9%80%99%E6%A8%A3%E7%AB%8B%E6%B3%95%E7%B2%BE%E7%A5%9E%E7%9A%84%E6%B3%95%E8%A6%8F/">既然之前提過法律的局限性是 Web3 可切入探討的角度&lt;/a>，那順便聊聊網路上，名子註冊爭議吧！在這類案例中，往往是公司決策權力大於國家司法。雖然維根斯坦說：「名子只是對象的指謂」，但孔老爺子更說過：「君子無所爭，必也正名乎？」。我們雖說算不上君子，但名子總是會爭一爭的。&lt;/p>
 &lt;p>不久前，&lt;a href="https://appworks.tw/team/natelie-lin/">Appworks 的分析師林楓&lt;/a> 寫一了一篇 &lt;a href="https://mirror.xyz/nataliefenglin.eth/cg6jpNoBlvogwkzcmubqKyNJp9klbCsKnooOopdDIC0?fbclid=IwAR0TJf3LLnsr-icyTgqc1RwNpgS8B5p_CoaD1Pjmepgwr1Ta7aTKpBTtP_E">fame, opps, (de)centralization, &amp;amp; doxxing&lt;/a>，講了她的觀察：&lt;/p>
@@ -24,69 +24,54 @@
 &lt;p>so, name registration of web3 app should be 100% free, everyone can register the name they want, but app product should have a board like ICANN to allow users to participate the decision, or even co-create the important policies, to reach the consensus of entire users, team, and the investors behind.&lt;/p>
 &lt;/blockquote>
 &lt;p>英文是用神器 &lt;a href="https://www.deepl.com/translator">deepl.com&lt;/a> 翻的。嗯！意思有到就好，講英文很累。&lt;/p>
-&lt;p>另外，DNS 是最適合做成 NFT ，並有二級市場的應用，但這就需要 TWNIC 點頭。或許數位發展部可以推動一下，使其成為 NFT 跟 DAO 的示範應用。&lt;/p></description><category domain="https://hychen.me/categories/%E7%A4%BE%E8%AB%96/">社論</category><category domain="https://hychen.me/tags/web3/">Web3</category></item><item><title>記阿怪陳志翰</title><link>https://hychen.me/posts/20221002182112-%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</link><guid isPermaLink="true">https://hychen.me/posts/20221002182112-%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>我有一個君子之交淡如水的朋友，叫阿怪。&lt;/p>
-&lt;p>阿怪出道非常早，也曾風光一時，幫很多人寫過知名歌曲。代表作是台北小巨蛋到現在都禁止演唱的歌，張惠妹的《三天三夜》。作為一個平日都以 ID 互相稱呼的阿宅。我是非常非常晚才知道他的本名，叫做陳志翰。&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/xGgSLk8nWRs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;p>什麼時候認識他？我有點記不清楚確切得時間，可以確定的是參加 &lt;a href="https://tossug.net/">TOSSUG&lt;/a> 後認識。TOSSUG 全名是台北開放源碼使用者聚會，由葉平與其友人共同創辦，主要是交流圍繞在開放原始碼、自由軟體的話題。這時的葉平才剛從臺大物理系離職，中年轉業進入 Google 不久，江湖人稱葉教授。&lt;/p>
-&lt;p>當年剛從軍中退伍不久，年少氣盛，還不曉得這個人的咖位，只覺得這怪叔叔怎麼老是問些技術蠢問題。直到一次聚會，他跟葉平聊作詞，談到華語流行圈作詞的弊病，談到退過現在如日中天的方文山的稿，才知道他是音樂創作人。他說他作詞上很少服人，除了林夕。&lt;/p>
-&lt;h2 id="原來是你啊">原來是你啊！&lt;/h2>
-&lt;p>第一次聽到他的外號後，我們都問陳奕迅唱的那首歌〈阿怪〉，寫的是你嗎？ 他說是。&lt;/p>
-&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/Ua8zztI71Zs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
-&lt;/div>
-&lt;p>本來是三人約好，他跟林夕，米可白說要互相寫歌給對方，結果只有林夕真的有寫。阿怪這首歌詞寫得真是好，除了說他帥以外。我覺得，就算是普男如我，都還是贏他一點點。&lt;/p>
+&lt;p>另外，DNS 是最適合做成 NFT ，並有二級市場的應用，但這就需要 TWNIC 點頭。或許數位發展部可以推動一下，使其成為 NFT 跟 DAO 的示範應用。&lt;/p></description><category domain="https://hychen.me/categories/%E7%A4%BE%E8%AB%96/">社論</category><category domain="https://hychen.me/tags/web3/">Web3</category></item><item><title>記阿怪陳志翰</title><link>https://hychen.me/posts/20221002182112-%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</link><guid isPermaLink="true">https://hychen.me/posts/20221002182112-%E8%A8%98%E9%98%BF%E6%80%AA%E9%99%B3%E5%BF%97%E7%BF%B0/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>我有一個君子之交淡如水的朋友，叫阿怪。阿怪出道非常早，也曾風光一時，幫很多人寫過知名歌曲。代表作是台北小巨蛋到現在都禁止演唱的歌，張惠妹的《三天三夜》。作為一個平日都以 ID 互相稱呼的阿宅。我是非常非常晚才知道他的本名，叫做陳志翰。&lt;/p>
 &lt;figure>&lt;img src="https://hychen.me/ox-hugo/h4_aguai0.jpeg"
 alt="Figure 1: 頂著一頭亂髮，瀟灑的阿怪"/>&lt;figcaption>
 &lt;p>&lt;span class="figure-number">Figure 1: &lt;/span>頂著一頭亂髮，瀟灑的阿怪&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
+&lt;h2 id="原來是你啊">原來是你啊！&lt;/h2>
+&lt;p>什麼時候認識他？我有點記不清楚確切得時間，可以確定的是參加 &lt;a href="https://tossug.net/">TOSSUG&lt;/a> 後認識。TOSSUG 全名是台北開放源碼使用者聚會，由葉平與其友人共同創辦，主要是交流圍繞在開放原始碼、自由軟體的話題。這時的葉平才剛從臺大物理系離職，中年轉業進入 Google 不久，江湖人稱葉教授。&lt;/p>
+&lt;p>當年剛從軍中退伍不久，年少氣盛，還不曉得這個人的咖位，只覺得這怪叔叔怎麼老是問些技術蠢問題。直到一次聚會，他跟葉平聊作詞，談到華語流行圈作詞的弊病，談到退過現在如日中天的方文山的稿，才知道他是音樂創作人。他說他作詞上很少服人，除了林夕。&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/Ua8zztI71Zs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>第一次聽到他的外號後，我們都問陳奕迅唱的那首歌〈阿怪〉，寫的是你嗎？ 他說是。本來是三人約好，他跟林夕，米可白說要互相寫歌給對方，結果只有林夕真的有寫。阿怪這首歌詞寫得真是好，除了說他帥以外。我覺得，就算是普男如我，都還是贏他一點點。&lt;/p>
 &lt;h2 id="他的音樂">他的音樂&lt;/h2>
-&lt;p>阿怪寫過不少名曲，但跟我們混時，他總自嘲已日幕西山，聊天時我們總笑他是過氣作曲家，怎麼跑來這圈子，完全八干子打不著。（說是過氣，但光靠版權分潤還是贏很多人）&lt;/p>
+&lt;p>阿怪寫過不少名曲，但跟我們混時，他總自嘲已日幕西山，聊天時我們總笑他是過氣作曲家，怎麼跑來這圈子，完全八干子打不著（說是過氣，但光靠版權分潤還是贏很多人）。偶而去 KTV 點他寫的歌，腦袋浮現的都是他自己唱的原版。全都是性愛版本。他說過他寫的歌，大部份一開始都是歪歌。一年 COSCUP 結束後，他跟一夥人去了 KTV 唱歌，可惜我沒跟到，否則聽原作者唱正版，是個相當有趣的體驗。&lt;/p>
+&lt;p>另一友人，在 &lt;a href="https://www.youtube.com/watch?v=4epTEGxXJ1Y&amp;amp;list=PLGNAqJdQPrAtOCLRd8BCEy6VmymL9mgZ4&amp;amp;index=5">Youtube&lt;/a> 上傳了當時的錄影，現場非常歡樂。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/4epTEGxXJ1Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;p>偶而去 KTV 點他寫的歌，腦袋浮現的都是他自己唱的原版。全都是性愛版本。他說過他寫的歌，大部份一開始都是歪歌。一年 COSCUP 結束後，他跟一夥人去了 KTV 唱歌，可惜我沒跟到，否則聽原作者唱正版，是個相當有趣的體驗。另一友人，在 &lt;a href="https://www.youtube.com/watch?v=4epTEGxXJ1Y&amp;amp;list=PLGNAqJdQPrAtOCLRd8BCEy6VmymL9mgZ4&amp;amp;index=5">Youtube&lt;/a> 上傳了當時的錄影，現場非常歡樂。&lt;/p>
-&lt;p>但說到底，我最愛的還是他這首，名不見經傳的《別人的女人》。&lt;/p>
+&lt;p>但說到底，我最愛的還是這首名不見經傳的《別人的女人》。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/3c5GdTFTiXs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;p>以及這首讓他說出「幹！從 1998 寫到 2003 年，終於寫完了」的《屋子裡有燈》&lt;/p>
+&lt;p>以及這首讓他說出「幹！從 1998 寫到 2003 年，終於寫完了」的《屋子裡有燈》。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/HOJ0q_0yscQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
 &lt;h2 id="他的源碼">他的源碼&lt;/h2>
-&lt;p>真正跟他比較熟，是在我跟幾個朋友共同創辦 &lt;a href="http://hackingthursday.wikidot.com/">HackingThursday&lt;/a> 後。幾乎每週都碰一次面。&lt;/p>
-&lt;figure>&lt;img src="https://hychen.me/ox-hugo/h4_aguai1.jpeg"
-alt="Figure 2: 攝於 Hacking Thursday 聚會後。我（右三），阿怪（前排右二），李圭烽（後排右一）"/>&lt;figcaption>
-&lt;p>&lt;span class="figure-number">Figure 2: &lt;/span>攝於 Hacking Thursday 聚會後。我（右三），阿怪（前排右二），李圭烽（後排右一）&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>Hacking Thursday 是一個每週四晚上會於特定咖啡店聚會。以「非會議」（unconference）形式、交換並實做各自提出的想法。通常我們都是帶著筆電，默默地坐著進行自己的專案，通常靜默不出聲，偶而才聊個兩三句，或是有個人突然想分享自己做的專案或是有趣的事情，才一群人聚攏在一塊。&lt;/p>
+&lt;p>真正跟他比較熟，是在我跟幾個朋友共同創辦 &lt;a href="http://hackingthursday.wikidot.com/">HackingThursday&lt;/a> 後。幾乎每週都碰一次面。Hacking Thursday 是一個每週四晚上會於特定咖啡店聚會。以「非會議」（unconference）形式、交換並實做各自提出的想法。通常我們都是帶著筆電，默默地坐著進行自己的專案，通常靜默不出聲，偶而才聊個兩三句，或是有個人突然想分享自己做的專案或是有趣的事情，才一群人聚攏在一塊。&lt;/p>
 &lt;figure>&lt;img src="https://hychen.me/ox-hugo/h4_aguai2.jpeg"
-alt="Figure 3: 攝於 Hacking Thursday 聚會，李四元（fourdollars）進行 demo。"/>&lt;figcaption>
-&lt;p>&lt;span class="figure-number">Figure 3: &lt;/span>攝於 Hacking Thursday 聚會，李四元（fourdollars）進行 demo。&lt;/p>
+alt="Figure 2: 攝於 Hacking Thursday 聚會，李四元（fourdollars）進行 demo。"/>&lt;figcaption>
+&lt;p>&lt;span class="figure-number">Figure 2: &lt;/span>攝於 Hacking Thursday 聚會，李四元（fourdollars）進行 demo。&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
 &lt;p>相較於他在流行音樂圈的咖味，他來我們這圈子通常是來討罵問程式要怎麼寫，或是找人幫他修電腦，或是把我們當樹洞，聊他想結婚的各種不順故事。阿怪不缺女人，乾妹妹也很多，奈何進入婚姻這墳墓的路途不順。可能這是才子的通病吧！難以定下來，卻又奢求一屋，兩人，三餐與四季的平淡生活，上窮碧落下黃泉，越想要什麼，越是得不到。「有事男朋友，無事阿怪哥」，他說。&lt;/p>
-&lt;p>阿怪除了詞曲創作上的才華外，在軟體產品發想上，也有許多超前時代的想法。諸如：&lt;/p>
-&lt;ul>
-&lt;li>跟李圭烽（a.k.a Thinker）聊到想做 p2p 電視，只不過請不動這尊神。 (~2008)&lt;/li>
-&lt;li>跟我聊到舞台 round down 的規劃軟體。(~2008)&lt;/li>
-&lt;li>劇本版本控制系統。(2009)&lt;/li>
-&lt;li>&lt;a href="https://github.com/aguai/TMDLang">TMDLangage&lt;/a> (他媽的標記語言) - 以類似 Markdown Languange 的標記語法建立依時序進行的事件流程表格諸如 樂隊形式級數樂譜 或 活動節目流程。&lt;/li>
-&lt;/ul>
+&lt;p>阿怪除了詞曲創作上的才華外，在軟體產品發想上，也有許多超前時代的想法。諸如跟李圭烽（a.k.a Thinker）聊到想做 p2p 電視，只不過請不動這尊神 (~2008)。，跟我聊到舞台 round down 的規劃軟體。(~2008)、劇本版本控制系統。(2009)，以及&lt;a href="https://github.com/aguai/TMDLang">TMDLangage&lt;/a>，這是以類似 Markdown Languange 的標記語法建立依時序進行的事件流程表格諸如 樂隊形式級數樂譜或活動節目流程。&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/Fi5Gl6OjANg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;p>說來，我算是他 Python 老師之一，只是比較菁英式教育，或說啟發性教育，強調學生的自主學習能力。然而業力總是會爆，不是不爆，只是時候未到。&lt;/p>
-&lt;p>有一年，我心血來潮想學怎麼作曲，在 Facebook 敲了敲他，請教怎麼進行。他簡單一句回覆：「矮哦！你就先哼一段就好了啊！」&lt;/p>
-&lt;p>嗯！ 跟我每次他問問題我就丟一堆連結叫他去看差不多⋯⋯&lt;/p>
+&lt;p>他想將軟體開發的許多最佳實踐方式導入演藝圈幕後工作流程許久，只是從未竣工。說來，我算是他 Python 老師之一，只是比較菁英式教育，或說啟發性教育，強調學生的自主學習能力。然而業力總是會爆，不是不爆，只是時候未到。有一年，我心血來潮想學怎麼作曲，在 Facebook 敲了敲他，請教怎麼進行。他簡單一句回覆：「矮哦！你就先哼一段就好了啊！」。嗯！ 跟我每次他問問題我就丟一堆連結叫他去看差不多。真是懷念那年少輕狂，臉上充滿蛋白質的時光。&lt;/p>
+&lt;figure>&lt;img src="https://hychen.me/ox-hugo/h4_aguai1.jpeg"
+alt="Figure 3: 攝於 Hacking Thursday 聚會後。我（右三），阿怪（前排右二），李圭烽（後排右一）"/>&lt;figcaption>
+&lt;p>&lt;span class="figure-number">Figure 3: &lt;/span>攝於 Hacking Thursday 聚會後。我（右三），阿怪（前排右二），李圭烽（後排右一）&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
 &lt;h2 id="拜拜">拜拜&lt;/h2>
 &lt;p>有時後人真是說走就走，他走那一年，我剛好因為一些事心力交瘁，身體出了一些問題，有過接近瀕死的經歷。他過世的消息，讓我非常震驚，也非常有感觸。平日幾乎不流淚的我，為此流了不少眼淚。&lt;/p>
-&lt;p>只是阿怪一直以來，給我的印象就是「歡樂」。我想即便是在是在天上，他也會一派瀟灑說：&lt;/p>
-&lt;p>「矮哦，開心一點嘛！」&lt;/p>
+&lt;p>只是阿怪一直以來，給我的印象就是「歡樂」。我想即便是在是在天上，他也會一派瀟灑說：「矮哦，開心一點嘛！」&lt;/p>
 &lt;p>僅以此文紀念。R.I.P.&lt;/p>
 &lt;blockquote>
 &lt;p>陳志翰（1974年10月16日－2019年4月4日），綽號「阿怪」，生於韓國首爾，台灣資深音樂製作人、音樂總監、程式設計師，專長華語流行音樂創作[2]。曾以音樂團體男女組合「莊祖宜 and Two fish」在豐華唱片出道發跡，但只發行一張專輯，後來去服兵役，音樂人陳復明將他留在豐華唱片，為試唱帶中的一首歌改詞，交給阿妹演唱，就是後來的《牽手》。之後轉入幕後專心餘音樂創作，代表作有張惠妹的《三天三夜》、《牽手》、《Open your eyes》，范逸臣的《I Believe》、《彩虹》，過去曾與不少知名歌手合作過，其中包括張惠妹、范逸臣、蕭淑慎、蕭敬騰、陶晶瑩、蘇永康、古巨基等人。2019年4月4日，在北京突然病逝&lt;/p>
