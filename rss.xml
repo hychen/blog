@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.104.3 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Sun, 23 Oct 2022 03:19:14 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>法律管不到的地方 - Web 3 名稱註冊的權利</title><link>https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</link><guid isPermaLink="true">https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</guid><pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>名子非常重要。尤其是在數位時代，網路上的名子，有時候比「本名」還真。乘載的不只是我們在網路上的信譽，更朔造我們的&lt;a href="https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/">人格&lt;/a>。既然之前
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.105.0 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Mon, 31 Oct 2022 06:08:03 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>法律管不到的地方 - Web 3 名稱註冊的權利</title><link>https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</link><guid isPermaLink="true">https://hychen.me/posts/20220424171922-web3_%E5%90%8D%E5%AD%97%E7%9A%84%E6%AC%8A%E5%88%A9/</guid><pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>名子非常重要。尤其是在數位時代，網路上的名子，有時候比「本名」還真。乘載的不只是我們在網路上的信譽，更朔造我們的&lt;a href="https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/">人格&lt;/a>。既然之前
 &lt;a href="https://hychen.me/posts/20221002194604-%E5%85%B6%E5%AF%A6_%E8%87%BA%E7%81%A3_web_3_%E7%94%A2%E6%A5%AD%E9%9C%80%E8%A6%81_%E6%95%B8%E4%BD%8D%E4%B8%AD%E4%BB%8B%E6%B3%95_%E9%80%99%E6%A8%A3%E7%AB%8B%E6%B3%95%E7%B2%BE%E7%A5%9E%E7%9A%84%E6%B3%95%E8%A6%8F/">提過法律的局限性是 Web3 可切入探討的角度&lt;/a>，那順便聊聊網路上，名子註冊爭議吧！在這類案例中，往往是公司決策權力大於國家司法。雖然維根斯坦說：「名子只是對象的指謂」，但孔老爺子更說過：「君子無所爭，必也正名乎？」。我們雖說算不上君子，但名子總是會爭一爭的。&lt;/p>
 &lt;p>不久前，&lt;a href="https://appworks.tw/team/natelie-lin/">Appworks 的分析師林楓&lt;/a> 寫一了一篇 &lt;a href="https://mirror.xyz/nataliefenglin.eth/cg6jpNoBlvogwkzcmubqKyNJp9klbCsKnooOopdDIC0?fbclid=IwAR0TJf3LLnsr-icyTgqc1RwNpgS8B5p_CoaD1Pjmepgwr1Ta7aTKpBTtP_E">fame, opps, (de)centralization, &amp;amp; doxxing&lt;/a>，講了她的觀察：&lt;/p>
 &lt;blockquote>
@@ -338,7 +338,96 @@ Reference Box 管理書目資訊，我採用 &lt;a href="https://www.zotero.org/
 &lt;p>等下，這不就是具象化的「社會契約」（social contract）？&lt;/p>
 &lt;p>有一年開始思索「公部門能不能 DAO 化」。那年讀了很多書跟論文，這麼多資料中，我受最多啟發的反倒是錢穆的《中國歷代政治得失》。書中談的是內外朝博弈、中央集權、地方分治、仕紳階級的重要性。讀完這本書後你會發現法制才是古人的傳統追求，對皇權的定義跟國民教育、影視劇所描述的也不一樣，皇帝並非今人所想，如此專制跟獨大。&lt;/p>
 &lt;p>在古人的認知裡，「皇帝」必須要對「天」負責，然而「天」是什麼？ 「天」自然不是一個人，若以西方理論的語境來談，「天」可以看成是一種皇權、政府、人民三者之間建立的「社會契約」（social contract）。此三者如何處理與「天」的關係，尤其是談到內外朝博弈與士紳階級的環節，非常值得經營 DAO 的人參考。&lt;/p>
-&lt;p>讀完不見然能知道什麼制度可行，但起碼能知道怎樣的制度過去會翻車。&lt;/p></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category></item><item><title>花好月圓不總是寓意美滿</title><link>https://hychen.me/posts/20221002201959-%E8%8A%B1%E5%A5%BD%E6%9C%88%E5%9C%93%E4%B8%8D%E7%B8%BD%E6%98%AF%E5%AF%93%E6%84%8F%E7%BE%8E%E6%BB%BF/</link><guid isPermaLink="true">https://hychen.me/posts/20221002201959-%E8%8A%B1%E5%A5%BD%E6%9C%88%E5%9C%93%E4%B8%8D%E7%B8%BD%E6%98%AF%E5%AF%93%E6%84%8F%E7%BE%8E%E6%BB%BF/</guid><pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>有一年參加朋友婚宴，辦在體育場，頗是浮誇，宴請的賓客不少，入座許久，婚宴仍未開始。&lt;/p>
+&lt;p>讀完不見然能知道什麼制度可行，但起碼能知道怎樣的制度過去會翻車。&lt;/p></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category></item><item><title>如何解決 org-helm-bibtext 跳出 "scan-error "Unbalanced parentheses" 的錯誤？</title><link>https://hychen.me/posts/20220520114334-%E5%A6%82%E4%BD%95%E8%A7%A3%E6%B1%BA_org_helm_bibtext_%E8%B7%B3%E5%87%BA_scan_error_unbalanced_parentheses_%E7%9A%84%E9%8C%AF%E8%AA%A4/</link><guid isPermaLink="true">https://hychen.me/posts/20220520114334-%E5%A6%82%E4%BD%95%E8%A7%A3%E6%B1%BA_org_helm_bibtext_%E8%B7%B3%E5%87%BA_scan_error_unbalanced_parentheses_%E7%9A%84%E9%8C%AF%E8%AA%A4/</guid><pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>在 Emacs 中可以用 &lt;a href="https://github.com/jkitchin/org-ref">org-ref&lt;/a> 跟 &lt;a href="https://github.com/tmalsburg/helm-bibtex">org-helm-bibtext&lt;/a> 搜尋、引用文獻，並且可以直接導入 &lt;a href="https://www.zotero.org/">Zotero&lt;/a> 輸出的 &lt;a href="https://www.bibtex.org/">Bibtex&lt;/a> 檔案，使用起來相當方便，但偶而我們會遇到 Bibtex 檔案解析失敗，跳出 &lt;code>scan-error &amp;quot;scan-error &amp;quot;Unbalanced parentheses&amp;quot; 195830 512550&amp;quot;&lt;/code> 類似的錯誤訊息，這代表什麼問題呢？本文簡略說明問題成因跟解法。&lt;/p>
+&lt;p>通常會出現這狀況，通常是
+Bibtex 檔案裡面的內容有不匹配的括號，導致 Regex 的解析錯誤。解決方式有兩種，一種是用 debug mode 啟動 Emacs，看 backtrace 是哪一個檔案導致的問題，另一種是打開 biblatex檔，透過 bibtext-validate 除錯。&lt;/p>
+&lt;h2 id="第一種方式">第一種方式&lt;/h2>
+&lt;p>首先用下面令查看 backgrace， 看是哪一個解析哪一的檔案導致的問題。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">emacs --debug-init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>根據錯誤訊息 &lt;code>scan-error &amp;quot;scan-error &amp;quot;Unbalanced parentheses&amp;quot; 195830 512550&amp;quot;&lt;/code> ，我們知道出錯的字元位置是在 &lt;strong>195830&lt;/strong> ，所以找到是哪一檔案後，直接用 &lt;code>goto-char&lt;/code> (M-g c) 跳到出錯的地方看是怎樣的內容導致錯誤：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-lisp" data-lang="lisp">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">goto-char&lt;/span> &lt;span class="mi">195830&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>執行後發現是因為 title 的 「自主學習-如何成為未來職場需要的自由人材(上）」 個字元是 &lt;code>(&lt;/code> 跟 &lt;code>）&lt;/code> 一個是半形，一個是全形，導致括號沒有正確匹配，將 ( 改成全形 &lt;code>（&lt;/code> 的即可。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bibtex" data-lang="bibtex">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">@video&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nl">bestianZiZhuXueXiRuHeChengWeiWeiLaiZhiChangXuYaoDeZiYouRenCaiShang2012&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">title&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{自主學習-如何成為未來職場需要的自由人材(上）}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">editor&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{{Bestian}}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">date&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{2012-12-27}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">url&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{https://www.youtube.com/watch?v=ZPzqw3x05-g}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">urldate&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{2022-04-05}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">abstract&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{自主學習促進會-遠距系列講座之四：如何成為未來職場需要的自由人才 中集網址：http://www.youtube.com/watch?v=Yc-fHn... 下集網址：http://www.youtube.com/watch?v=IqQTLQ... 自學出身和本科系出身的人材有無不同？  面試錄取者和未錄取的主要差異是？  軟體設計在學校學習有用嗎？還有哪些管道？ 面對大的挑戰時，如何避免自己嚇自己？如何評估挑戰的價值？ 如何面對理想與現實的拉扯？ 如何落實創意生活？在經常移動的工作中維持安定感與家庭相處品質？ 如何改變習慣？如何做出特出的事？ 如何決定是否要換工作？時間點該怎麼抓？ 如果以上正是您的疑問，本講座就是為您準備的心靈禮物。  本次講座由資深自由軟體工作者唐鳳(Audrey Tang)主講，天水工作室製作。}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">editortype&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{director}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">keywords&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{@DONE}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>除這以外，還有另一種出錯，就是《 、 &lt;code>「&lt;/code> 、 &lt;code>{&lt;/code> 這類兩兩一對的括號都不能單獨存在，否則也會出現匹配錯誤，出錯的例子如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bibtex" data-lang="bibtex">&lt;span class="line">&lt;span class="cl">&lt;span class="nc">@online&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nl">k3vin-wang.ethWebGTMCeLue2022&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">title&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{Web 3.0 {{GTM}} 策略：新思維、策略、指標}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">author&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{family=wang.eth, prefix=k3vin-, useprefix=true}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">date&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{2022-03-26T23:41:19}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">url&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{https://medium.com/digital-discovery/web-3-0-gtm-%E7%AD%96%E7%95%A5-%E6%96%B0%E6%80%9D%E7%B6%AD-%E7%AD%96%E7%95%A5-%E6%8C%87%E6%A8%99-66dabd819d34}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">urldate&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{2022-05-01}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">abstract&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{新創通常產出的項目和市場上的成熟的項目相較之下的不確定性會比較大，因此一個新創如何解決 『冷啟動問題 Cold Start Problem …}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">langid&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{english}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">organization&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">{{Digital Discovery}}&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>這邊可以看到，簡介內的文字裡的 &lt;code>『冷啟動問題&lt;/code> 的 &lt;code>「&lt;/code> 單獨存在，導致語法錯誤。&lt;/p>
+&lt;h2 id="第二種方式">第二種方式&lt;/h2>
+&lt;p>如果已經懷疑 &amp;quot;scan-error&amp;quot; 是因為 bibtext 檔案的格式出錯，bibtext 本身提供 lint 工具，其實可以用該命令直接檢查。執行該指令後，會直接顯示哪一行出現錯誤。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-lisp" data-lang="lisp">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">bibtext-validate&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>惟須注意的是，有時候 bibtext-validate 也抓不到左括號右掛號不匹配的問題，我多是仰賴第一種方式進行。&lt;/p>
+&lt;h2 id="小結">小結&lt;/h2>
+&lt;p>本篇文章說明了使用 org-helm-bibtext 常見的問題，以及兩種解決方式。&lt;/p></description><category domain="https://hychen.me/categories/%E5%95%8F%E9%A1%8C%E8%88%87%E8%A7%A3%E6%B3%95/">問題與解法</category><category domain="https://hychen.me/tags/emacs/">Emacs</category></item><item><title>花好月圓不總是寓意美滿</title><link>https://hychen.me/posts/20221002201959-%E8%8A%B1%E5%A5%BD%E6%9C%88%E5%9C%93%E4%B8%8D%E7%B8%BD%E6%98%AF%E5%AF%93%E6%84%8F%E7%BE%8E%E6%BB%BF/</link><guid isPermaLink="true">https://hychen.me/posts/20221002201959-%E8%8A%B1%E5%A5%BD%E6%9C%88%E5%9C%93%E4%B8%8D%E7%B8%BD%E6%98%AF%E5%AF%93%E6%84%8F%E7%BE%8E%E6%BB%BF/</guid><pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>有一年參加朋友婚宴，辦在體育場，頗是浮誇，宴請的賓客不少，入座許久，婚宴仍未開始。&lt;/p>
 &lt;p>他的哥哥（也是我朋友）許是無聊，便從主桌跑來我這桌吐口水，與我說些心底話。哎！我這是長得很像情緒垃圾桶嗎？哪裡不坐，坐我旁邊，妨礙我吃飯。對社交失能者來說，婚宴這麼無聊的活動，能幹的正經事只有「吃」。這兄妹情怨！兩性啊！婚姻啊！我懂什麼？我就懂吃飯！隔壁桌星海羅盤葉教授功力深厚，怎不去那邊請教？怕是人家帶了個兒子，在小輩面前聊這些，不好意思？&lt;/p>
 &lt;p>朋友是個妙人，其貌不揚，穿著邋遢，常年鶯鶯燕燕環繞，御姐與乾妹不少，叫人欣羨，誰叫他才高八斗，在流行音樂產業成名極早，可這麼多年來，總是單著。每次碰面，不是分享他的感情失敗史，就是嚷著想結婚沒女朋友。現下想來，當年他應是抱著弱弱相殘的心態，來找同樣單著的我吐苦水。不然找了這桌另一對恩愛非常的情侶講這些話，情緒沒宣洩到，反倒自傷七百。&lt;/p>
 &lt;p>聊了一會，新娘要進場了，他也就回主桌了，而我則進行我的正經事，吃！只有等待下一道菜的空檔，才在同桌其他友人話題中插上幾句。滿盤上、空盤下，直到輪到「花好月圓」這道菜上來。&lt;/p>
