@@ -215,6 +215,10 @@ uglyURLs = false
         #pre = "internal"
         #post = "tags"
     [[menu.main]]
+        url = "https://notes.hychen.me"
+        name = "筆記"
+        weight = 4
+    [[menu.main]]
         pageref = "/posts/20220514014035-我的部落格"
         name = "關於"
         weight = 5
@@ -321,7 +325,7 @@ uglyURLs = false
       "我修不知道。",
       "我觀不可觀。",
       "----",
-      "[文章](/posts) ｜ [分類](/categories)",
+      "[文章](/posts) ｜ [筆記](https://notes.hychen.me)",
       "----",
     ]
     # 底部連結的內間距，單位：em
