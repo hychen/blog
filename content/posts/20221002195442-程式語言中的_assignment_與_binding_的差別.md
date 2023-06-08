@@ -1,6 +1,5 @@
 +++
 title = "程式語言中的 Assignment 與 Binding 的差別"
-author = ["Hsin-Yi Chen"]
 publishDate = 2016-04-04
 categories = ["觀想"]
 draft = false

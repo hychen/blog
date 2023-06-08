@@ -1,6 +1,5 @@
 +++
 title = "AI 時代的文學程式設計：從 Github Copilot 到 AI 訓練師與領域專家"
-author = ["Hsin-Yi Chen"]
 publishDate = 2023-03-11
 categories = ["觀想"]
 draft = false

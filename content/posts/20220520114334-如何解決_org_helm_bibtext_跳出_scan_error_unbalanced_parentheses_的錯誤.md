@@ -2,7 +2,6 @@
 title = """
   如何解決 org-helm-bibtext 跳出 "scan-error "Unbalanced parentheses" 的錯誤？
   """
-author = ["Hsin-Yi Chen"]
 publishDate = 2022-05-20
 tags = ["Emacs"]
 categories = ["問題與解法"]
