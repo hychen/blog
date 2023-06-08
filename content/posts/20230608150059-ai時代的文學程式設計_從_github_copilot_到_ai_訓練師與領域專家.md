@@ -5,7 +5,7 @@ categories = ["觀想"]
 draft = false
 +++
 
-朋友 Thinker Li 最近展示了他如何跟 [Github Copilot](https://github.com/features/copilot) 結隊編程的紀錄，展示從註解開始撰寫程式碼的新流程（[連結](https://www.plurk.com/p/p6kkiy)）。其實，我這幾日也都是如此編程。在有了 Github Copilot, [ChatGPT](https://chat.openai.com/)，以及之後可能推出的 [Test Copilot](https://githubnext.com/projects/testpilot/)。讓我驚覺五年前的情境想像，似乎真的到來了，屬於「文學編程」（Literate Programming）的文藝復興時刻。
+朋友 Thinker Li 最近展示了他如何跟 [Github Copilot](https://github.com/features/copilot) 結對編程的紀錄，展示從註解開始撰寫程式碼的新流程（[連結](https://www.plurk.com/p/p6kkiy)）。其實，我這幾日也都是如此編程。在有了 Github Copilot, [ChatGPT](https://chat.openai.com/)，以及之後可能推出的 [Test Copilot](https://githubnext.com/projects/testpilot/)。讓我驚覺五年前的情境想像，似乎真的到來了，屬於「文學編程」（Literate Programming）的文藝復興時刻。
 
 
 ## 文學編程 {#文學編程}
