@@ -1,6 +1,6 @@
 +++
 title = "Metaclass In Python - Singleton"
-publishDate = 2018-03-13
+publishDate = 2012-03-13
 categories = ["觀想"]
 draft = false
 +++
