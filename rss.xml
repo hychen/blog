@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.113.0 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Thu, 08 Jun 2023 10:10:18 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>臺灣該採用的人工智慧人才培育策略（2018 版本）</title><link>https://hychen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</link><guid isPermaLink="true">https://hychen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</guid><pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>根據記憶，寫了一篇根據 2018 年時空背景，我那時對 AI 人才培育的觀點。這應該是我首次出現 AI 訓練師的想法，供 AI 相關從業人員參考，產出符合筆者意願的內容。本文並不嚴謹，廢話很多，目的只是概略交待想法出處，沒有多迭代個幾次，讓其行文流暢。如今是 2023 年，自然語言處理的進展是我當初沒預想到的，現在的觀點大抵相同，但當是有所增補。以下文章開始。&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>不可觀修行筆記 － 我修不知道，我觀不可觀。</title><link>https://hychen.me/</link><description>陳信屹的筆記</description><generator>Hugo 0.113.0 https://gohugo.io/</generator><language>zh-TW</language><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Thu, 08 Jun 2023 10:53:17 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://hychen.me/rss.xml"/><item><title>臺灣該採用的人工智慧人才培育策略（2018 版本）</title><link>https://hychen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</link><guid isPermaLink="true">https://hychen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</guid><pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>根據記憶，寫了一篇根據 2018 年時空背景，我那時對 AI 人才培育的觀點。這應該是我首次出現 AI 訓練師的想法，供 AI 相關從業人員參考，產出符合筆者意願的內容。本文並不嚴謹，廢話很多，目的只是概略交待想法出處，沒有多迭代個幾次，讓其行文流暢。如今是 2023 年，自然語言處理的進展是我當初沒預想到的，現在的觀點大抵相同，但當是有所增補。以下文章開始。&lt;/p>
 &lt;h2 id="正文">正文&lt;/h2>
 &lt;p>人工智慧的迅猛發展引起了全球關注和討論。就在近幾年，人工智慧取得了突破性進展，如 AlphaGo 在圍棋比賽中擊敗人類世界冠軍，以及在語言翻譯、語音識別、圖像識別等領域廣泛應用。這些發展表明，人工智慧已經具備極高的實用潛力，對未來社會和經濟發展產生深遠的影響。因此，如何培養具備與人工智慧協作的能力和創新能力的下一代人才，成為全球教育界共同關注的問題。&lt;/p>
 &lt;h3 id="一-人類與人工智慧協作的行為如同生成對抗網絡-gan">一、人類與人工智慧協作的行為如同生成對抗網絡（GAN）&lt;/h3>
@@ -907,7 +907,36 @@ Q2.1: 如果待遇是問題，為什麼唐鳳有辦法留那麼久？&lt;/p>
 &lt;/div>
 &lt;/div>&lt;p>因此，在所有的 Imperative Language 裡，不管是 Python, Ruby, C, Java, 變數其實都是被綁在指標上，這樣變數指到的值才能被修改。&lt;/p>
 &lt;h2 id="結論">結論&lt;/h2>
-&lt;p>所以說，變數只是個值的代稱，如果值是指標，那麼就可以修改指標要指到哪個 值，反之則不行。但不管怎麼說，變數都不應該被當成是一個容器。&lt;/p></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category></item><item><title>網路人格</title><link>https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/</link><guid isPermaLink="true">https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/</guid><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>語氣、詞彙、以及藏匿在句子中的思想， 在1與0的空間中交織出一個網路人格。&lt;/p>
+&lt;p>所以說，變數只是個值的代稱，如果值是指標，那麼就可以修改指標要指到哪個 值，反之則不行。但不管怎麼說，變數都不應該被當成是一個容器。&lt;/p></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category></item><item><title>夢境 320</title><link>https://hychen.me/posts/20230608185100-%E5%A4%A2%E5%A2%83320/</link><guid isPermaLink="true">https://hychen.me/posts/20230608185100-%E5%A4%A2%E5%A2%83320/</guid><pubDate>Sun, 20 Mar 2011 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;div class="verse">
+&lt;p>我手拿著90手槍, 沿著樓梯一路向下,&lt;br />
+底下黑壓壓的一群人, 緩緩步行向上,&lt;br />
+沒人對被手槍指著有反應&lt;br />
+&lt;br />
+一開使擦身而過的的, 是臉模糊不清的民眾,&lt;br />
+身上著的服飾似乎是民國初期的款式&lt;br />
+&lt;br />
+後來, 樓梯開始窄了起來,&lt;br />
+群眾裡開始夾雜清朝官員&lt;br />
+我貼著牆壁繼續向下&lt;br />
+&lt;br />
+樓梯更窄了&lt;br />
+&lt;br />
+我遇見了孫中山與蔣中正,&lt;br />
+孫中山手持著拐杖, 側過身想繞過我繼續向上爬,&lt;br />
+腳步有些不穩, 我摻扶了他一把&lt;br />
+蔣中正不發一語, 表情堅毅&lt;br />
+這兩人之前也對被槍指著沒反應&lt;br />
+&lt;br />
+送走兩老, 恍惚間聽到廣播機傳來,&lt;br />
+人民代表正推舉大總統的新聞&lt;br />
+&lt;br />
+樓梯又更窄了, 那是通往哪裡呢?&lt;br />&lt;/p>
+&lt;/div></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category></item><item><title>口足程式設計師</title><link>https://hychen.me/posts/20230608183343-%E5%8F%A3%E8%B6%B3%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB/</link><guid isPermaLink="true">https://hychen.me/posts/20230608183343-%E5%8F%A3%E8%B6%B3%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB/</guid><pubDate>Tue, 16 Sep 2008 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>如果沒有手，你不知道什麼是擁抱的感覺。如果沒有手，你不知道生活中許多理所當然的動作原來都這麼麻煩。如果沒有手，你將是什麼樣的人？&lt;/p>
+&lt;p>尤記得某個節慶日，我在百般無聊下窩在沙發上看電視，剛好看到公視正在介紹口足畫家，看著看著，思緒就那麼一偏，那麼一轉，在腦海中冒出了一個問題「既然有口足畫家，那口足程式設計師，有嗎？」，好似失去雙手的上肢身障者絕大多數的發展，就是成為一名口足畫家。&lt;/p>
+&lt;p>用腳寫程式比用腳畫圖難嗎?&lt;/p>
+&lt;p>好像也不是，仔細想想，程式設計對雙手的要求似乎遠較繪畫來的低，不用講究力道，不用講究角度，只是敲敲打打，以及簡單的二維運動(滑鼠定位)，不管哪一個，都是繪畫的難度指數比較高。&lt;/p>
+&lt;p>要寫程式就必須先解決打字問題，如果沒辦法輸入程式碼，那程式也不用寫了。首先，腳能按的按鍵一定會比手用的少，所以必須要能以有限的按鍵來輸入中文英文，類似的問題同樣出現在手機上，而以手機上輸入法的發展成熟度來看，除了輸入文字慢，其他的打字需求都可以滿足，且寫程式大部分的時間都是想，在思索，真正打字的時間則不多，所以輸入文字慢看來也不是個問題。感覺上，成為一個口足程式設計師應該是可行的。&lt;/p>
+&lt;p>但我們仍然沒有一個好用的腳用電腦輸入裝置，目前(以我)在市面上看到的，都是將雙手的操作思維原封不動的挪到腳用輸入電腦裝置 - 用腳來模擬手部的操作。而即使就算是個雙手健全的人，有個好用的腳用輸入裝置，對於日常應用也是便利許多，比如說，雙手用在吃飯，眼睛盯著螢幕前的小說文章，然後用腳來換下一頁。&lt;/p></description><category domain="https://hychen.me/categories/%E8%A7%80%E6%83%B3/">觀想</category></item><item><title>網路人格</title><link>https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/</link><guid isPermaLink="true">https://hychen.me/posts/20221002203411-%E7%B6%B2%E8%B7%AF%E4%BA%BA%E6%A0%BC/</guid><pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>語氣、詞彙、以及藏匿在句子中的思想， 在1與0的空間中交織出一個網路人格。&lt;/p>
 &lt;p>於是我確信我真的從一篇篇的觀想， 漸漸描繪出一個概略的輪廓，認識了你。&lt;/p>
 &lt;p>只是你永遠是那樣的模糊不清析，&lt;/p>
 &lt;p>你終究只是個ID。&lt;/p>
