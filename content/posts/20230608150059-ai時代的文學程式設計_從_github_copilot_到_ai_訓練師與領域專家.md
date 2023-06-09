@@ -5,7 +5,7 @@ categories = ["觀想"]
 draft = false
 +++
 
-朋友 Thinker Li 最近展示了他如何跟 [Github Copilot](https://github.com/features/copilot) 結對編程的紀錄，展示從註解開始撰寫程式碼的新流程（[連結](https://www.plurk.com/p/p6kkiy)）。其實，我這幾日也都是如此編程。在有了 Github Copilot, [ChatGPT](https://chat.openai.com/)，以及之後可能推出的 [Test Copilot](https://githubnext.com/projects/testpilot/)。讓我驚覺五年前的情境想像，似乎真的到來了，屬於「文學編程」（Literate Programming）的文藝復興時刻。
+朋友 Thinker Li 最近展示了他如何跟 [Github Copilot](https://github.com/features/copilot) 結    對編程的紀錄，展示從註解開始撰寫程式碼的新流程（[連結](https://www.plurk.com/p/p6kkiy)）。其實，我這幾日也都是如此編程。在有了 Github Copilot, [ChatGPT](https://chat.openai.com/)，以及之後可能推出的 [Test Copilot](https://githubnext.com/projects/testpilot/)。讓我驚覺五年前的情境想像，似乎真的到來了，屬於「文學編程」（Literate Programming）的文藝復興時刻。
 
 
 ## 文學編程 {#文學編程}
@@ -107,6 +107,6 @@ AI 訓練師是我在五年前設想的一種新職業概念，指涉的是現�
 
 我們正在目睹一種新型的程式設計範式的崛起：文學程式設計。這種由高德納提出的方法將讓程式設計師用他們自己的思維邏輯和流程來開發程式，不再受制於電腦強加的方式和順序。諸如 Github Copilot 和 ChatGPT 已開始被開始應用到文學編成設計。
 
-然而，我們也需要注意，即便是使用相同的AI模型，不同的輸入（提示工程）會產生不同的結果。這引出了一個重要的角色：AI訓練師。他們不僅需要為AI提供適當的指導，更需要具備社會和文化資本來對AI的行為進行背書。同時，我們也需要領域專家來作為決策者，確定什麼是真實的，什麼是偽造的。他們不需要擁有電腦科學背景，但他們的話語具有權威性，他們的判斷具有決定性影響。
+我們也需要注意，這類與 AI 協作的方式也漸漸蔓延到其他產業，而即便是使用相同的AI模型，不同的輸入（提示工程）會產生不同的結果。這引出了一個重要的角色：AI訓練師。他們不僅需要為AI提供適當的指導，更需要具備社會和文化資本來對AI的行為進行背書。同時，我們也需要領域專家來作為決策者，確定什麼是真實的，什麼是偽造的。他們不需要擁有電腦科學背景，但他們的話語具有權威性，他們的判斷具有決定性影響。
 
 不可否認的是，這個過程可能會面臨許多挑戰，如智慧財產權的問題、數據保護規定、道德與倫理問題等。對此，我們需要一種監管模型來處理這些問題。例如，OpenAI在幾年前發表的 "regulatory Markets for AI Safety" 論文，就提出了一種透過私人市場來監管AI安全的概念。整體概念類似 IEEE 與各國政府關係，屬於一種傳統的組織型態。與之相對的，是我曾提過在 Model 部署過程中使用 DAO 治理的去中心化協議，讓使用者深入產品部署決策。適合當代社會價值的選擇是一種財富資本、社會資本、文化資本的博弈過程。換言之， Google 的 Ethical AI Board 便是種可以 DAO 化的對象來爭取壓力團體支持。
