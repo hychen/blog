@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 不可觀修行筆記</title><link>https://tysonchen.me/posts/</link><description>Recent content in Posts on 不可觀修行筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-hant</language><lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tysonchen.me/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>臺灣該採用的人工智慧人才培育策略（2018 版本）</title><link>https://tysonchen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</link><pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate><guid>https://tysonchen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</guid><description>根據記憶，寫了一篇根據 2018 年時空背景，我那時對 AI 人才培育的觀點。這應該是我首次出現 AI 訓練師的想法，供 AI 相關從業人員參考，本文透過 ChatGPT 交互產出，並不嚴謹，廢話很多，目的只是概略交待想法出處，沒有多迭代個幾次，讓其行文流暢。如今是 2023 年，自然語言處理的進展是我當初沒預想到的，現在的觀點大抵相同，但當是有所增補。以下文章開始。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 不可觀修行筆記</title><link>https://tysonchen.me/posts/</link><description>Recent content in Posts on 不可觀修行筆記</description><generator>Hugo -- gohugo.io</generator><language>zh-hant</language><lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tysonchen.me/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>詩 - 伴憂</title><link>https://tysonchen.me/posts/20230708111314-%E8%A9%A9_%E4%BC%B4%E6%86%82/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://tysonchen.me/posts/20230708111314-%E8%A9%A9_%E4%BC%B4%E6%86%82/</guid><description>我後來就不問
+沒有答案的問題了，
+因為沒有出口的迷宮，
+是走不出來的。
+驚鴻倩影，醉夢的繁華絮語，
+我們稱之為路的，
+不過是一種迷惘。
+夜，如此透明，
+隱藏著未知的奧秘，
+只有你我，
+才能揭開那如絲綢般的神秘面紗。
+在這塵世的喧囂與寂靜之間，
+是人世的束縛，或是自由的飛翔？
+那一刻，人生的旅途如無光的幽深，
+輾轉蹉跎前行，尋一片晴朗。
+那猙獰的內心低語，
+如同暗夜的浪濤，
+在我心海中遊蕩。
+任它徜徉吧！
+讓暴風雨再來得更猛烈些吧！
+我與自我舞動，
+成最真的我。
+無出口的迷宮，
+我們又何需逃脫？
+這是勝利的預言家在叫喊!
+這是勇敢的你，也是我。</description></item><item><title>臺灣該採用的人工智慧人才培育策略（2018 版本）</title><link>https://tysonchen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</link><pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate><guid>https://tysonchen.me/posts/20230608171154-%E8%87%BA%E7%81%A3%E8%A9%B2%E6%8E%A1%E7%94%A8%E7%9A%84%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BA%BA%E6%89%8D%E5%9F%B9%E8%82%B2%E7%AD%96%E7%95%A5_2018_%E7%89%88%E6%9C%AC/</guid><description>根據記憶，寫了一篇根據 2018 年時空背景，我那時對 AI 人才培育的觀點。這應該是我首次出現 AI 訓練師的想法，供 AI 相關從業人員參考，本文透過 ChatGPT 交互產出，並不嚴謹，廢話很多，目的只是概略交待想法出處，沒有多迭代個幾次，讓其行文流暢。如今是 2023 年，自然語言處理的進展是我當初沒預想到的，現在的觀點大抵相同，但當是有所增補。以下文章開始。
 正文 人工智慧的迅猛發展引起了全球關注和討論。就在近幾年，人工智慧取得了突破性進展，如 AlphaGo 在圍棋比賽中擊敗人類世界冠軍，以及在語言翻譯、語音識別、圖像識別等領域廣泛應用。這些發展表明，人工智慧已經具備極高的實用潛力，對未來社會和經濟發展產生深遠的影響。因此，如何培養具備與人工智慧協作的能力和創新能力的下一代人才，成為全球教育界共同關注的問題。
 一、人類與人工智慧協作的行為如同生成對抗網絡（GAN） 人類與AI的協作行為可以被視為生成對抗網絡（GAN）。GAN是一種深度學習模型，由兩個神經網絡組成：生成器（Generator）和鑑別器（Discriminator）。生成器負責創建偽數據，鑑別器則試圖分辨真實數據與偽數據的區別。GAN 在影像辨識和圖像生成方面取得了驚人的成果。然而，在「後真相時代」，區分真實數據和偽數據的分別並不完全由AI決定，而是需要人類的社會價值觀和判斷力進行評估和判斷。人類的社會價值觀和判斷力，可以發揮其社會資本帶來的影響力，擴散到整個社會，使其真實。
 在人類與 AI 的協作中，人類扮演類似生成器的角色，提供創意和想法，而 AI 則像鑑別器，分析人類的創意並提供反饋。同時，AI 的反饋也觸發人類的創意和想法，成為生成器，而人類則扮演鑑別器的角色，試圖分辨真實數據與偽數據之間的區別，做出符合社會價值觀、自身自由意志的選擇判斷與糾錯，並將結果回饋給AI。這樣的互動過程不斷地促進了人類與AI在創新和問題解決方面的進步，並且可以更好地適應社會變遷和價值觀的演變。
